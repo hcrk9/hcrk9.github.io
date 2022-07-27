@@ -224,6 +224,13 @@
                 display: grid;
                 grid-template-columns: repeat(2,minmax(0,1fr));
             }
+            .projects-02 {
+                background: linear-gradient(101.6deg, #07287F 50%, #4B68B5 100%);
+                color: #eee;
+                height: fit-content;
+                display: grid;
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
             .projects-description {
                 display: flex;
                 flex-flow: column nowrap;
@@ -247,6 +254,8 @@
             }
             .projects-image {
                 background-color: #222;
+                display: flex;
+                align-items: center;
             }
             .projects-image img {
                 width: -webkit-fill-available;
@@ -402,6 +411,37 @@
                 </div>
             </div>
         </section>
+        <section class="projects-02">
+            <div class="projects-description">
+                <div class="projects-description">
+                    <h2 class="projects-id upper">01</h2>
+                    <h1 class="upper">Remaking <abbr title="Chongqing Rail Transit">CRT</abbr>'s PIS Layout</h1>
+                    <p class="description-text upper">I thought that the old PIS design on some older train of L3 was ugly, so I tried making a better one. However, I don't think mine is that better than the original design.</p>        
+                </div>
+                <div class="projects-info">
+                    <div class="project-date" style="grid-area: date;">
+                        <b>Date</b>
+                        <p>June 2022</p>
+                    </div>
+                    <div class="project-type" style="grid-area: type;">
+                        <b>Type</b>
+                        <p>Design</p>
+                    </div>
+                    <div class="project-tool" style="grid-area: tool;">
+                        <b>Tool used</b>
+                        <p>Figma</p>
+                    </div>
+                    <div class="project-time" style="grid-area: time;">
+                        <b>Time spent</b>
+                        <p>1-2h</p>
+                    </div>                    
+                </div>
+            </div>
+            <div  class="projects-image">
+                <img src="./images/CRT_PIS.png" alt="A comparison between the original CRT Line 3 PIS design and my remake">
+            </div>
+        </section>
+
         <footer class="footer">
             <div style="grid-area: info;" class="footer-info">
                 <svg width="59" height="30" viewBox="0 0 59 30" fill="none" xmlns="http://www.w3.org/2000/svg">
