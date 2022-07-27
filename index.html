@@ -27,7 +27,7 @@
             }
             .title {
                 font-size: 4vw;
-                background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("https://s2.loli.net/2022/07/27/4iCHesSKfLqaNmy.jpg");
+                background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("./images/bg.png");
                 height: 60vh;
             }
             .title-text {
@@ -105,7 +105,15 @@
             }
             .hachi-logo {
                 height:30px;
+                transition: 0.3s filter;
                 /*margin-left: 60px;*/
+            }
+            .hachi-logo:hover {
+                filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
+                transition: 0.3s filter;
+            }
+            .hachi-logo:active {
+                background: linear-gradient(92.86deg, #7F80D5 0%, #FF8CD1 100.25%);
             }
             .navbar-link {
                 color: #fff;
@@ -114,8 +122,12 @@
                 text-decoration: none;
                 transition: 0.3s font-weight;
             }
+            .navbar-link:hover {
+                transition: 0.3s filter;
+                filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
+            }
             .navbar-link:active {
-                color: #ddd;
+                fill-opacity: 50%;
                 font-weight:200;
                 transition: 0.3s color;
                 transition: 0.3s font-weight;
@@ -125,7 +137,7 @@
                 padding-left:13em;
             }
             .bold-vf {
-                font-weight:bold;
+                font-weight:600;
                 transition: 0.3s font-weight;
             }
             .bold-vf:hover {
@@ -156,9 +168,19 @@
                 display: flex;
                 transition: 0.3s filter;
             }
-            .social-icon svg:active {
+            .social-icon svg:hover {
                 filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
                 transition: 0.3s filter;
+            }
+            .social-icon a:active {
+                fill-opacity: 50%;
+            }
+            .footer {
+                background-color: #333;
+                height: 200px;
+                display: grid;
+                grid-template-columns: repeat(4,minmax(0,1fr));
+                grid-template-areas: "info info nav1 nav2";
             }
         </style>
     </head>
@@ -210,5 +232,11 @@
             <span>Cover art ©</span>
             <a href="http://azz.net/void" target="_blank" class="bold-vf copyright-link">void</a>
         </div>
+        <footer class="footer">
+            <div style="grid-area: info;" class="footer-info">123</div>
+            <div style="grid-area: nav1;" class="footer-info">1234</div>
+            <div style="grid-area: nav2;" class="footer-info">1235</div>
+
+        </footer>
     </body>
 </html>
