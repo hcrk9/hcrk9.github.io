@@ -75,7 +75,6 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                text-fill-color: transparent;
             }
             .title-text-2 {
                 letter-spacing: -0.04em;
@@ -83,7 +82,6 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                text-fill-color: transparent;
             }
             .title-text-3 {
                 letter-spacing: -0.04em;
@@ -91,7 +89,6 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                text-fill-color: transparent;
             }
             .title-text span[data-show] {
                 transform: translateY(-100%);
@@ -173,12 +170,12 @@
             .copyright-link {
                 color:#000;
                 text-decoration: none;
-                transition: 0.3s text-shadow;
+                transition: 0.2s text-shadow;
             }
             .copyright-link:active {
                 color:#fff;
                 text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8);
-                transition: 0.3s text-shadow;
+                transition: 0.2s text-shadow;
             }
             .main-nav {
                 display: flex;
@@ -201,11 +198,11 @@
             .social-icon svg {
                 fill:#fff;
                 display: flex;
-                transition: 0.3s filter;
+                transition: 0.2s filter;
             }
             .social-icon svg:hover {
                 filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
-                transition: 0.3s filter;
+                transition: 0.2s filter;
             }
             .social-icon a:active {
                 fill-opacity: 50%;
@@ -218,15 +215,15 @@
                 background:repeat center url(./images/sssquiggly.svg), linear-gradient(90deg, #7F80D5 0%, #FF8CD1 100%);
             }
             .projects-01 {
-                background: linear-gradient(101.6deg, #07287F 50%, #4B68B5 100%);
+                background: linear-gradient(90deg, #07287F 50%, #4B68B5 100%);
                 color: #eee;
                 height: fit-content;
                 display: grid;
                 grid-template-columns: repeat(2,minmax(0,1fr));
             }
             .projects-02 {
-                background: linear-gradient(101.6deg, #07287F 50%, #4B68B5 100%);
-                color: #eee;
+                background: linear-gradient(90deg, #EFA8CE 0%, #E57F82 50%);
+                color: #222;
                 height: fit-content;
                 display: grid;
                 grid-template-columns: repeat(2,minmax(0,1fr));
@@ -240,17 +237,24 @@
             .upper {
                 padding-left: 12px;
             }
-            .projects-01 h1 {
+            .projects-name {
                 font-size:2.5vw;
             }
-            .projects-id {
+            .projects-id-light {
                 margin:0%;
                 font-size: 4vw;
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                text-fill-color: transparent;
+            }
+            .projects-id-dark {
+                margin:0%;
+                font-size: 4vw;
+                background: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, #222 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
             .projects-image {
                 background-color: #222;
@@ -263,7 +267,7 @@
             .description-text {
                 width: 48rem;
             }
-            .projects-info {
+            .project-01-info {
                 display: grid;
                 height: auto;
                 padding: 1em;
@@ -272,8 +276,23 @@
                 grid-template-areas: "date type tool time";
                 background-color: #c7deff;
             }
-            .project-date,.project-type,.project-time,.project-tool {
+            .project-02-info {
+                display: grid;
+                height: auto;
+                padding: 1em;
+                gap: 1em;
+                grid-template-columns: repeat(4,minmax(0,1fr));
+                grid-template-areas: "date type tool time";
+                background-color: #FFC7C9;
+            }
+            .project-01-date,.project-01-type,.project-01-time,.project-01-tool {
                 color: #07287F;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+            }
+            .project-02-date,.project-02-type,.project-02-time,.project-02-tool {
+                color: #7E070A;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
@@ -323,9 +342,42 @@
                 border-top: 1px solid #aaa;
                 padding-top: 10px;
             }
+            .landscape-alert {
+                display: none;
+                position: fixed;
+                justify-content: center;
+                align-items: center;
+                z-index: 2000;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: -webkit-fill-available;
+                height: -webkit-fill-available;
+            }
+            .landscape-content {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1em;
+                color: #eee;
+                font-weight: 600;
+            }
+            @media only screen and (orientation:portrait) {
+                .landscape-alert,.landscape-content {
+                    display: flex!important;
+                }
+                body {
+                    overflow: hidden;
+                }
+            }
         </style>
     </head>
     <body>
+        <div class="landscape-alert">
+            <div class="landscape-content">
+                <img src="./images/rotate_device.svg" alt="" style="width: 25%;">
+                <span>Please browse this page in landscape mode or on a PC.</span>
+            </div>
+        </div>
         <div class="navbar">
             <div>
                 <a href="index.html" class="hachi-logo">
@@ -377,7 +429,6 @@
             </div>
             <div class="img-alt"><span> ALT: A image of Hutao, the Genshin Impact Character sitting in a coffin.</span></div>
         </div>
-        <div class="separation"></div>
         <section class="projects">
             <h1 style="padding: 0.5em 13rem; color:#eee">Finished Projects</h1>
         </section>
@@ -387,58 +438,59 @@
             </div>
             <div class="projects-description">
                 <div class="projects-description">
-                    <h2 class="projects-id upper">01</h2>
-                    <h1 class="upper">Remaking <abbr title="Chongqing Rail Transit">CRT</abbr>'s PIS Layout</h1>
+                    <h2 class="projects-id-light upper">01</h2>
+                    <h1 class="projects-name upper">Remaking <abbr title="Chongqing Rail Transit">CRT</abbr>'s PIS Layout</h1>
                     <p class="description-text upper">I thought that the old PIS design on some older train of L3 was ugly, so I tried making a better one. However, I don't think mine is that better than the original design.</p>        
                 </div>
-                <div class="projects-info">
-                    <div class="project-date" style="grid-area: date;">
+                <div class="project-01-info">
+                    <div class="project-01-date" style="grid-area: date;">
                         <b>Date</b>
                         <p>June 2022</p>
                     </div>
-                    <div class="project-type" style="grid-area: type;">
+                    <div class="project-01-type" style="grid-area: type;">
                         <b>Type</b>
                         <p>Design</p>
                     </div>
-                    <div class="project-tool" style="grid-area: tool;">
+                    <div class="project-01-tool" style="grid-area: tool;">
                         <b>Tool used</b>
                         <p>Figma</p>
                     </div>
-                    <div class="project-time" style="grid-area: time;">
+                    <div class="project-01-time" style="grid-area: time;">
                         <b>Time spent</b>
                         <p>1-2h</p>
                     </div>                    
                 </div>
             </div>
         </section>
+        <div class="separation"></div>
         <section class="projects-02">
             <div class="projects-description">
                 <div class="projects-description">
-                    <h2 class="projects-id upper">01</h2>
-                    <h1 class="upper">Remaking <abbr title="Chongqing Rail Transit">CRT</abbr>'s PIS Layout</h1>
-                    <p class="description-text upper">I thought that the old PIS design on some older train of L3 was ugly, so I tried making a better one. However, I don't think mine is that better than the original design.</p>        
+                    <h2 class="projects-id-dark upper">02</h2>
+                    <h1 class="projects-name upper"><abbr title="Chinese Testbook Company">WANWEI</abbr>, but w/ Genshin Impact</h1>
+                    <p class="description-text upper">I felt like giving our teachers a bit of a surprise, so I decided to recreate the cover of one of our homeworks, but with some interesting changes.</p>        
                 </div>
-                <div class="projects-info">
-                    <div class="project-date" style="grid-area: date;">
+                <div class="project-02-info">
+                    <div class="project-02-date" style="grid-area: date;">
                         <b>Date</b>
-                        <p>June 2022</p>
+                        <p>May 2022</p>
                     </div>
-                    <div class="project-type" style="grid-area: type;">
+                    <div class="project-02-type" style="grid-area: type;">
                         <b>Type</b>
                         <p>Design</p>
                     </div>
-                    <div class="project-tool" style="grid-area: tool;">
+                    <div class="project-02-tool" style="grid-area: tool;">
                         <b>Tool used</b>
-                        <p>Figma</p>
+                        <p>Photoshop</p>
                     </div>
-                    <div class="project-time" style="grid-area: time;">
+                    <div class="project-02-time" style="grid-area: time;">
                         <b>Time spent</b>
-                        <p>1-2h</p>
+                        <p>2-4h</p>
                     </div>                    
                 </div>
             </div>
             <div  class="projects-image">
-                <img src="./images/CRT_PIS.png" alt="A comparison between the original CRT Line 3 PIS design and my remake">
+                <img src="./images/wanwei_cover.png" alt="A comparison between the original CRT Line 3 PIS design and my remake">
             </div>
         </section>
 
