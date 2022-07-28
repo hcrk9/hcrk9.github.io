@@ -4,14 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>哈赤官方站 @ hachiiiiiiii.co</title>           
+        <title>哈赤官方站 @ hachiiiiiiii.co</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ECD49MNC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'G-B6ECD49MNC');
+        </script>
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>           
         <script>
            $( document ).ready(function() {
-                if (localStorage.getItem("pageloadcount")) { $("#VF-alert").hide();
+                let count = localStorage.getItem('loadCount');
+                if (count == "1") { $("#VF-alert").hide();
             } 
-                localStorage.setItem("pageloadcount", "1");
             });
-         </script>
+        </script>
+        <script>
+            $(function(){
+                $("#alert-close").click(function(){
+                    localStorage.setItem("loadCount","1")
+                });
+            })
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="favicon.svg">
@@ -274,6 +291,12 @@
             h2 {
                 font-weight: 400;
             }
+            button {
+                background-color: transparent;
+                color: #eee;
+                border:1px solid #eee;
+                border-radius: 10px;
+            }
             .icon-list {
                 display: flex;
                 flex-flow: row nowrap;
@@ -395,6 +418,7 @@
                 <div class="title-line-3">an unprofessional photographer.</div>
             </div>
         </div>
+        <button id="alert-reset">RESET</button>
         <div id="VF-alert" style="display: flex">
             <img src="images/warning.svg" alt="Caution">
             This site uses Variable Font technology, try to hover on one of those large texts and links!
