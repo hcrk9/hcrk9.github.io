@@ -4,8 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>哈赤官方站 @ hachiiiiiiii.co</title>
-        <script src="title.js"></script>
+        <title>哈赤官方站 @ hachiiiiiiii.co</title>           
+        <script>
+           $( document ).ready(function() {
+                if (localStorage.getItem("pageloadcount")) { $("#VF-alert").hide();
+            } 
+                localStorage.setItem("pageloadcount", "1");
+            });
+         </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="favicon.svg">
@@ -32,6 +38,13 @@
             }
             html::-webkit-scrollbar-thumb {
                 background: #555;
+            }
+            #VF-alert {
+                background-color: #d0ac49;
+                font-weight: 600;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
             }
             body {
                 margin: 0%;
@@ -308,6 +321,14 @@
             .link-ncm:active {
                 filter: brightness(.5);
             }
+            @keyframes closeAlert {
+                from {
+                    opacity: 100%;
+                }
+                to {
+                    opacity:0%;
+                }
+            }
             @media only screen and (orientation:portrait) {
                 html, body {
                     overflow: hidden;
@@ -373,6 +394,11 @@
                 <div class="title-line-2">a bad programmer &</div>
                 <div class="title-line-3">an unprofessional photographer.</div>
             </div>
+        </div>
+        <div id="VF-alert" style="display: flex">
+            <img src="images/warning.svg" alt="Caution">
+            This site uses Variable Font technology, try to hover on one of those large texts and links!
+            <button id="alert-close">CLOSE</button>
         </div>
         <div class="main-content">
             <div class="quote">
@@ -479,6 +505,16 @@
             </nav>
             <div style="grid-area: legal;" class="footer-legal">©Hachi 2022. "Hachi" Logo is a trademark of Hachi. <b>This website works best on a computer running Google Chrome.</b></div>
         </footer>
+        <script>
+            document.getElementById("alert-close").addEventListener("click", closeAlert);
+            function closeAlert() {
+                 document.getElementById("VF-alert").style = "animation:1s closeAlert"
+                 setTimeout(displayNone,1000)
+                 function displayNone() {
+                    document.getElementById("VF-alert").style = "display:none"
+                 }
+            }
+        </script> 
     </body>
 </html>
     
