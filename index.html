@@ -300,7 +300,6 @@
             .footer {
                 background-color: #333;
                 color: #eee;
-                height: 220px;
                 display: grid;
                 grid-template-columns: repeat(4,minmax(0,1fr));
                 grid-template-areas: "info info nav1 nav2" "legal legal legal legal";
@@ -321,6 +320,9 @@
             .footer-email:active{
                 fill-opacity: 50%;
                 transition: 0.2s fill-opacity;
+            }
+            .footer-nav2 h3 {
+                hyphens: auto;
             }
             a {
                 text-decoration: none;
@@ -362,13 +364,74 @@
                 font-weight: 600;
             }
             @media only screen and (orientation:portrait) {
-                .landscape-alert,.landscape-content {
-                    display: flex!important;
-                }
                 body {
-                    overflow: hidden;
+                    overflow-x: hidden;
                 }
-            }
+                .title {
+                    font-size: 10vw;
+                    background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("./images/bg.png");
+                }
+                .title-text {
+                    height: 10vw;
+                    padding-bottom: 6px;
+                }
+                .title-text span {
+                    top: 10.5vw;
+                }
+                .navbar {
+                    padding: 10 40 10 40;
+                }
+                .img-info {
+                    padding: 0 3em;
+                }
+                .img-alt {
+                    display: none;
+                }
+                .main-nav {
+                    align-items: center;
+                    text-align: center;
+                }
+                .projects-01,.projects-02 {
+                    width: 100vw;
+                    grid-template-rows: repeat(2,minmax(0,1fr));
+                    grid-template-columns: none;
+                }
+                .projects-description {
+                    flex-flow: column wrap;
+                }
+                .projects-name {
+                    font-size: 10vw;
+                    width: 100vw;
+                }
+                .projects-id-light, .projects-id-dark {
+                    font-size: 12vw;
+                }
+                .projects-image {
+                    width: 100vw;
+                }
+                .projects-image img {
+                    width: 100vw;
+                }
+                .description-text {
+                    width: 90vw;
+                }
+                .project-01-info,.project-02-info {
+                    width: -webkit-fill-available;
+                    padding: 1em 0em;
+                    gap: 0em;
+                    grid-template-columns: repeat(2,minmax(0,1fr));
+                    grid-template-areas: "date type" "tool time";
+                }
+                .project-01-date, .project-01-tool, .project-02-date, .project-02-tool {
+                    padding-left: 10px;
+                }
+                .footer {
+                    grid-template-columns:  repeat(3,minmax(0,1fr));
+                    grid-template-areas: "info info nav1" "legal legal nav2";
+                }
+                .projects h1 {
+                    padding: 0.5em 3rem!important;
+                }
         </style>
     </head>
     <body>
@@ -559,7 +622,7 @@
                 </ul>
             </nav>
             <nav style="grid-area: nav2;" class="footer-nav2">
-                <h3>Acknowledgment</h3>
+                <h3>Acknowledge­ment</h3>
                 <ul>
                     <li><a href="https://space.bilibili.com/451368848/" target="_blank">CodingStartup</a></li>
                     <li><a href="https://docs.github.com/cn/pages/">GitHub Pages</a></li>
