@@ -115,10 +115,17 @@
                 padding-bottom: 6px;
             }
             h1 {
-                margin: 0
+                margin: 0;
+                font-weight: 300;
+                transition: all 0.3s;
+            }
+            h1:hover {
+                font-weight: 600;
+                transition: all 0.3s;
             }
             p {
-                margin: 0
+                margin: 0;
+                font-weight: 500;
             }
             .footer {
                 background-color: #333;
@@ -188,11 +195,23 @@
                 animation: 8s line-1 ease;
                 font-weight: 120;
                 letter-spacing: -0.08em;
+                transition: all 1s;
+            }
+            .title-line-1:hover {
+                font-weight: 400;
+                letter-spacing: 0em;
+                transition: all 1s;
             }
             .title-line-2 {
                 animation: 8s line-2 ease;
                 font-weight: 120;
                 letter-spacing: -0.08em;
+                transition: all 1s;
+            }
+            .title-line-2:hover {
+                font-weight: 400;
+                letter-spacing: 0em;
+                transition: all 1s;
             }
             .title-line-3 {
                 animation: 8s line-3 ease;
@@ -200,6 +219,11 @@
                 font-variation-settings: "wght" 100, "wdth" 50, "GRAD" 100;
                 font-style: italic;
                 font-family: "Roboto Serif", serif;
+                transition: 1s font-variation-settings;
+            }
+            .title-line-3:hover {
+                font-variation-settings: "wght" 900, "wdth" 150, "GRAD" -50;
+                transition: 1s font-variation-settings;
             }
             @keyframes line-1 {
                 0% {
@@ -257,8 +281,14 @@
             .main-grid {
                 display: grid;
                 grid-template-rows: repeat(2,1fr);
-                grid-template-areas: "title title" "cugan esrgan";
+                grid-template-areas: "title-01 title-01" "cugan esrgan" "craiyon ." "title-02 title-02" "uvr .";
                 gap:2em 16em;
+            }
+            h2 {
+                font-weight: 600;
+            }
+            .main-content p,i {
+                width: 20vw;
             }
         </style>
         <body>
@@ -307,19 +337,35 @@
         </div>
         <div class="main-content">
             <div class="main-grid">
-                <h1 style="grid-area: title;">Image</h1>
+                <div style="grid-area: title-01;">
+                    <ruby><h1>AI</h1><rt>Artificial Intelligence</rt></ruby>
+                    <h2>Image</h2>
+                </div>
                 <div class="info-realcugan" style="grid-area: cugan;">
                     <h1>Real-CUGAN</h1>
-                    <p>A anime style image upscaler by Bilibili.</p>
+                    <p>An open-source anime style image upscaler by Bilibili.</p>
                     <a href="https://github.com/bilibili/ailab/tree/main/Real-CUGAN" target="_blank">GitHub Repo</a>
                     <a href="https://github.com/nihui/realcugan-ncnn-vulkan" target="_blank">ncnn Version</a>
                 </div>
                 <div class="info-realesrgan" style="grid-area: esrgan;">
                     <h1>Real-ESRGAN</h1>
-                    <p>A image upscaler by Tencent ARC Lab.</p>
+                    <p>An open-source image upscaler by Tencent ARC Lab.</p>
                     <a href="https://github.com/xinntao/Real-ESRGAN" target="_blank">GitHub Repo</a>
-
-                </div>    
+                </div>
+                <div class="info-craiyon" style="grid-area: craiyon;">
+                    <h1>craiyon</h1>
+                    <p>Previously known as "DALL-E Mini", craiyon can generate <i style="text-decoration: line-through;">memes</i> images from any prompt.</p>
+                    <a href="https://craiyon.com" target="_blank">Official Site</a>
+                </div>
+                <div style="grid-area: title-02;">
+                    <h2>Sound</h2>
+                </div>
+                <div class="info-UVR" style="grid-area: uvr;">
+                    <ruby><h1>UVR</h1><rt>Ultimate Vocal Remover</rt></ruby>
+                    <p>An open-source vocal & instrumental separator.</p>
+                    <i>"GUI for a Vocal Remover that uses Deep Neural Networks." ——Github Repo "About"</i><br>
+                    <a href="https://github.com/Anjok07/ultimatevocalremovergui" target="_blank">GitHub Repo</a>
+                </div>
             </div>
         </div>
         <footer class="footer">
