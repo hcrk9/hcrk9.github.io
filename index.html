@@ -344,25 +344,6 @@
                 border-top: 1px solid #aaa;
                 padding-top: 10px;
             }
-            .landscape-alert {
-                display: none;
-                position: fixed;
-                justify-content: center;
-                align-items: center;
-                z-index: 2000;
-                background-color: rgba(0, 0, 0, 0.5);
-                width: -webkit-fill-available;
-                height: -webkit-fill-available;
-            }
-            .landscape-content {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 1em;
-                color: #eee;
-                font-weight: 600;
-            }
             @media only screen and (orientation:portrait) {
                 body {
                     overflow-x: hidden;
@@ -432,15 +413,10 @@
                 .projects h1 {
                     padding: 0.5em 3rem!important;
                 }
+            }
         </style>
     </head>
     <body>
-        <div class="landscape-alert">
-            <div class="landscape-content">
-                <img src="./images/rotate_device.svg" alt="" style="width: 25%;">
-                <span>Please browse this page in landscape mode or on a PC.</span>
-            </div>
-        </div>
         <div class="navbar">
             <div>
                 <a href="index.html" class="hachi-logo">
