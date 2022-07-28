@@ -168,9 +168,9 @@
             }
 
             .title {
-                background: no-repeat center/186% url("./images/cccircular.svg");
+                background: no-repeat center/286% url("./images/cccircular.svg");
                 height: 60vh;
-                font-size: 4vw;
+                font-size: 5vw;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -307,6 +307,27 @@
             }
             .link-ncm:active {
                 filter: brightness(.5);
+            }
+            @media only screen and (orientation:portrait) {
+                html, body {
+                    overflow: hidden;
+                    overflow-y: auto;
+                }
+                .navbar {
+                    padding: none;
+                    justify-content: space-around;
+                }
+                .main-nav {
+                    align-items: center;
+                    text-align: center;
+                }
+                .footer {
+                    grid-template-columns:  repeat(2,minmax(0,1fr));
+                    grid-template-areas: "info nav1" "legal nav2";
+                }
+                .footer-info {
+                    padding-top:1em
+                }
             }
         </style>
         <body>
