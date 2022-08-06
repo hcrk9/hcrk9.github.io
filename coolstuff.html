@@ -16,368 +16,61 @@
         
             gtag('config', 'G-B6ECD49MNC');
         </script>
-        <script src="title.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="favicon.svg">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wdth,wght,GRAD@1,8..144,50..150,100..900,-50..100" rel="stylesheet">
-        <style>
-            @font-face {
-                font-family: 'Montserrat Fallback';
-                src: url("fonts/Montserrat-VariableFont_wght.ttf");
-            }
-            @font-face {
-                font-family: 'Montserrat Fallback Italic';
-                src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
-            }
-            ::selection {
-                background:#7F80D5;
-            }
-            html::-webkit-scrollbar {
-                width: 8px;
-                height: 5px;
-            }
-            html::-webkit-scrollbar-track {
-                background: #333;
-            }
-            html::-webkit-scrollbar-thumb {
-                background: #555;
-            }
-            body {
-                margin: 0%;
-                padding: 0%;
-                background-color: #222;
-                font-family: 'Montserrat', 'Montserrat Fallback', Source Han Sans SC, sans-serif;
-            }
-            ul {
-                list-style: none;
-            }
-            .active-page span {
-                font-weight: 800;
-            }
-            .navbar {
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                justify-content: space-between;
-                padding: 10px 60px 10px 60px;
-                gap: 30px;
-
-                position: fixed;
-                width: -moz-available;          /* WebKit-based browsers will ignore this. */
-                width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-                width: fill-available;
-                height: 60px;
-                left: 0px;
-                top: 0px;
-                z-index: 1000;
-
-                background: rgba(0, 0, 0, 0.8);
-                backdrop-filter: saturate(180%) blur(20px);
-                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-            }
-            .hachi-logo {
-                height:30px;
-                transition: 0.3s filter;
-                /*margin-left: 60px;*/
-            }
-            .hachi-logo:hover {
-                filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
-                transition: 0.3s filter;
-            }
-            .navbar-link {
-                color: #fff;
-                font-weight: 600;
-                transition: 0.3s color;
-                text-decoration: none;
-                transition: 0.3s font-weight;
-            }
-            .navbar-link:hover {
-                transition: 0.3s filter;
-                filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
-            }
-            .navbar-link:active {
-                fill-opacity: 50%;
-                font-weight:200;
-                transition: 0.3s color;
-                transition: 0.3s font-weight;
-            }
-            .main-nav {
-                display: flex;
-                flex-flow: row nowrap;
-                gap: 1rem;
-                margin-right:auto;
-            }
-            .social-icon svg {
-                fill:#fff;
-                display: flex;
-                transition: 0.2s filter;
-            }
-            .social-icon svg:hover {
-                filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
-                transition: 0.2s filter;
-            }
-            .social-icon a:active {
-                fill-opacity: 50%;
-            }
-            ul {
-                padding:0
-            }
-            li {
-                padding-bottom: 6px;
-            }
-            h1 {
-                margin: 0;
-                font-weight: 300;
-                transition: all 0.3s;
-            }
-            h1:hover {
-                font-weight: 600;
-                transition: all 0.3s;
-            }
-            p {
-                margin: 0;
-                font-weight: 500;
-            }
-            .footer {
-                background-color: #333;
-                color: #eee;
-                display: grid;
-                grid-template-columns: repeat(4,minmax(0,1fr));
-                grid-template-areas: "info info nav1 nav2" "legal legal legal legal";
-                gap: 1em;
-                padding: 1% 2%;
-            }
-            .footer-info {
-                display:flex;
-                flex-flow: column nowrap;
-                gap: .8em;
-                font-weight:550;
-                height: 160px;
-                justify-content: center;
-            }
-            .footer-email {
-                transition: 0.2s all;
-            }
-            .footer-email:active{
-                fill-opacity: 50%;
-                transition: 0.2s fill-opacity;
-            }
-            .footer-nav2 h3 {
-                hyphens: auto;
-            }
-            a {
-                text-decoration: none;
-                color: #aaa;
-                transition: 0.2s all;
-            }
-            a:hover {
-                font-weight:700;
-                transition: 0.2s font-weight;
-            }
-            a:active {
-                color: rgba(170,170,170,0.5);
-                transition: 0.2s color;
-            }
-            abbr {
-                text-decoration: underline wavy;
-            }
-            .footer-legal {
-                border-top: 1px solid #aaa;
-                padding-top: 10px;
-            }
-
-            .title {
-                background: no-repeat center/186% url("./images/sssurf.svg");
-                height: 60vh;
-                font-size: 4vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .title-text {
-                text-align: center;
-                letter-spacing: -0.04em;
-                background: linear-gradient(135deg, #B0B1FF 15%, #2FCEF1 100%);                
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .title-line-1 {
-                animation: 8s line-1 ease;
-                font-weight: 120;
-                letter-spacing: -0.08em;
-                transition: all 1s;
-            }
-            .title-line-1:hover {
-                font-weight: 400;
-                letter-spacing: 0em;
-                transition: all 1s;
-            }
-            .title-line-2 {
-                animation: 8s line-2 ease;
-                font-weight: 120;
-                letter-spacing: -0.08em;
-                transition: all 1s;
-            }
-            .title-line-2:hover {
-                font-weight: 400;
-                letter-spacing: 0em;
-                transition: all 1s;
-            }
-            .title-line-3 {
-                animation: 8s line-3 ease;
-                letter-spacing: -0.08em;
-                font-variation-settings: "wght" 100, "wdth" 50, "GRAD" 100;
-                font-style: italic;
-                font-family: "Roboto Serif", serif;
-                transition: 1s font-variation-settings;
-            }
-            .title-line-3:hover {
-                font-variation-settings: "wght" 900, "wdth" 150, "GRAD" -50;
-                transition: 1s font-variation-settings;
-            }
-            @keyframes line-1 {
-                0% {
-                    font-weight: 120;
-                    letter-spacing: -0.08em;
-                }
-                50% {
-                    font-weight: 400;
-                    letter-spacing: 0em;
-                }
-                100% {
-                    font-weight: 120;
-                    letter-spacing: -0.08em;
-                }
-            }
-            @keyframes line-2 {
-                0% {
-                    font-weight: 120;
-                    letter-spacing: -0.08em;
-                }
-                50% {
-                    font-weight: 500;
-                    letter-spacing: 0em;
-                }
-                100% {
-                    font-weight: 120;
-                    letter-spacing: -0.08em;
-                }
-            }
-            @keyframes line-3 {
-                0% {
-                    font-variation-settings: "wght" 100, "wdth" 50, "GRAD" 100;
-                    letter-spacing: -0.08em;
-                }
-                50% {
-                    font-variation-settings: "wght" 900, "wdth" 150, "GRAD" -50;
-                    letter-spacing: 0.04em;
-                }
-                100% {
-                    font-variation-settings: "wght" 100, "wdth" 50, "GRAD" 100;
-                    letter-spacing: -0.08em;
-                }
-            }
-            
-            .main-content {
-                color: #eee;
-                padding: 4em 0;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            .main-content a {
-                text-decoration: underline wavy;
-            }
-            .main-grid {
-                display: grid;
-                grid-template-rows: repeat(2,1fr);
-                grid-template-areas: "title-01 title-01" "cugan esrgan" "craiyon ." "title-02 title-02" "uvr .";
-                gap:2em 16em;
-            }
-            h2 {
-                font-weight: 600;
-            }
-            .main-content p,i {
-                width: 20vw;
-            }
-            @media only screen and (orientation:portrait) {
-                html, body {
-                    overflow: hidden;
-                    overflow-y: auto;
-                }
-                .navbar {
-                    padding: none;
-                    justify-content: space-around;
-                }
-                .title {
-                    background: no-repeat center/386% url("./images/sssurf.svg");
-                    font-size: 7vw;
-                }
-                .main-nav {
-                    align-items: center;
-                    text-align: center;
-                }
-                .main-grid {
-                    grid-template-rows: repeat(1,1fr);
-                    grid-template-areas: "title-01" "cugan" "esrgan" "craiyon" "title-02" "uvr";
-                    padding: 0 2em;
-                }
-                .main-content p,i {
-                width: 50vw;
-            }
-                .footer {
-                    grid-template-columns:  repeat(2,minmax(0,1fr));
-                    grid-template-areas: "info nav1" "legal nav2";
-                }
-                .footer-info {
-                    padding-top:1em
-                }
-                .footer-email svg {
-                    display: none;
-                }
-            }
-
-        </style>
-        <body>
-            <div class="navbar">
-                <div>
-                    <a href="index.html" class="hachi-logo">
-                        <svg width="59" height="30" viewBox="0 0 59 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33.4616 9.23077V4.61538H42.6923V0H47.3077V4.61538H56.5385V9.23077H47.3077V11.5385H58.8462V16.1538H51.9231V23.0769C51.9231 25.3846 50.7693 30 45 30H43.8462V25.3846H45C45.7692 25.3846 47.3077 24.9231 47.3077 23.0769V16.1538H42.6923V19.9655C42.6923 25.3846 40.3187 29.4 39.8624 30L35.7693 27.6923C37.6436 24.3226 38.077 22.3846 38.077 19.6154V16.1538H31.1539V11.5385H42.6923V9.23077H33.4616Z" fill="white"/>
-                            <path d="M31.1539 25.3846V18.4615H35.7693V25.3846H31.1539Z" fill="white"/>
-                            <path d="M54.2306 25.3846V18.4615H58.846V25.3846H54.2306Z" fill="white"/>
-                            <path d="M12.6921 11.5385L9.23061 8.07692L15.6757 1.63178C16.7206 0.586971 18.1376 0 19.6152 0C21.0928 0 22.51 0.586968 23.5547 1.63178L29.9998 8.07692L26.5383 11.5385L20.8391 5.83922C20.4589 5.45905 20.2688 5.26899 20.0568 5.18116C19.7741 5.06404 19.4564 5.06404 19.1737 5.18116C18.9616 5.26899 18.7716 5.45905 18.3914 5.83922L12.6921 11.5385Z" fill="white"/>
-                            <path d="M15 13.848V10.3865H24.2308V13.848H15Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5384 15.5769V30H23.3653C24.7093 30 25.3813 30 25.9116 29.7803C26.6182 29.4877 27.1799 28.926 27.4725 28.2194C27.6922 27.6891 27.6922 27.0171 27.6922 25.6731V15.5769H11.5384ZM16.1537 25.3846V19.6154H23.0768V24.5192C23.0768 24.7881 23.0768 24.9224 23.033 25.0285C22.9744 25.1698 22.862 25.2822 22.7207 25.3408C22.6146 25.3846 22.4803 25.3846 22.2114 25.3846H16.1537Z" fill="white"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3846 4.6154V22.1977C10.3846 23.5461 10.3846 24.2202 10.1643 24.7521C9.87062 25.4612 9.30727 26.0245 8.59821 26.3181C8.0664 26.5385 7.39221 26.5385 6.04384 26.5385H0V4.6154H10.3846ZM6.11226 9.23078H4.27235V21.9231H5.24688C5.5157 21.9231 5.6501 21.9231 5.75612 21.8792C5.89749 21.8206 6.0098 21.7083 6.06835 21.567C6.11226 21.4609 6.11226 21.3265 6.11226 21.0577V9.23078Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-                <nav class="main-nav">
-                    <ul><a href="about.html" class="navbar-link"><div class="button"><span>About</span></div></a></ul>
-                    <ul><a href="coolstuff.html" class="navbar-link active-page"><div class="button"><span>Cool Stuff</span></div></a></ul>
-                </nav>
-                <div class="social-icon">
-                    <a href="https://space.bilibili.com/22376817" target="_blank">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.813 4.65301H18.667C20.177 4.70701 21.436 5.23101 22.44 6.22701C23.444 7.22201 23.964 8.47601 24 9.98701V17.347C23.964 18.857 23.444 20.116 22.44 21.12C21.436 22.124 20.178 22.644 18.667 22.68H5.333C3.823 22.644 2.564 22.124 1.56 21.12C0.556 20.116 0.036 18.858 0 17.347V9.98701C0.036 8.47601 0.556 7.22201 1.56 6.22701C2.564 5.23101 3.822 4.70701 5.333 4.65301H6.107L4.933 3.53301C4.81226 3.41546 4.71688 3.27443 4.65273 3.11861C4.58858 2.96279 4.55702 2.79549 4.56 2.62701C4.56 2.27101 4.684 1.96901 4.933 1.72001L4.96 1.69301C5.227 1.44401 5.533 1.32001 5.88 1.32001C6.227 1.32001 6.533 1.44401 6.8 1.69301L9.653 4.44001C9.724 4.51101 9.787 4.58201 9.84 4.65301H14.107C14.1486 4.57391 14.2026 4.502 14.267 4.44001L17.12 1.69301C17.387 1.44401 17.693 1.32001 18.04 1.32001C18.387 1.32001 18.702 1.47101 18.969 1.72001C19.236 1.96901 19.36 2.27101 19.36 2.62701C19.36 2.98201 19.236 3.28401 18.987 3.53301L17.813 4.65301ZM5.333 7.24001C4.587 7.25801 3.96 7.51601 3.453 8.01301C2.947 8.51101 2.684 9.14301 2.667 9.90701V17.427C2.684 18.191 2.947 18.822 3.453 19.32C3.96 19.818 4.587 20.076 5.333 20.093H18.667C19.413 20.076 20.04 19.818 20.547 19.32C21.053 18.822 21.316 18.191 21.333 17.427V9.90701C21.316 9.14201 21.053 8.51101 20.547 8.01301C20.04 7.51601 19.413 7.25801 18.667 7.24001H5.333ZM8 11.107C8.373 11.107 8.684 11.231 8.933 11.48C9.183 11.729 9.316 12.049 9.333 12.44V13.613C9.316 14.004 9.183 14.324 8.933 14.573C8.684 14.823 8.373 14.947 8 14.947C7.627 14.947 7.316 14.822 7.067 14.573C6.817 14.324 6.684 14.004 6.667 13.613V12.44C6.667 12.067 6.796 11.751 7.053 11.493C7.311 11.236 7.627 11.107 8 11.107V11.107ZM16 11.107C16.373 11.107 16.684 11.231 16.933 11.48C17.183 11.729 17.316 12.049 17.333 12.44V13.613C17.316 14.004 17.183 14.324 16.933 14.573C16.684 14.823 16.373 14.947 16 14.947C15.627 14.947 15.316 14.822 15.067 14.573C14.817 14.324 14.684 14.004 14.667 13.613V12.44C14.684 12.049 14.817 11.729 15.067 11.48C15.316 11.231 15.627 11.107 16 11.107V11.107Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://www.youtube.com/channel/UCmt-EaZ3Qmq9DaCX1p7p_Kg" target="_blank">
-                        <svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                    </a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://twitter.com/hcrk862" target="_blank">
-                        <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-                    </a>
-                </div>
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="coolstuff.css">
+    <body class="dark">
+        <div class="navbar">
+            <div>
+                <a href="index.html" class="hachi-logo" style="fill:var(--primary)">
+                    <svg width="59" height="30" viewBox="0 0 59 30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.4616 9.23077V4.61538H42.6923V0H47.3077V4.61538H56.5385V9.23077H47.3077V11.5385H58.8462V16.1538H51.9231V23.0769C51.9231 25.3846 50.7693 30 45 30H43.8462V25.3846H45C45.7692 25.3846 47.3077 24.9231 47.3077 23.0769V16.1538H42.6923V19.9655C42.6923 25.3846 40.3187 29.4 39.8624 30L35.7693 27.6923C37.6436 24.3226 38.077 22.3846 38.077 19.6154V16.1538H31.1539V11.5385H42.6923V9.23077H33.4616Z" />
+                        <path d="M31.1539 25.3846V18.4615H35.7693V25.3846H31.1539Z" />
+                        <path d="M54.2306 25.3846V18.4615H58.846V25.3846H54.2306Z" />
+                        <path d="M12.6921 11.5385L9.23061 8.07692L15.6757 1.63178C16.7206 0.586971 18.1376 0 19.6152 0C21.0928 0 22.51 0.586968 23.5547 1.63178L29.9998 8.07692L26.5383 11.5385L20.8391 5.83922C20.4589 5.45905 20.2688 5.26899 20.0568 5.18116C19.7741 5.06404 19.4564 5.06404 19.1737 5.18116C18.9616 5.26899 18.7716 5.45905 18.3914 5.83922L12.6921 11.5385Z" />
+                        <path d="M15 13.848V10.3865H24.2308V13.848H15Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5384 15.5769V30H23.3653C24.7093 30 25.3813 30 25.9116 29.7803C26.6182 29.4877 27.1799 28.926 27.4725 28.2194C27.6922 27.6891 27.6922 27.0171 27.6922 25.6731V15.5769H11.5384ZM16.1537 25.3846V19.6154H23.0768V24.5192C23.0768 24.7881 23.0768 24.9224 23.033 25.0285C22.9744 25.1698 22.862 25.2822 22.7207 25.3408C22.6146 25.3846 22.4803 25.3846 22.2114 25.3846H16.1537Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3846 4.6154V22.1977C10.3846 23.5461 10.3846 24.2202 10.1643 24.7521C9.87062 25.4612 9.30727 26.0245 8.59821 26.3181C8.0664 26.5385 7.39221 26.5385 6.04384 26.5385H0V4.6154H10.3846ZM6.11226 9.23078H4.27235V21.9231H5.24688C5.5157 21.9231 5.6501 21.9231 5.75612 21.8792C5.89749 21.8206 6.0098 21.7083 6.06835 21.567C6.11226 21.4609 6.11226 21.3265 6.11226 21.0577V9.23078Z" />
+                    </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul><a href="about.html" class="navbar-link"><div class="button"><span>About</span></div></a></ul>
+                <ul><a href="coolstuff.html" class="navbar-link active-page"><div class="button"><span>Cool Stuff</span></div></a></ul>
+            </nav>
+            <div class="has-dropdown">
+                <a href="#">Theme</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#" id="light">LIGHT</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" id="dark">DARK</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icon">
+                <a href="https://space.bilibili.com/22376817" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.813 4.65301H18.667C20.177 4.70701 21.436 5.23101 22.44 6.22701C23.444 7.22201 23.964 8.47601 24 9.98701V17.347C23.964 18.857 23.444 20.116 22.44 21.12C21.436 22.124 20.178 22.644 18.667 22.68H5.333C3.823 22.644 2.564 22.124 1.56 21.12C0.556 20.116 0.036 18.858 0 17.347V9.98701C0.036 8.47601 0.556 7.22201 1.56 6.22701C2.564 5.23101 3.822 4.70701 5.333 4.65301H6.107L4.933 3.53301C4.81226 3.41546 4.71688 3.27443 4.65273 3.11861C4.58858 2.96279 4.55702 2.79549 4.56 2.62701C4.56 2.27101 4.684 1.96901 4.933 1.72001L4.96 1.69301C5.227 1.44401 5.533 1.32001 5.88 1.32001C6.227 1.32001 6.533 1.44401 6.8 1.69301L9.653 4.44001C9.724 4.51101 9.787 4.58201 9.84 4.65301H14.107C14.1486 4.57391 14.2026 4.502 14.267 4.44001L17.12 1.69301C17.387 1.44401 17.693 1.32001 18.04 1.32001C18.387 1.32001 18.702 1.47101 18.969 1.72001C19.236 1.96901 19.36 2.27101 19.36 2.62701C19.36 2.98201 19.236 3.28401 18.987 3.53301L17.813 4.65301ZM5.333 7.24001C4.587 7.25801 3.96 7.51601 3.453 8.01301C2.947 8.51101 2.684 9.14301 2.667 9.90701V17.427C2.684 18.191 2.947 18.822 3.453 19.32C3.96 19.818 4.587 20.076 5.333 20.093H18.667C19.413 20.076 20.04 19.818 20.547 19.32C21.053 18.822 21.316 18.191 21.333 17.427V9.90701C21.316 9.14201 21.053 8.51101 20.547 8.01301C20.04 7.51601 19.413 7.25801 18.667 7.24001H5.333ZM8 11.107C8.373 11.107 8.684 11.231 8.933 11.48C9.183 11.729 9.316 12.049 9.333 12.44V13.613C9.316 14.004 9.183 14.324 8.933 14.573C8.684 14.823 8.373 14.947 8 14.947C7.627 14.947 7.316 14.822 7.067 14.573C6.817 14.324 6.684 14.004 6.667 13.613V12.44C6.667 12.067 6.796 11.751 7.053 11.493C7.311 11.236 7.627 11.107 8 11.107V11.107ZM16 11.107C16.373 11.107 16.684 11.231 16.933 11.48C17.183 11.729 17.316 12.049 17.333 12.44V13.613C17.316 14.004 17.183 14.324 16.933 14.573C16.684 14.823 16.373 14.947 16 14.947C15.627 14.947 15.316 14.822 15.067 14.573C14.817 14.324 14.684 14.004 14.667 13.613V12.44C14.684 12.049 14.817 11.729 15.067 11.48C15.316 11.231 15.627 11.107 16 11.107V11.107Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.youtube.com/channel/UCmt-EaZ3Qmq9DaCX1p7p_Kg" target="_blank">
+                    <svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://twitter.com/hcrk862" target="_blank">
+                    <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+            </div>
         </div>
         <div class="title">
             <div class="title-text">
@@ -498,6 +191,7 @@
             </nav>
             <div style="grid-area: legal;" class="footer-legal">©Hachi 2022. "Hachi" Logo is a trademark of Hachi. <b>This website works best on a computer running Google Chrome.</b></div>
         </footer>
+        <script src="switch.js"></script>
     </body>
 </html>
     
