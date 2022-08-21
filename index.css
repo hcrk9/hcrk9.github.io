@@ -185,6 +185,7 @@ h1:hover {
     font-family: Multiply Monospace, monospace;
     display: flex;
     justify-content: space-around;
+    color:var(--primary);
 }
 /* MOBILE */
 
