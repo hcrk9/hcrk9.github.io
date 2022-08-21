@@ -21,11 +21,6 @@
             font-family: Multiply Monospace;
             src: url(./images/MultiplyMonospace-Regular.otf);
         }
-        @media only screen and (orientation:portrait) {
-            .alert {
-                display: block!important;
-            }
-        }
         @keyframes bg-r1 {
             from {
                 transform: none;
@@ -43,12 +38,11 @@
             }
         }
         body {
-            background:url(./images/asterisk.png) #eee;
+            background:url(./images/asterisk.svg) #eee;
             overflow-x: hidden;
             font-family: Multiply Monospace;
         }
         .alert {
-            display: none;
             background: #000;
             color: #fff;
             font-size: 1em;
@@ -77,14 +71,16 @@
         }
         .title {
             font-size: 300px;
-            background-color: #eee;
+            background-color: #EAC378;
+            color: #222;
             width: min-content;
-            box-shadow: 8px 8px 0 #222;
+            box-shadow: 8px 8px 0 #EA7878;
             animation: title 2s linear infinite;
         }
         .desc {
             font-size: 200px;
-            background-color: #eee;
+            background-color: #EA7878;
+            color: #EAC378;
             width: min-content;
             box-shadow: 8px 8px 0 #222;
             animation: title 2s linear infinite;
@@ -95,10 +91,33 @@
             background-color: #222;
             width: 10ch;
             text-align: center;
+            transition: 1s all;
         }
         .table:hover {
-            letter-spacing: -.2em;
+            letter-spacing: -.1em;
             transition: 1s all;
+        }
+        .t1 {
+            color: #9d1e1e;
+            background-color: #EA7878;
+        }
+        .t2 {
+            color: #EAC378;
+            background-color: #ce8b0f;
+        }
+        .t3 {
+            color: #EA7878;
+            background-color: #EAC378;
+        }
+        .sample1 {
+            font-size: 150px;
+            background-color: #EA7878;
+            color: #222;
+        }
+        .sample2 {
+            font-size: 150px;
+            color: #EA7878;
+            background-color: #222;
         }
         span {
             background-color: #eee;
@@ -108,10 +127,10 @@
             transition: 2s all;
         }
         .hachi1, .hachi2 {
-            filter: drop-shadow(10px 10px 0 #777);
+            filter: drop-shadow(10px 10px 0 #EAC378);
         }
         .hachi1 img {
-            animation: 1s hachi1 linear infinite;
+            animation: 1.76s hachi1 linear infinite;
         }
         @keyframes hachi1 {
             0% {
@@ -143,10 +162,27 @@
         .linky {
             color: #eee;
         }
+        ::selection {
+            color:#222;
+            background-color: #0ff;
+        }
+        html {
+            scrollbar-color: #EA7878 transparent;
+        }
+        html::-webkit-scrollbar{
+            width: 5px;
+            height: 5px;
+        }
+        html::-webkit-scrollbar-track {
+            background: #EAC378;
+        }
+        html::-webkit-scrollbar-thumb {
+            background: #EA7878;
+        }
     </style>
 </head>
 <body>
-    <div class="alert">please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone. please use PC or rotate your phone.</div>
+    <div class="alert">please use PC for best experience. please avoid using iOS devices.</div>
     <div class="bg">
         <div class="bg-r1">
             <svg width="9443" height="132" viewBox="0 0 9443 132" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,22 +202,25 @@
     <br>
     <div class="latin-chrs">
         <span>uppercase & lowercase characters * lowercase not included</span>
-        <div class="table">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+        <div class="table t1">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
     </div>
     <div class="numbers">
         <span>numbers</span>
-        <div class="table">1 2 3 4 5 6 7 8 9 0</div>
+        <div class="table t2">1 2 3 4 5 6 7 8 9 0</div>
     </div>
     <div class="symbols">
         <span>symbols</span>
-        <div class="table">! @ # $ ￥ % ‰ ^ & * ( ) - = _ + ` ~ [ ] { } \ | ; ' : " , . < > / ?</div>
+        <div class="table t3">! @ # $ ￥ % ‰ ^ & * ( ) - = _ + ` ~ [ ] { } \ | ; ' : " , . < > / ?</div>
     </div>
+    <span>SAMPLE</span>
+    <div class="sample1">A quick brown fox jumps over a lazy dog.</div>
+    <div class="sample2">“Beat Eater” is a song by Police Picadilly, commissioned by SEGA for the mobile rhythm game Project Sekai: Colorful Stage ft. Hatsune Miku</div>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <p style="color:#EA7878;border:2px solid #222;background-color: #222;">this font is made with <a class="linky" href="http://figma.com">Figma</a> and <a class="linky" href="https://www.figma.com/community/file/1115382696459820988/">rasmus's script</a></p>
+    <p style="color:#EA7878;border:2px solid #222;background-color: #222;">this font is made with <a class="linky" href="http://figma.com">Figma</a> and <a class="linky" href="https://www.figma.com/community/file/1115382696459820988/">rasmus's script</a><br>the license for this font can be found <a class="linky" href="./OFL.txt">here</a></p>
     <div class="dl">
         <a href="./images/MultiplyMonospace-Regular.otf">DOWN</a>
         <button onclick="window.open('./images/MultiplyMonospace-Regular.otf')">LOAD</button>
