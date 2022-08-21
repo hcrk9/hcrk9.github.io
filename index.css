@@ -181,7 +181,11 @@ h1:hover {
     flex-flow: column wrap;
     justify-content: center;
 }
-
+.font {
+    font-family: Multiply Monospace, monospace;
+    display: flex;
+    justify-content: space-around;
+}
 /* MOBILE */
 
 @media only screen and (orientation:portrait) {
