@@ -143,6 +143,9 @@ ul {
     transform: translateX(-30%);
     transition: .2s opacity;
 }
+.main-content {
+    background: var(--background);
+}
 ul {
     padding:0
 }
@@ -170,6 +173,10 @@ p {
     grid-template-areas: "info info nav1 nav2" "legal legal legal legal";
     gap: 1em;
     padding: 1% 2%;
+    width: -webkit-fill-available;
+    position: fixed;
+    bottom: 0%;
+    z-index: -999;
 }
 .footer-info {
     display:flex;
@@ -209,9 +216,9 @@ abbr {
     border-top: 1px solid var(--secondary);
     padding-top: 10px;
 }
-
-
-
+.footer-hgt {
+    height: 289.63px;
+}
 @media only screen and (orientation:portrait) {
     /* GLOBAL */
     html, body {
@@ -232,5 +239,8 @@ abbr {
     }
     .footer-info {
         padding-top:1em
+    }
+    .footer-hgt {
+        height: 404.45px;
     }
 }
