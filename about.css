@@ -160,3 +160,26 @@ button {
     flex-flow: row nowrap;
     align-items: center;
 }
+.kamitsubaki {
+    display: grid;
+    grid-template-areas: "kaf isekaijoucho";
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 20px;
+    width: 100%;
+}
+.kaf, .isekaijoucho {
+    height: 120px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2em;
+    font-weight: 100;
+}
+.kaf {
+    background:center / cover no-repeat url("./images/Clip_20221114_000123.png");
+}
+.isekaijoucho {
+    background:center / cover no-repeat url("./images/Clip_20221114_000219.png");
+}
