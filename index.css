@@ -8,7 +8,7 @@ h1:hover {
 }
 .title {
     font-size: 4vw;
-    background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("https://s2.loli.net/2022/07/28/7jBvKbheG8LiUqA.jpg");
+    background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("images/bg.jpg");
     height: 60vh;
 }
 .title-text {
@@ -191,6 +191,13 @@ h1:hover {
 section {
     position: relative;
 }
+.kamitsubaki, .kamitsubaki a {
+    background-color: #eee;
+    color: #000;
+    font-size: 170px;
+    letter-spacing: -10px;
+    text-align: right;
+}
 /* MOBILE */
 
 @media only screen and (orientation:portrait) {
@@ -199,7 +206,7 @@ section {
     }
     .title {
         font-size: 10vw;
-        background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://s2.loli.net/2022/07/28/7jBvKbheG8LiUqA.jpg");
+        background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("images/bg.jpg");
     }
     .title-text {
         height: 10vw;
