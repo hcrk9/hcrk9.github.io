@@ -40,6 +40,10 @@
             padding: 0;
             margin: 0;
         }
+        ::selection {
+            background:#000;
+            color: #fff;
+        }
         .navwrap {
             position: fixed;
             top: 48px;
@@ -65,6 +69,17 @@
         a {
             text-decoration: none;
             color: #000;
+        }
+        .newsContent a {
+            text-decoration: underline;
+            color: #000;
+            transition: all .3s;
+        }
+        .newsContent a:hover {
+            text-decoration: underline;
+            color: #fff;
+            background-color: #000;
+            transition: all .3s;
         }
         .lines {
             display: flex;
@@ -160,48 +175,40 @@
         p {
             margin: 0;
         }
-        .newsList {
-            width: -webkit-fill-available;
-            gap: -1px;
-        }
-        .newsLink {
+        .newsInfoWrap {
             display: flex;
-            align-items: center;
-            padding: 0px 20px;         
-            width: -webkit-fill-available;
-            height: 90px;           
-            border-top: 1px solid #000;
-            flex-direction: row;
-            transition: all .3s;
-        }
-        .date {
-            width: 240px;
-        }
-        div.newsList > a:last-child > div {
-            border-bottom:1px solid #000;
-        }
-        .newsLink:hover {
-            background-color: rgba(0, 0, 0, .1);
-            transition: all .3s;
-        }
-        .newsContent {
-            display: flex;
-            align-items: flex-start;
-            padding: 0px;
+            flex-flow: column nowrap;
             gap: 8px;
-            flex-direction: column;
-            font-weight: bold;
+        }
+        .newsInfo {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: 24px;
+            font-size: 20px;
         }
         .newsTag {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 4px 6px;
-            gap: 10px;        
-            background: #000000;
+            padding: 2px 8px;
+            font-weight: bold;
+            background-color: #000;
             color: #fff;
-            flex-direction: row;
-            font-size: 16px;
+        }
+        .newsTitle {
+            font-size: 42px;
+            border-bottom: 1px solid #000;
+        }
+        .newsImage img {
+            max-width: 50%;
+        }
+        .newsContent p {
+            font-size: 18px;
+        }
+        .newsSelector {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: 32px;
+            margin: auto;
         }
         footer {
             margin-top: 180px;
@@ -285,34 +292,27 @@
     <div class="main">
         <section class="news">
             <b class="heading">NEWS</b>
-            <div class="newsList">
-                <a href="article-03.html">
-                    <div class="newsLink">
-                        <p class="date">2022.11.17</p>
-                        <div class="newsContent">
-                            <div class="newsTag">HACHIROKU</div>
-                            <p class="newsTitle">HACHIROKU 初配信 @ 11.20.22 9PM</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="article-02.html">
-                    <div class="newsLink">
-                        <p class="date">2022.10.02</p>
-                        <div class="newsContent">
-                            <div class="newsTag">POLICY</div>
-                            <p class="newsTitle">CHANGE ON PRIVACY POLICY</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="article-01.html">
-                    <div class="newsLink">
-                        <p class="date">2022.19.29</p>
-                        <div class="newsContent">
-                            <div class="newsTag">GUIDELINE</div>
-                            <p class="newsTitle">HACHIROKU STUDIO DOUJIN CREATION GUIDELINE</p>
-                        </div>
-                    </div>
-                </a>
+            <div class="newsInfoWrap">
+                <div class="newsInfo">
+                    <div class="newsDate">2022.11.17</div>
+                    <div class="newsTag">POLICY</div>
+                </div>
+                <div class="newsTitle">プライバシー ポリシーの調整 - Change on Privacy Policy</div>
+            </div>
+            <div class="newsImage">
+                <img src="images/CompanyNews.svg" alt="A screenshot of OBS Studio">
+            </div>
+            <div class="newsContent">
+                <p><b>Due to new regulations, HACHIROKU STUDIO has updated its Privacy Policy.</b></p>
+                <p>· MAIN CHANGES</p>
+                <p>There is now a more detailed section regarding how we use, share and process your personal data.</p>
+                <br>
+                <p><a href="privacy.html">VIEW THE LATEST VERSION</a></p>
+            </div>
+            <div class="newsSelector">
+                <a href="article-01.html"><img src="images/arrow-left.svg" alt="Left Arrow"></a>
+                <a href="news.html" style="font-size: 28px; font-weight:300;">INDEX</a>
+                <a href="article-03.html"><img src="images/arrow-right.svg" alt="Right Arrow"></a>
             </div>
         </section>
     </div>
