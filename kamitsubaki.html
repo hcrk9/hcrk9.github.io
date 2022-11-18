@@ -23,6 +23,18 @@
             $(window).scroll(function () {
                 if($(document).scrollTop()<"100")
                 //before you've scrolled 100 pixels...
+                $(".arrow").fadeIn();
+                if($(document).scrollTop()>"100")
+                //after you've scrolled 100 pixels...
+                $(".arrow").fadeOut();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if($(document).scrollTop()<"100")
+                //before you've scrolled 100 pixels...
                 $(".pageTop").fadeOut();
                 if($(document).scrollTop()>"100")
                 //after you've scrolled 100 pixels...
@@ -129,6 +141,9 @@
             gap: 180px;
             display: flex;
             flex-flow: column nowrap;
+        }
+        .arrowWrap {
+            height: 68px;
         }
         .arrow {
             display: flex;
@@ -308,7 +323,7 @@
     <div class="main">
         <section class="heroWrap">
             <div class="hero"><img style="height: 450px;" src="images/hachi_studio_64.svg" alt=""></div>
-            <div class="arrow"><img src="images/arrow.svg" alt=""></div>
+            <div class="arrowWrap"><div class="arrow"><img src="images/arrow.svg" alt=""></div></div>
         </section>
         <section class="news">
             <u class="heading"><b>NEWS</b></u>
