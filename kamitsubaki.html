@@ -126,7 +126,7 @@
             justify-content: center;
         }
         .main {
-            gap: 100px;
+            gap: 180px;
             display: flex;
             flex-flow: column nowrap;
         }
@@ -197,7 +197,7 @@
             flex-direction: row;
             transition: all .3s;
         }
-        .date   {
+        .date {
             width: 240px;
         }
         div.newsList > a:last-child > div {
@@ -227,7 +227,49 @@
             font-size: 16px;
         }
         footer {
-            height: 600px;
+            margin-top: 180px;
+            display: flex;
+            align-items: flex-end;
+            height: 640px;
+        }
+        .footer-bg-2 {
+            height: 640px;
+            width: 100%;
+            background: center no-repeat url(images/Footer.svg);
+            position: absolute;
+            z-index: 1;
+        }
+        .footer-bg-1 {
+            height: 520px;
+            width: 100%;
+            background-color: #000;
+            position: absolute;
+            z-index: 0;
+        }
+        .footerContent {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
+            margin: 0 auto;
+            margin-bottom: 64px;
+            gap: 4px;
+        }
+        .footerLinks, .footerPolicy, .footerLinks a, .footerPolicy a, .Copyright {
+            z-index: inherit;
+            font-size: 16px;
+            font-weight: bold;
+            color: #b2b2b2;
+        }
+        .footerLinks a, .footerPolicy a {
+            padding-right: 40px;
+        }
+        .footerLinks a:last-child, .footerPolicy a:last-child {
+            padding-right: 0px;
+        }
+        .Copyright {
+            padding-top: 24px;
         }
     </style>
 </head>
@@ -301,6 +343,23 @@
             </div>
         </section>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="footerContent">
+            <div class="footerLinks">
+                <a href="news.html">NEWS</a>
+                <a href="">PROJECT</a>
+                <a href="">STORE</a>
+                <a href="">CONTACT</a>
+                <a href="">JOIN</a>
+            </div>
+            <div class="footerPolicy">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">GUIDELINE</a>
+            </div>
+            <div class="Copyright">© HACHI STUDIO 2022</div>
+        </div>
+        <div class="footer-bg-2"></div>
+        <div class="footer-bg-1"></div>
+    </footer>
 </body>
 </html>
