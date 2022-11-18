@@ -18,18 +18,19 @@
             });
         });
     </script>
-        <script>
-            $(document).ready(function(){
-                $(window).scroll(function () {
-                    if($(document).scrollTop()<"100")
-                    //before you've scrolled 100 pixels...
-                    $(".pageTop").fadeOut();
-                    if($(document).scrollTop()>"100")
-                    //after you've scrolled 100 pixels...
-                    $(".pageTop").fadeIn();
-                });
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if($(document).scrollTop()<"100")
+                //before you've scrolled 100 pixels...
+                $(".pageTop").fadeOut();
+                if($(document).scrollTop()>"100")
+                //after you've scrolled 100 pixels...
+                $(".pageTop").fadeIn();
             });
-        </script>
+        });
+    </script>
+    <link rel="stylesheet" href="fonts/webfont.css">
     <style>
         html, body {
             scroll-behavior: smooth;
