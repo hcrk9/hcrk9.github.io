@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "Mona Sans";
+            src: url(./fonts/Mona-Sans.ttf);
+            font-weight: 200 900;
+        }
+        :root {
+            --background: #000;
+            --foreground: #eee;
+        }
+        .bottomContent a {
+            color: var(--foreground);
+            text-decoration: none;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Mona Sans", Glow Sans SC, sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(180deg, #000000 0%, #161616 90%);
+            color: var(--foreground);
+        }
+        .med {
+            font-weight: 550;
+        }
+        .bottomBar {
+            width: fit-content;
+            height: 28px;
+            z-index: 2;
+            opacity: .5;
+            backdrop-filter: blur(12px);
+            background-color: var(--background);
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            flex-flow: row nowrap;
+            white-space: nowrap;
+            animation: 10s infinite linear moving;
+        }
+        .bottomBar:hover {
+            animation-play-state: paused;
+            opacity: 1;
+            transition: .3s all;
+        }
+        .bottomFilter {
+            position: fixed;
+            pointer-events: none;
+            width: 100vw;
+            height: 28px;
+            bottom: 0;
+            z-index: 3;
+            background: linear-gradient(90deg, #161616 0%, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0) 66.67%, #161616 100%);
+        }
+        .bottomContent {
+            height: 28px;
+            text-transform: uppercase;
+            width: min-content;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            padding: 0 16px;
+            animation: 6s infinite text-breathing;
+        }
+        .copyright {
+            background-color: #3C3D89;
+            color: var(--foreground);
+        }
+        .newest {
+            background-color: #9D3D37;
+            color: var(--background);
+        }
+        .youmightlike {
+            background-color: #448443;
+            color: var(--foreground);
+        }
+        @keyframes text-breathing {
+            0% {
+                font-weight: 200;
+            }
+            50% {
+                font-weight: 400;
+            }
+            100% {
+                font-weight: 200;
+            }
+        }
+        @keyframes moving {
+            0% {
+                transform: none;
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bottomFilter"></div>
+    <div class="bottomBar elderScroll">
+        <div class="bottomContent copyright">
+            <a href="">
+                <span>© HACHI 2022</span>
+                <span>///</span>
+                <span class="med">WARNING</span>
+                <span>Some content on this website may not belong to the site owner, seek authorizaton before using. </span>    
+            </a>
+        </div>
+        <div class="bottomContent newest">
+            <a href="">
+                <span class="med">NEWEST AVAILABLE</span>
+                <span>///</span>
+                <span>A COLLECTION OF PLAYLISTS THAT I MADE, ON APPLE MUSIC & SPOTIFY.</span>
+            </a>
+        </div>
+        <div class="bottomContent youmightlike">
+            <a href="">
+                <span class="med">YOU MIGHT LIKE</span>
+                <span>///</span>
+                <span>Design Projects of mine from the past.</span>
+            </a>
+        </div>
+        <!-- COPY CONTENT BELOW -->
+        <div class="bottomContent copyright">
+            <a href="">
+                <span>© HACHI 2022</span>
+                <span>///</span>
+                <span class="med">WARNING</span>
+                <span>Some content on this website may not belong to the site owner, seek authorizaton before using. </span>    
+            </a>
+        </div>
+        <div class="bottomContent newest">
+            <a href="">
+                <span class="med">NEWEST AVAILABLE</span>
+                <span>///</span>
+                <span>A COLLECTION OF PLAYLISTS THAT I MADE, ON APPLE MUSIC & SPOTIFY.</span>
+            </a>
+        </div>
+        <div class="bottomContent youmightlike">
+            <a href="">
+                <span class="med">YOU MIGHT LIKE</span>
+                <span>///</span>
+                <span>Design Projects of mine from the past.</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
