@@ -19,6 +19,7 @@
             font-family: 'Noto Serif SC', serif;
             max-width: 1000px;
             margin:24px auto;
+            padding: 24px;
             animation: 1s fadeIn;
             font-size: 18px;
         }
@@ -137,6 +138,11 @@
             height: 36px;
             filter: brightness(500%);
             margin: 12px;
+        }
+        @media screen and (max-width: 1100px) {
+            .summary {
+                flex-flow: column;
+            }
         }
     </style>
 </head>
