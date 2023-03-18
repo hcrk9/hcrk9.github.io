@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>稲葉曇黑体 / INABAKUMORI SANS @ hachiiiiiiii.co</title>
+    <style>
+        @font-face {
+            font-family:Inabakumori Sans;
+            src: url(./files/InabakumoriSansJP-Bold.otf);
+        }
+        body {
+            background: #b2b2b2;
+            margin: auto;
+            font-family: Inabakumori Sans;
+            font-size: 18px;
+            padding-bottom: 48px;
+        }
+        .desc {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+            text-indent: 0%;
+        }
+        .hero {
+            width: 100%;
+        }
+        .dl {
+            height: 64px;
+        }
+        .line {
+            width: 15%;
+            padding: 48px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/inabakumori_sans.svg" alt="" class="hero">
+    <div class="desc">
+        <span>稲葉曇黑体 Inabakumori Sans</span>
+        <img src="images/handdrawn_line-1.svg" alt="" class="line">
+        <span>Han Ideogram: <b>Noto Sans JP</b></span>
+        <span>Hirigana & Katakana: <b>Noto Serif JP</b></span>
+        <span>Latin, Number & Symbol: <b>FZFW ZhuZi Hei</b></span>
+        <img src="images/handdrawn_line-2.svg" alt="" class="line">
+        <a href="files/InabakumoriSansJP-Bold.otf"><img src="./images/dl.svg" alt="DL" class="dl"></a>
+    </div>
+</body>
+</html>
