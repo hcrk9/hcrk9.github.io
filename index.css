@@ -8,8 +8,8 @@ h1:hover {
 }
 .title {
     font-size: 4vw;
-    background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("images/bg.jpg");
-    height: 60vh;
+    background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("images/con_00030-4256572473.jpg");
+    height: 800px;
 }
 .title-text {
     font-variation-settings: "wght" 750;
@@ -96,7 +96,7 @@ h1:hover {
     background: repeat center url(./images/construction-line.svg), linear-gradient(0deg, #222 0%, #333 100%);
 }
 .projects {
-    background:repeat center url(./images/sssquiggly.svg), linear-gradient(90deg, #7F80D5 0%, #FF8CD1 100%);
+    background-color: #000;
 }
 .projects-01 {
     background: linear-gradient(90deg, #07287F 50%, #4B68B5 100%);
@@ -194,8 +194,8 @@ section {
 .kamitsubaki, .kamitsubaki a {
     background-color: #eee;
     color: #000;
-    font-size: 170px;
-    letter-spacing: -10px;
+    font-size: 60px;
+    letter-spacing: -6px;
     text-align: right;
 }
 /* MOBILE */

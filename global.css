@@ -48,7 +48,7 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: var(--background);
-    font-family: 'Montserrat', 'Montserrat Fallback', Source Han Sans SC VF, sans-serif;
+    font-family: 'Noto Sans Mono', 'Montserrat Fallback', Source Han Sans SC VF, sans-serif;
     transition: 0.3s all;
 }
 ul {
@@ -62,20 +62,20 @@ ul {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 60px 10px 60px;
     gap: 30px;
 
-    position: fixed;
+    position: absolute;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
+    width: 80%;
     height: 60px;
-    left: 0px;
-    top: 0px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1000;
 
-    background: var(--nav);
-    backdrop-filter: saturate(180%) blur(20px);
+    background: none;
+    border-bottom: 1px solid #fff;
 }
 .hachi-logo {
     height:30px;
@@ -174,9 +174,6 @@ p {
     gap: 1em;
     padding: 1% 2%;
     width: -webkit-fill-available;
-    position: fixed;
-    bottom: 0%;
-    z-index: -999;
 }
 .footer-info {
     display:flex;
@@ -215,9 +212,6 @@ abbr {
 .footer-legal {
     border-top: 1px solid var(--secondary);
     padding-top: 10px;
-}
-.footer-hgt {
-    height: 289.63px;
 }
 @media only screen and (orientation:portrait) {
     /* GLOBAL */
