@@ -18,7 +18,7 @@ h1:hover {
 }
 .title {
     font-size: 1em;
-    background: #B6B6B6 no-repeat center/80% url("images/inabaku.jpg");
+    background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
