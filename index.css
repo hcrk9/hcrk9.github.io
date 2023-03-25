@@ -2,14 +2,52 @@ h1 {
     font-weight: 700;
     transition: 0.3s all;
 }
+@font-face {
+    font-family:'Inabakumori Sans';
+    src: url(./fonts/InabakumoriSansJP-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family:'Inabakumori Sans';
+    src: url(./fonts/InabakumoriSansJP-Bold.woff2);
+    font-weight: 700;
+}
 h1:hover {
     font-weight: 300;
     transition: 0.3s all;
 }
 .title {
-    font-size: 4vw;
-    background: rgba(0, 0, 0, 0.8) no-repeat top/100% url("images/con_00030-4256572473.jpg");
-    height: 800px;
+    font-size: 1em;
+    background: #B6B6B6 no-repeat center/80% url("images/inabaku.jpg");
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.arrowWrap {
+    height: 68px;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow img {
+    animation: arrow 1s infinite;
+}
+@keyframes arrow {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: none;
+    }
 }
 .title-text {
     font-variation-settings: "wght" 750;
