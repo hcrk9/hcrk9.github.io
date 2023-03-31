@@ -4,12 +4,12 @@ h1 {
 }
 @font-face {
     font-family:'Inabakumori Sans';
-    src: url(./fonts/InabakumoriSansJP-Regular.woff2);
+    src: url(./files/InabakumoriSansJP-Bold.otf);
     font-weight: 400;
 }
 @font-face {
     font-family:'Inabakumori Sans';
-    src: url(./fonts/InabakumoriSansJP-Bold.woff2);
+    src: url(./files/InabakumoriSansJP-Regular.otf);
     font-weight: 700;
 }
 h1:hover {
