@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About / 哈赤官方站 @ hachiiiiiiii.co</title>
+        <title>Notes / 哈赤官方站 @ hachiiiiiiii.co</title>
         <meta name="description" content="An ameteur designer, a bad programmer & an unprofessional photographer.">
         <meta name="keywords" content="hachi, designer, programmer, photographer, not porn">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,28 +16,110 @@
         
             gtag('config', 'G-B6ECD49MNC');
         </script>
-        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>           
-        <script>
-           $( document ).ready(function() {
-                let count = localStorage.getItem('loadCount');
-                if (count == "1") { $("#VF-alert").hide();
-            } 
-            });
-        </script>
-        <script>
-            $(function(){
-                $("#alert-close").click(function(){
-                    localStorage.setItem("loadCount","1")
-                });
-            })
-        </script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>                   <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="icon" href="favicon.svg">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900" rel="stylesheet">
-        <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="global_without_a.css">
+        <style>
+            @font-face {
+                font-family:'Inabakumori Sans';
+                src: url(./fonts/InabakumoriSansJP-Regular.woff2);
+                font-weight: 400;
+            }
+            @font-face {
+                font-family:'Inabakumori Sans';
+                src: url(./fonts/InabakumoriSansJP-Bold.woff2);
+                font-weight: 700;
+            }
+            .title {
+                font-size: 6em;
+                background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+                height: 100vh;
+                display: flex;
+                flex-flow: column nowrap;
+            }
+            .main-content {
+                background-color: #C6C6C6;
+            }
+            .note-item {
+                width: 80%;
+                min-height: 48em;
+                margin: auto;
+            }
+            .note-item p {
+                max-width: 64ch;
+                text-align: justify;
+            }
+            .ina {
+                background-color: #C6C6C6;
+                font-family: "Inabakumori Sans";
+            }
+            .bg-1 {
+                position: absolute;
+                height: 200px;
+                width: 80%;
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 4em;
+            }
+            .bg-1 img {
+                height: 450px;
+                filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.35));
+            }
+            h2 {
+                font-size: 3em;
+                letter-spacing: .1em;
+                margin-block-end:0%;
+            }
+            h4 {
+                font-size: 2em;
+                border-bottom: 2px solid black;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-top: 3em;
+            }
+            p {
+                padding: 3em 0;
+                font-size: 1.2em;
+            }
+            .dl-button{
+                padding: 8px 14px;
+                background-color: black;
+                color: white;
+                border-radius: 4px;
+                transition: all .3s;
+                text-decoration: none;
+                transform:none;
+                width: fit-content;
+
+                font-weight: 700;
+                letter-spacing: .1em;
+            }
+            .dl-button a {
+                color: white;
+                text-decoration: none;
+            }
+            .dl-button:hover {
+                transform: translateY(-2px);
+                background-color: #1e1e1e;
+                text-decoration: none;
+                transition: all .3s;
+            }
+            @media only screen and (orientation:portrait) {
+                .projects h1 {
+                    padding: 0.5em 3rem!important;
+                }
+                .title {
+                    font-size: 10vw;
+                    background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+                }
+            }
+        </style>
+
     </head>
     <body class="dark">
         <div class="navbar">
@@ -55,12 +137,12 @@
                 </a>
             </div>
             <nav class="main-nav">
-                <ul><a href="about.html" class="navbar-link active-page"><div class="button"><span>About</span></div></a></ul>
+                <ul><a href="about.html" class="navbar-link"><div class="button"><span>About</span></div></a></ul>
                 <ul><a href="coolstuff.html" class="navbar-link"><div class="button"><span>Cool Stuff</span></div></a></ul>
                 <ul><a href="designs.html" class="navbar-link"><div class="button"><span>Designs</span></div></a></ul>
-                <ul><a href="notes.html" class="navbar-link"><div class="button"><span>Notes</span></div></a></ul>
+                <ul><a href="notes.html" class="navbar-link active-page"><div class="button"><span>Notes</span></div></a></ul>
             </nav>
-            <div class="has-dropdown">
+            <!--<div class="has-dropdown">
                 <a href="#">Theme</a>
                 <ul class="dropdown">
                     <li class="dropdown-item">
@@ -70,7 +152,7 @@
                         <a href="#" id="dark">DARK</a>
                     </li>
                 </ul>
-            </div>
+            </div> !-->
             <div class="social-icon">
                 <a href="https://space.bilibili.com/22376817" target="_blank">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,56 +172,28 @@
             </div>
         </div>
         <div class="title">
-            <div class="title-text">
-                <div class="title-line-1">an ameteur designer,</div>
-                <div class="title-line-2">a bad programmer &</div>
-                <div class="title-line-3">an unprofessional photographer.</div>
-            </div>
+            <span style="position: absolute; left: 13rem; bottom: 8rem; font-weight: 700; color: white; font-family:'Inabakumori Sans'">
+                Notes</span>
         </div>
+
+
+
         <div class="main-content">
-            <div class="chuni">
-                <img src="./files/CHUNITHM.svg" alt=""  style="max-width: 100%;">
-            </div>    
-            <div style="border-bottom: 1px solid #aaa;padding-top: 2em;width:-webkit-fill-available"></div>
-            <h1 style="padding: 1em 0 0 0;">我推</h1>
-            <h2><b>KAMITSUBAKI</b></h2>
-            <section class="kamitsubaki">
-                <a class="kaf" href="https://space.bilibili.com/488970166" target="_blank">
-                    <div style="grid-area: kaf;">
-                        <h2> </h2>
-                    </div>
-                </a>
-                <a class="isekaijoucho" href="https://space.bilibili.com/488978908" target="_blank">
-                    <div style="grid-area: isekaijoucho;">
-                        <h2> </h2>
-                    </div>
-                </a>
-            </section>
-            <h1 style="padding: 1em 0 0 0;">Things I used</h1>
-            <h2>Creativity</h2>
-            <div class="icon-list">
-                <a href="https://www.adobe.com/products/photoshop.html"><div class="icon-photoshop"></div></a>
-                <a href="https://www.adobe.com/products/premiere.html"><div class="icon-premiere-pro"></div></a>
-                <a href="https://figma.com"><div class="icon-figma"></div></a>
-            </div>
-            <h2>Coding</h2>
-            <div class="icon-list">
-                <a href="https://code.visualstudio.com/" target="_blank"><div class="icon-vscode"></div></a>
-                <a href="https://github.com"><div class="icon-github"></div></a>
-            </div>
-            <h1 style="padding: 1em 0;">Music I like</h1>
-            <a href="https://music.163.com/#/playlist?id=572322438" target="_blank" style="width:100%;max-width:660px">
-                <div class="link-ncm">
-                    <div class="icon-ncm"></div>
-                    <div>
-                        <b>Mameyudoufu喜欢的音乐</b>
-                        <p>歌单</p>
-                    </div>              
+            <section class="note-item ina">               
+                <h4>01 · ノート</h4>
+                <!--<div class="bg-1">
+                    <img src="https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/con_TransitCard_R.webp" alt="" class="bg">
+                </div> -->
+                <h2>Some info about Inabakumori Sans <br> 关于「稲葉雲黑体」</h2>
+                <p>这套字体是我 <s>无比专业</s> 毫无经验的使用绝对正版FontLab 8和罗技G512的CTRL,C和V键等工具在一个小时左右的时间内拼凑出的产品。本来我对其追求仅限于「大概能看就行」，不过后来往bilibili传了个视频被字体大佬 <b>@綿雲飴里</b> 看到了，只好尝试改善一下了（。</p>
+                <div class="dl-button">
+                    <a href="https://www.bilibili.com/video/BV1XL411R7zb/" >Video on Bilibili</a>
                 </div>
-            </a>
-            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;padding:1em 0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/5-3hrs/pl.u-6mo44P8hBqrMjLW"></iframe>        
+            </section>
         </div>
-        <div class="footer-hgt"></div>
+
+
+
         <footer class="footer">
             <div style="grid-area: info;" class="footer-info">
                 <svg width="59" height="30" viewBox="0 0 59 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,17 +270,6 @@
             </nav>
             <div style="grid-area: legal;" class="footer-legal">©Hachi 2022. "Hachi" Logo is a trademark of Hachi. <b>This website works best on a computer running Google Chrome.</b></div>
         </footer>
-        <script>
-            document.getElementById("alert-close").addEventListener("click", closeAlert);
-            function closeAlert() {
-                 document.getElementById("VF-alert").style = "animation:1s closeAlert"
-                 setTimeout(displayNone,1000)
-                 function displayNone() {
-                    document.getElementById("VF-alert").style = "display:none"
-                 }
-            }
-        </script> 
-        <script src="switch.js"></script>
     </body>
 </html>
     
