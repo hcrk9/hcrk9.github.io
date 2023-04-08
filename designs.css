@@ -23,25 +23,35 @@
     min-height: 48em;
     margin: auto;
 }
+.design-item:last-child {
+    padding-bottom: 3em;
+}
 .transit {
     background-color: #C6C6C6;
     font-family: "Inabakumori Sans";
 }
+.millennium {
+    background-color: #F2F7FE;
+    font-family: "Gotham", "Noto Sans SC";
+    z-index: 999;
+}
 .bg-1 {
-    position: absolute;
-    height: 200px;
     width: 80%;
     display: flex;
     justify-content: flex-end;
     padding-top: 4em;
+    z-index: 0;
+    pointer-events: none;
 }
 .bg-1 img {
     height: 450px;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.35));
 }
+.transit h2 {
+    letter-spacing: .1em;
+}
 h2 {
     font-size: 6em;
-    letter-spacing: .1em;
     margin-block-end:0%;
 }
 h4 {
@@ -78,6 +88,11 @@ p {
     background-color: #1e1e1e;
     text-decoration: none;
     transition: all .3s;
+}
+.btns {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
 }
 @media only screen and (orientation:portrait) {
     .projects h1 {
