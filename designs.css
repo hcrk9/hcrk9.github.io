@@ -28,7 +28,7 @@
 }
 .transit {
     background-color: #C6C6C6;
-    font-family: "Inabakumori Sans";
+    font-family: "Inabakumori Sans", "Noto Sans SC";
 }
 .millennium {
     background-color: #F2F7FE;
@@ -116,7 +116,7 @@ p {
     border: 2px solid #000;
     color: #000;
 
-    font-family: "Gotham", "Montserrat";
+    font-family: "Gotham", "Montserrat", "Noto Sans SC";
     font-size: 1.2em;
 
     border-radius: 4px;
@@ -126,7 +126,6 @@ p {
     background-color: #000;
     border: 2px solid #000;
     color: #fff;
-    font-family: "Gotham", "Montserrat";
     transition: .3s all;
 }
 @media only screen and (orientation:portrait) {
