@@ -83,36 +83,51 @@
 
 
         <div class="main-content">
-            <div class="item-bg transit">
-                <section class="design-item">               
-                    <h4>01 · バスカード</h4>
-                    <div class="bg-1">
-                        <img src="https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/con_TransitCard_R.webp" alt="" class="bg">
-                    </div>
-                    <h2>Transit Cards <br> 公交卡</h2>
-                    <p>Here is some transit card templetes I made.</p>
-                    <div class="dl-button">
-                        <a href="https://www.figma.com/community/file/1221312684918926255" >Figma File</a>
+            <div class="item-bg millennium">
+                <section class="design-item millennium">               
+                    <h4>02 · BLUE ARCHIVE CARDS</h4>
+                    <div class="ba-card">
+                        <div class="ba-card-image">
+                            <img src="https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/Mcard.svg" alt="" class="bg" id="ba-card-img">
+                            <div class="ba-card-btn">
+                                <button id="MILLENNIUM">MILLENNIUM 千年</button>
+                                <button id="S.C.H.A.L.E">S.C.H.A.L.E 夏莱</button>
+                            </div>
+                        </div>
+                        <div class="ba-card-desc">
+                            <h2>Student ID <br> 学生卡</h2>
+                            <p>Student ID Card from video game "Blue Archive" <br> * 严格意义上说，夏莱那张卡应该叫“教师卡”，不过无所谓（（</p>
+                            <div class="btns">
+                                <div class="dl-button">
+                                    <a href="https://www.figma.com/community/file/1226526699847606949" >Figma File</a>
+                                </div>
+                                <div class="dl-button">
+                                    <a href="./files/MillenniumCard.zip" id="card-image-link">Card Image</a>
+                                </div>
+                                <div class="dl-button">
+                                    <a href="./files/MillenniumLogo.zip" id="logo-image-link" >Millennium Logo Image</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
-            <div class="item-bg millennium">
-                <section class="design-item millennium">               
-                    <h4>02 · MILLENNIUM</h4>
-                    <div class="bg-1"  style="margin: auto;">
-                        <img src="https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/Mcard.svg" alt="" class="bg">
-                    </div>
-                    <h2>Student ID <br> 千年学生卡</h2>
-                    <p>Student ID Card from video game "Blue Archive"</p>
-                    <div class="btns">
-                        <div class="dl-button">
-                            <a href="https://www.figma.com/community/file/1226526699847606949" >Figma File</a>
+
+            <div class="item-bg transit">
+                <section class="design-item">               
+                    <h4>01 · バスカード</h4>
+                    <div class="ba-card">
+                        <div class="ba-card-image">
+                            <img src="https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/con_TransitCard_R.webp" alt="" class="bg" id="card-img">
                         </div>
-                        <div class="dl-button">
-                            <a href="./files/MillenniumCard.zip" >Card Image</a>
-                        </div>
-                        <div class="dl-button">
-                            <a href="./files/MillenniumLogo.zip" >Millennium Logo Image</a>
+                        <div class="ba-card-desc">
+                            <h2>Transit Card <br> 公交卡</h2>
+                            <p>Some transit card templetes I made</p>
+                            <div class="btns">
+                                <div class="dl-button">
+                                    <a href="https://www.figma.com/community/file/1221312684918926255" >Figma File</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -188,15 +203,33 @@
             <nav style="grid-area: nav2;" class="footer-nav2">
                 <h3>Acknowledge­ment</h3>
                 <ul>
-                    <li><a href="https://space.bilibili.com/451368848/" target="_blank">CodingStartup</a></li>
                     <li><a href="https://docs.github.com/cn/pages/">GitHub Pages</a></li>
                     <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
                     <li><a href="https://stackoverflow.com/">StackOverflow</a></li>
-                    <li><a href="https://fffuel.co" target="_blank">Free SVG Generator</a></li>
                 </ul>
             </nav>
             <div style="grid-area: legal;" class="footer-legal">©Hachi 2022. "Hachi" Logo is a trademark of Hachi. <b>This website works best on a computer running Google Chrome.</b></div>
         </footer>
+        <script>
+            const m_button = document.getElementById("MILLENNIUM"); // get the button element by its ID
+            const s_button = document.getElementById("S.C.H.A.L.E"); // get the button element by its ID
+
+            const img = document.getElementById("ba-card-img"); // get the img element by its ID
+            const logo = document.getElementById("logo-image-link");
+            const card = document.getElementById("card-image-link");
+
+            m_button.addEventListener("click", () => { // add a click event listener to the button
+                img.src = "./images/Mcard.svg"; // change the src property of the img element to "./images/Mcard.svg"
+                logo.href = "./files/MillenniumLogo.zip";
+                card.href = "./files/MillenniumCard.zip";
+            });
+        
+            s_button.addEventListener("click", () => { // add a click event listener to the button
+                img.src = "./images/SCHALECard.svg"; // change the src property of the img element to "./images/Mcard.svg"
+                logo.href = "./files/SCHALECard.zip";
+                card.href = "./files/SCHALELogo.zip";
+            });
+        </script>
     </body>
 </html>
     

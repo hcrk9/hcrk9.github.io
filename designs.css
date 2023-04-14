@@ -53,6 +53,7 @@
 h2 {
     font-size: 6em;
     margin-block-end:0%;
+    margin-block-start: 0%;
 }
 h4 {
     font-size: 2em;
@@ -94,6 +95,40 @@ p {
     flex-flow: row nowrap;
     gap: 10px;
 }
+
+
+
+.ba-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 6em;
+    gap: 4em;
+}
+.ba-card-image img {
+    max-width: 800px;
+    max-height: 342px;
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.3));
+}
+.ba-card-image button {
+    background-color: transparent;
+    margin: 2em 0;
+    border: 2px solid #000;
+    color: #000;
+
+    font-family: "Gotham", "Montserrat";
+    font-size: 1.2em;
+
+    border-radius: 4px;
+    transition: .3s all;
+}
+.ba-card-image button:hover {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    font-family: "Gotham", "Montserrat";
+    transition: .3s all;
+}
 @media only screen and (orientation:portrait) {
     .projects h1 {
         padding: 0.5em 3rem!important;
@@ -101,5 +136,14 @@ p {
     .title {
         font-size: 10vw;
         background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+    }
+    .ba-card-image {
+        margin:auto;
+    }
+    .ba-card-image img {
+        margin:auto;
+        max-width: 100%;
+        max-height: none;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.3));
     }
 }
