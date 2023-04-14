@@ -128,13 +128,53 @@ p {
     color: #fff;
     transition: .3s all;
 }
+
+.arrowWrap {
+    height: 68px;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow img {
+    animation: arrow 1s infinite;
+}
+@keyframes arrow {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.title span {
+    position: absolute; 
+    left: 13rem; 
+    bottom: 8rem; 
+    font-weight: 700; 
+    color: white; 
+    font-family:'Inabakumori Sans'
+}
 @media only screen and (orientation:portrait) {
+    .title span {
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .projects h1 {
         padding: 0.5em 3rem!important;
     }
     .title {
         font-size: 10vw;
-        background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+        background: #B6B6B6 no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
     }
     .ba-card-image {
         margin:auto;
