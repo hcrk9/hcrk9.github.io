@@ -1,0 +1,27 @@
+---
+layout: default
+title: Notes
+---
+<!DOCTYPE html>
+    <body class="dark">
+        <div class="title">
+            <span style="position: absolute; left: 13rem; bottom: 8rem; font-weight: 700; color: white; font-family:'Inabakumori Sans'">
+                Notes</span>
+        </div>
+
+
+
+        <div class="main-content">
+            {% for post in site.posts %}
+            <section class="note-item ina">
+                <h4>ノート</h4>
+                <h2><a href="{{ post.url }}" style="color: #000;" class="blog-title">{{ post.title }}</a></h2>
+                <span style="color:#777">{{post.date}}</span><br>
+                <span style="color:#777">PREVIEW ↓</span>
+                {{ post.excerpt }}
+            </section>
+            {% endfor %}
+        </div>
+    </body>
+</html>
+    

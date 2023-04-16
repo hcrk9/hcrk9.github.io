@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Page-Exit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACHIROKU STUDIO</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if($(document).scrollTop()<"100")
+                //before you've scrolled 100 pixels...
+                $(".socialwrap").fadeIn();
+                if($(document).scrollTop()>"100")
+                //after you've scrolled 100 pixels...
+                $(".socialwrap").fadeOut();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if($(document).scrollTop()<"100")
+                //before you've scrolled 100 pixels...
+                $(".arrow").fadeIn();
+                if($(document).scrollTop()>"100")
+                //after you've scrolled 100 pixels...
+                $(".arrow").fadeOut();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if($(document).scrollTop()<"100")
+                //before you've scrolled 100 pixels...
+                $(".pageTop").fadeOut();
+                if($(document).scrollTop()>"100")
+                //after you've scrolled 100 pixels...
+                $(".pageTop").fadeIn();
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./assets/fonts/webfont.css">
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Helvetica Now Display, Source Han Sans JP, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .navwrap {
+            position: fixed;
+            top: 48px;
+            left: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: left;
+        }
+        .topnav {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 20px;
+        }
+        .links {
+            display: flex;
+            flex-flow: column nowrap;
+            list-style: none;
+            padding-inline-start: 0px;
+            gap: 48px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .lines {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 25px;
+            padding-top: 25px;
+        }
+        .line {
+            padding-top: 5px;
+            padding-bottom: 1px;
+        }
+        .fourth {
+            padding-top: 5px;
+            margin-bottom: -12px;
+        }
+        .socialwrap {
+            position: fixed;
+            top: 48px;
+            right: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .twitter,.youtube {
+            height: 36px;
+            width: 36px;
+            transition: all .3s;
+        }
+        .twitter svg, .youtube svg {
+            transition: all .3s;
+        }
+        .twitter:hover svg {
+            fill: #1C99ED;
+            transition: all .3s;
+        }
+        .youtube:hover svg {
+            fill: #f00;
+            transition: all .3s;
+        }
+        .pageTop {
+            position: fixed;
+            bottom: 48px;
+            right: 75px;
+            display: none;
+        }
+        .pageTop a {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        .pageTop > a > .arrow {
+            height: 40px;
+        }
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main {
+            gap: 180px;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .arrowWrap {
+            height: 68px;
+        }
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .arrow img {
+            animation: arrow 1s infinite;
+        }
+        .pageTopArrow, .pageTopArrow img {
+            animation: arrow_up 1s infinite;
+            height: 24px;
+        }
+        @keyframes arrow {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: none;
+            }
+        }
+        @keyframes arrow_up {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: translateY(-4px);
+            }
+            100% {
+                transform: none;
+            }
+        }
+        .news {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 40px;
+        }
+        .heading {
+            font-size: 36px;
+            transform: translateX(-50%);
+        }
+        b {
+            font-weight: 800;
+        }
+        p {
+            margin: 0;
+        }
+        .newsList {
+            width: -webkit-fill-available;
+            gap: -1px;
+        }
+        .newsLink {
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;         
+            width: -webkit-fill-available;
+            height: 90px;           
+            border-top: 1px solid #000;
+            flex-direction: row;
+            transition: all .3s;
+        }
+        .date {
+            width: 240px;
+        }
+        div.newsList > a:last-child > div {
+            border-bottom:1px solid #000;
+        }
+        .newsLink:hover {
+            background-color: rgba(0, 0, 0, .1);
+            transition: all .3s;
+        }
+        .newsContent {
+            display: flex;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 8px;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        .newsTag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 6px;
+            gap: 10px;        
+            background: #000000;
+            color: #fff;
+            flex-direction: row;
+            font-size: 16px;
+        }
+        footer {
+            margin-top: 180px;
+            display: flex;
+            align-items: flex-end;
+            height: 640px;
+        }
+        .footer-bg-2 {
+            height: 640px;
+            width: 100%;
+            background: center no-repeat url(./assets/images/Footer.svg);
+            position: absolute;
+            z-index: 1;
+        }
+        .footer-bg-1 {
+            height: 520px;
+            width: 100%;
+            background-color: #000;
+            position: absolute;
+            z-index: 0;
+        }
+        .footerContent {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
+            margin: 0 auto;
+            margin-bottom: 64px;
+            gap: 4px;
+        }
+        .footerLinks, .footerPolicy, .footerLinks a, .footerPolicy a, .Copyright {
+            z-index: inherit;
+            font-size: 16px;
+            font-weight: bold;
+            color: #b2b2b2;
+        }
+        .footerLinks a, .footerPolicy a {
+            padding-right: 40px;
+        }
+        .footerLinks a:last-child, .footerPolicy a:last-child {
+            padding-right: 0px;
+        }
+        .Copyright {
+            padding-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navwrap">
+        <div><a href="kamitsubaki.html"><img src="./assets/images/HACHIROKU STUDIO.svg" alt="HACHIROKU STUDIO"></a></div>
+        <nav class="topnav">
+            <div class="lines">
+                <div class="fir"><img src="./assets/images/Line.svg" alt=""></div>
+                <div class="line"><img src="./assets/images/Line.svg" alt=""></div>
+                <div class="line"><img src="./assets/images/Line.svg" alt=""></div>
+                <div class="fourth"><img src="./assets/images/Line.svg" alt=""></div>
+                <div class="line"><img src="./assets/images/circle.svg" alt=""></div>
+            </div>
+            <ul class="links">
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="">PROJECT</a></li>
+                <li><a href="">STORE</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">JOIN</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="socialwrap" id="social">
+        <div class="logo"><img src="./assets/images/hachi_studio_64.svg" alt="HACHI STUDIO"></div>
+        <div class="desc"><img src="./assets/images/desc.svg" alt="“HACHIROKU STUDIO” is a parody of a creative label orignated from YouTube where young talented people have gathered."></div>
+        <div class="twitter"><a href="https://twitter.com/hcrk862"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a></div>
+        <div class="youtube"><a href="https://youtube.com/@isekaijoucho"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div>
+    </div>
+    <div class="pageTop">
+        <a href="#">
+            <div class="pageTopArrow"><img src="./assets/images/pagetop_arrow.png" alt=""></div>
+            <div><img style="height: 140px;" src="./assets/images/pagetop.png" alt=""></div>
+        </a>
+    </div>
+    <div class="main">
+        <section class="heroWrap">
+            <div class="hero"><img style="height: 450px;" src="./assets/images/hachi_studio_64.svg" alt=""></div>
+            <div class="arrowWrap"><div class="arrow"><img src="./assets/images/arrow.svg" alt=""></div></div>
+        </section>
+        <section class="news">
+            <u class="heading"><b>NEWS</b></u>
+            <div class="newsList">
+                <a href="article-03.html">
+                    <div class="newsLink">
+                        <p class="date">2022.11.17</p>
+                        <div class="newsContent">
+                            <div class="newsTag">HACHIROKU</div>
+                            <p class="newsTitle">HACHIROKU 初配信 @ 11.20.22 9PM</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="article-02.html">
+                    <div class="newsLink">
+                        <p class="date">2022.10.02</p>
+                        <div class="newsContent">
+                            <div class="newsTag">POLICY</div>
+                            <p class="newsTitle">CHANGE ON PRIVACY POLICY</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="article-01.html">
+                    <div class="newsLink">
+                        <p class="date">2022.19.29</p>
+                        <div class="newsContent">
+                            <div class="newsTag">GUIDELINE</div>
+                            <p class="newsTitle">HACHIROKU STUDIO DOUJIN CREATION GUIDELINE</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footerContent">
+            <div class="footerLinks">
+                <a href="news.html">NEWS</a>
+                <a href="">PROJECT</a>
+                <a href="">STORE</a>
+                <a href="">CONTACT</a>
+                <a href="">JOIN</a>
+            </div>
+            <div class="footerPolicy">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">GUIDELINE</a>
+            </div>
+            <div class="Copyright">© HACHIROKU STUDIO 2023</div>
+        </div>
+        <div class="footer-bg-2"></div>
+        <div class="footer-bg-1"></div>
+    </footer>
+</body>
+</html>

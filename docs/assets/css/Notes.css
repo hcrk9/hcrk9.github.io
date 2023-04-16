@@ -1,0 +1,103 @@
+@font-face {
+    font-family:'Inabakumori Sans';
+    src: url(./fonts/InabakumoriSansJP-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family:'Inabakumori Sans';
+    src: url(./fonts/InabakumoriSansJP-Bold.woff2);
+    font-weight: 700;
+}
+body {
+    background-color: #C6C6C6;
+}
+.title {
+    font-size: 6em;
+    background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.main-content {
+    background-color: #C6C6C6;
+}
+.blog-title {
+    color: #000;
+}
+.blog-title:hover {
+    text-decoration: underline;
+}
+.note-item {
+    width: 80%;
+    margin: auto;
+}
+.note-item p {
+    max-width: 64ch;
+    text-align: justify;
+}
+.ina {
+    background-color: #C6C6C6;
+    font-family: "Inabakumori Sans";
+}
+.bg-1 {
+    position: absolute;
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4em;
+}
+.bg-1 img {
+    height: 450px;
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.35));
+}
+h2 {
+    font-size: 3em;
+    letter-spacing: .1em;
+    margin-block-end:0%;
+}
+h4 {
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-top: 3em;
+}
+p {
+    padding: 3em 0;
+    font-size: 1.2em;
+}
+.dl-button{
+    padding: 8px 14px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    transition: all .3s;
+    text-decoration: none;
+    transform:none;
+    width: fit-content;
+
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+.dl-button a {
+    color: white;
+    text-decoration: none;
+}
+.dl-button:hover {
+    transform: translateY(-2px);
+    background-color: #1e1e1e;
+    text-decoration: none;
+    transition: all .3s;
+}
+@media only screen and (orientation:portrait) {
+    .projects h1 {
+        padding: 0.5em 3rem!important;
+    }
+    .title {
+        font-size: 10vw;
+        background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+    }
+}

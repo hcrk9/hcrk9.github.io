@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hachi Katakana</title>
+    <link rel="icon" href="favicon.svg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: repeat url(./images/bg2.svg);
+            overflow-x: hidden;
+        }
+        .main {
+            background: repeat-x url(./images/bg.svg);
+            padding-bottom: 20em;
+        }
+        .l1 {
+            position: static;
+            width: 100%;
+            height: 100%;
+        }
+        .l1 img {
+            width: 100%;
+        }
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .girl img {
+            width: 23%;
+            position: absolute;
+            right: -4em;
+            top: 14%;
+            filter: drop-shadow(-1px -1px 0px #0C8CE9) drop-shadow(1px 1px 0px #0C8CE9);
+        }
+        .l2 img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #000;
+            border: none;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin: auto;
+        }
+        button:active {
+            background-color: #fff;
+        }
+        button:active img {
+            filter: invert();
+        }
+        button:hover img {
+            animation: 5s ROTATE linear infinite;
+        }
+        @keyframes ROTATE {
+            0% {
+                transform: rotate3d(0,0,0,0deg);
+            }
+            100% {
+                transform: rotate3d(0,1,0,360deg);
+            }
+        }
+        .hachi {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+        }
+        .copyright {
+            position: absolute;
+            right: 2px;
+            top: 60%;
+        }
+        .glyphs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="hachi"><a href="index.html"><img src="./images/hachi.svg" alt=""></a></div>
+        <div class="l1"><img src="./images/element-l1.svg" alt="if you can see this, you might wanna check your Internet."></div>
+        <div class="girl"><img src="./images/anime_girl.png" alt="realistically, nobody is gonna see this text"></div>
+        <div class="copyright"><img src="./images/unrelatedanimegirl.svg" alt=""></div>
+        <div class="l2"><img src="./images/element-l2.svg" alt="expect the one who use DevTool"></div>
+        <div class="text"><img src="./images/text.svg" alt="if you are one of them, maybe check out https://www.pixiv.net/users/23040640"></div>
+        <button>
+            <a href="images/HachiKatakana-Regular.otf"><img src="./images/btn.svg" alt="rotaté"></a>
+        </button>
+    </div>
+    <div class="glyphs"><img src="./images/Glyphs.svg" alt=""></div>
+</body>
+</html>
