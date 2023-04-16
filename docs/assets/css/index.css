@@ -249,7 +249,7 @@ section {
         padding: 0.5em 3rem!important;
     }
     .title {
-        font-size: 10vw;
+        font-size: 1rem;
         background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
     }
     .title-text {
@@ -261,6 +261,7 @@ section {
     }
     .img-info {
         padding: 0 3em;
+        display: none;
     }
     .img-alt {
         display: none;
