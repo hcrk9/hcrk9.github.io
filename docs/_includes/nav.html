@@ -46,4 +46,28 @@
             <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
         </a>
     </div>
+    <div class="mobile-nav" id="mobile-nav">
+        <a class="menu-icon" href="javascript:void(0);" onclick="openMenu()"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.66664C0 3.80753 0.696446 3.11108 1.55556 3.11108H26.4444C27.3036 3.11108 28 3.80753 28 4.66664C28 5.52575 27.3036 6.2222 26.4444 6.2222H1.55556C0.696446 6.2222 0 5.52575 0 4.66664Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14C0 13.1409 0.696446 12.4444 1.55556 12.4444H26.4444C27.3036 12.4444 28 13.1409 28 14C28 14.8591 27.3036 15.5555 26.4444 15.5555H1.55556C0.696446 15.5555 0 14.8591 0 14Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 23.3333C0 22.4742 0.696446 21.7778 1.55556 21.7778H26.4444C27.3036 21.7778 28 22.4742 28 23.3333C28 24.1924 27.3036 24.8889 26.4444 24.8889H1.55556C0.696446 24.8889 0 24.1924 0 23.3333Z" fill="white"/>
+            </svg>                      
+        </a>
+    </div>
 </div>
+<div class="mobile-menu" id="mobile-menu">
+    <ul><a href="{{site.baseurl}}/about.html" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a></ul>
+    <ul><a href="{{site.baseurl}}/coolstuff" class="navbar-link" {% if page.url == "/coolstuff.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Cool Stuff</span></div></a></ul>
+    <ul><a href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a></ul>
+    <ul><a href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a></ul>
+</div>
+<script>
+    function openMenu() {
+        var x = document.getElementById("mobile-menu");
+        if (x.className === "mobile-menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "mobile-menu";
+        }
+    }
+</script>
