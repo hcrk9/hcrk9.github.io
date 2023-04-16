@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/global.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/blog.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ECD49MNC"></script>
     <script>
@@ -20,14 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="dark">
     {% include nav.html %}
     <div class="title">
       <span>{{ page.title }}</span>
     </div>
     <section class="content">
       {{ content }}
-      <a href="/notes" style="color:#777;border-top: 1px solid #777">BACK TO NOTES</a>
+      <a href="/notes" style="color:#777;border-top: 1px solid #777; margin-top: 2em; display: block;width: fit-content;">BACK TO NOTES</a>
     </section>
     {% include footer.html %}
   </body>

@@ -8,17 +8,17 @@
 }
 @font-face {
     font-family: 'Inabakumori Sans';
-    src: url('./files/InabakumoriSans-Regular.ttf') format('truetype'),
-        url('./files/InabakumoriSans-Regular.woff') format('woff'),
-        url('./files/InabakumoriSans-Regular.woff2') format('woff2');
+    src: url('../../files/InabakumoriSans-Regular.ttf') format('truetype'),
+        url('../../files/InabakumoriSans-Regular.woff') format('woff'),
+        url('../../files/InabakumoriSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inabakumori Sans';
-    src: url('./files/nabakumoriSans-Bold.ttf') format('truetype'),
-        url('./files/InabakumoriSans-Bold.woff') format('woff'),
-        url('./files/InabakumoriSans-Bold.woff2') format('woff2');
+    src: url('../../files/nabakumoriSans-Bold.ttf') format('truetype'),
+        url('../../files/InabakumoriSans-Bold.woff') format('woff'),
+        url('../../files/InabakumoriSans-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -253,7 +253,33 @@ abbr {
     .footer-info {
         padding-top:1em
     }
-    .footer-hgt {
-        height: 404.45px;
+}
+.mobile-menu {
+    display: none;
+}
+.mobile-nav {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .main-nav {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .responsive {
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        background-color: #222;
+        width: 100%;
+        padding-top: 100px;
+        z-index: 100;
+    }
+    .responsive ul {
+        margin: 1em 3em;
     }
 }

@@ -55,7 +55,7 @@ html::-webkit-scrollbar {
     height: 5px;
 }
 .title {
-    font-size: 5em;
+    font-size: 3rem;
     background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
     height: 100vh;
     display: flex;
@@ -81,6 +81,7 @@ body {
     background-color: var(--background);
     font-family: 'Noto Sans Mono', 'Montserrat', 'Montserrat Fallback', Source Han Sans SC VF, sans-serif;
     transition: 0.3s all;
+    background-color: #b0b0b0;
 }
 footer a:visited {
     color: var(--secondary);
@@ -137,12 +138,6 @@ ul {
     transition: 0.3s color;
     transition: 0.3s font-weight;
 }
-.main-nav {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1rem;
-    margin-right:auto;
-}
 .social-icon svg {
     fill:var(--primary);
     display: flex;
@@ -178,7 +173,7 @@ ul {
     transition: .2s opacity;
 }
 .main-content {
-    background: var(--background);
+    background: #b0b0b0;
 }
 ul {
     padding:0
@@ -250,7 +245,9 @@ abbr {
 
 
 .content {
-    padding: 6em 16em;
+    padding: 6em 0;
+    width: 60%;
+    margin: auto;
     background-color: #b0b0b0;
     color: #222;
     font-size: 1.5em;
@@ -264,6 +261,9 @@ abbr {
     html, body {
         overflow: hidden;
         overflow-y: auto;
+    }
+    .content {
+        width: 80%;
     }
     .navbar {
         padding: none;
@@ -282,5 +282,11 @@ abbr {
     }
     .footer-hgt {
         height: 404.45px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: auto;
+        padding: 0;
     }
 }
