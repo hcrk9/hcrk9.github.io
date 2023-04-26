@@ -13,3 +13,5 @@ categories: log
 [Site](sr.mihoyo.com)
 1. DaisukeRichard活动休止了...? 不过这位Illustrator的作品说实话不算太好找，他不用pixiv，wixsite上看着都是压缩过的图片，所以大概只有找个方法批量下载他的twitter上的ｍｅｄｉａ了。
 [Twitter](https://twitter.com/daisukerichard/status/1620424434241908740)
+1. YouTube上的PSYQUI Mix。
+[Link](https://www.youtube.com/watch?v=Qcm35mZqyc8&list=RDEMGFdI7hTjrI9gySe4QzeR8g)
