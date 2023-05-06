@@ -15,3 +15,4 @@ categories: log
 [Twitter](https://twitter.com/daisukerichard/status/1620424434241908740)
 1. YouTube上的PSYQUI Mix。
 [Link](https://www.youtube.com/watch?v=Qcm35mZqyc8&list=RDEMGFdI7hTjrI9gySe4QzeR8g)
+1. Web Taiko Revived @ http://147.185.221.181:11142/
