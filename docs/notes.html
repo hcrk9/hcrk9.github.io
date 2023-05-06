@@ -3,6 +3,12 @@ layout: default
 title: Notes
 ---
 <!DOCTYPE html>
+    <style>
+        .excerpt {
+            max-height: 10em;
+            overflow: hidden;
+        }
+    </style>
     <body class="dark">
         <div class="title">
             <span style="position: absolute; left: 13rem; bottom: 8rem; font-weight: 700; color: white; font-family:'Inabakumori Sans'">
@@ -18,7 +24,9 @@ title: Notes
                 <h2><a href="{{ post.url }}" style="color: #000;" class="blog-title">{{ post.title }}</a></h2>
                 <span style="color:#777">{{post.date}}</span><br>
                 <span style="color:#777">PREVIEW ↓</span>
-                {{ post.excerpt }}
+                <div class="excerpt">
+                    {{ post.excerpt }}
+                </div>
             </section>
             {% endfor %}
         </div>

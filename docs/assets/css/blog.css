@@ -15,7 +15,7 @@ html::-webkit-scrollbar {
     font-weight: 700; 
     color: white; 
     font-family:'Inabakumori Sans';
-    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 1));
 }
 html::-webkit-scrollbar-track {
     background: var(--background-2);
