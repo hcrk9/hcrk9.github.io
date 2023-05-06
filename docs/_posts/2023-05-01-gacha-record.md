@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BlueArchive悲哀抽卡记录 <br> Gacha Records"
-date:   2077-08-06 10:00:00 +0800
+date:   2023-05-01 00:00:00 +0800
 categories: log
 ---
 #### May 2023
