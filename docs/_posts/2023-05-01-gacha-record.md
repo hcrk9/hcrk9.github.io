@@ -30,3 +30,5 @@ categories: log
 #### Noa
 ![Noa](https://static.wikia.nocookie.net/blue-archive/images/b/bd/Noa_Portrait.png/revision/latest "Noa")
 # 几十抽，出了。
+
+本页To-do：修复图片外链（self-host）
