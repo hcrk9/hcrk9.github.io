@@ -11,7 +11,7 @@ categories: log
 
 <img src="{{site.baseurl}}/assets/images/ba/Yuuka_Gym_Portrait.webp" style="height: 500px" alt="Yuuka (Track) Portrait">
 
-# *136抽*，没出。
+# *147抽*，**出了**。
 
 ***
 
@@ -20,7 +20,7 @@ categories: log
 ## 亚子
 #### Ako
 
-<img src="{{site.baseurl}}/assets/images/ba/Ako_Portrait.webp" style="height: 500px" alt="Yuuka (Track) Portrait">
+<img src="{{site.baseurl}}/assets/images/ba/Ako_Portrait.webp" style="height: 500px" alt="Ako Portrait">
 
 # 几十抽，没出。
 
@@ -29,8 +29,8 @@ categories: log
 ## 明日奈（兔女郎），朱音（兔女郎）
 #### Asuna (Bunny)，Akane (Bunny)
 
-<img src="{{site.baseurl}}/assets/images/ba/Asuna_Bunny_Girl_Portrait.webp" style="height: 500px" alt="Yuuka (Track) Portrait">
-<img src="{{site.baseurl}}/assets/images/ba/Akane_Bunny_Girl_Portrait.webp" style="height: 500px" alt="Yuuka (Track) Portrait">
+<img src="{{site.baseurl}}/assets/images/ba/Asuna_Bunny_Girl_Portrait.webp" style="height: 500px" alt="Asuna Bunny Girl Portrait">
+<img src="{{site.baseurl}}/assets/images/ba/Akane_Bunny_Girl_Portrait.webp" style="height: 500px" alt="Akane Bunny Girl Portrait">
 
 # 20抽，出了。
 
@@ -39,6 +39,6 @@ categories: log
 ## 乃爱
 #### Noa
 
-<img src="{{site.baseurl}}/assets/images/ba/Noa_Portrait.webp" style="height: 500px" alt="Yuuka (Track) Portrait">
+<img src="{{site.baseurl}}/assets/images/ba/Noa_Portrait.webp" style="height: 500px" alt="Noa Portrait">
 
 # 几十抽，出了。
