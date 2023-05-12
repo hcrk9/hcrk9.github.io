@@ -1,9 +1,24 @@
 ---
 layout: post
-title:  "周末应当关心的事 <br> Things to care about"
+title:  "值得留意的东西 <br> Things to care about"
 date:   2023-04-26 10:00:00 +0800
 categories: log
 ---
+# 10 May 2023
+## BA Gacha
+谢谢Nexon，接下来两个池子all out了
+![feet](https://hachiiiiiiii.co/assets/images/wheelchair.webp "轮椅阳葵")
+？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+![Koharu Gacha](https://hachiiiiiiii.co/assets/images/koharu.webp "小春")
+还以为可以存点石头的
+这样吧 小春事实上是常驻角色 所以石头拿去抽阳葵算了 这周存着。。
+
+注册了fb。
+
+***
+之前的
+***
+
 1. 首先是BlueArchive的新活动，体香和玛丽PickUp；BONUS登陆活动；
 [Twitter上的总结图片。](https://twitter.com/EN_BlueArchive/status/1650746702146736129/photo/1)
 [![优香！！！](https://pbs.twimg.com/media/FuJYyuUaEAAw6Ff?format=jpg&name=large "Yuuka(Sport)")](https://twitter.com/EN_BlueArchive/status/1649699563630997504)
