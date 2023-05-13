@@ -1,3 +1,11 @@
+---
+---
+body {
+    background: repeat-y center/100vw url("{{site.baseurl}}/assets/images/ba/millennium-bg.svg") !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 .title {
     font-size: 6em;
     background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
@@ -6,7 +14,7 @@
     flex-flow: column nowrap;
 }
 .main-content {
-    background-color: #C6C6C6;
+    background-color: transparent;
 }
 .design-item {
     width: 80%;
@@ -26,6 +34,35 @@
     font-family: "Gotham", "Montserrat", "Noto Sans SC";
     z-index: 999;
 }
+.ba-logo {
+    background-color: #1a1a1a;
+    background-image: url("{{site.baseurl}}/assets/images/schale_halo.svg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Gotham", "Montserrat", "Noto Sans SC";
+    z-index: 999;
+    color: #fff;
+}
+
+.ba-logo-h {
+    min-height: 1em!important;
+}
+.ba-logo-dl {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    padding: 4em 0;
+}
+.ba-logo-img {
+    transition: all .3s;
+}
+.ba-logo-img:hover {
+    filter: drop-shadow(0px 4px 8px #ffffff99);
+    transition: all .3s;
+}
+
 .bg-1 {
     width: 80%;
     display: flex;
@@ -46,6 +83,7 @@ h2 {
     margin-block-end:0%;
     margin-block-start: 0%;
 }
+
 h4 {
     font-size: 2rem;
     border-bottom: 2px solid black;
@@ -55,6 +93,16 @@ h4 {
     margin-inline-end: 0px;
     padding-top: 3em;
 }
+.white {
+    font-size: 2rem;
+    border-bottom: 2px solid white !important;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-top: 3em;
+}
+
 p {
     padding: 3em 0;
 }
@@ -140,6 +188,18 @@ p {
 .arrow img {
     animation: arrow 1s infinite;
 }
+
+.item-bg {
+    margin: 3em;
+    border-radius: 12px;
+    filter: drop-shadow(0px 2px 4px #12203450);
+    transition: all .3s;
+}
+.item-bg:hover {
+    transition: all .3s;
+    filter: drop-shadow(0px 4px 8px #12203490);
+    transform: translateY(-4px);
+}
 @keyframes arrow {
     0% {
         transform: none;
@@ -187,5 +247,9 @@ p {
     .btns {
         flex-flow: column nowrap;
         gap:10px;
+    }
+
+    .item-bg {
+        margin: 1em;
     }
 }
