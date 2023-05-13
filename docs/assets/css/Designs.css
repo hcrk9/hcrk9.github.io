@@ -1,7 +1,7 @@
 ---
 ---
 body {
-    background: repeat-y center/100vw url("{{site.baseurl}}/assets/images/ba/millennium-bg.svg") !important;
+    background: repeat-y center/100vw url("{{site.baseurl}}/assets/images/ba/Millennium-bg.svg") !important;
 }
 ::-webkit-scrollbar {
     display: none;
