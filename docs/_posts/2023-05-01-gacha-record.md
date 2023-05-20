@@ -6,6 +6,24 @@ categories: log
 ---
 #### May 2023
 
+## 阳葵
+#### Himari
+
+<img src="{{site.baseurl}}/assets/images/ba/Himari_Portrait.webp" style="height: 500px" alt="Himari Portrait">
+
+# 还没抽。
+
+***
+
+## 小春
+#### Koharu
+
+<img src="{{site.baseurl}}/assets/images/ba/Koharu_Portrait.webp" style="height: 500px" alt="Koharu Portrait">
+
+# *10抽*，没出。
+
+***
+
 ## 优香（体操服）
 #### Yuuka (Track)
 

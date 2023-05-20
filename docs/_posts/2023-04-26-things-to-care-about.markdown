@@ -4,6 +4,14 @@ title:  "值得留意的东西 <br> Things to care about"
 date:   2023-04-26 10:00:00 +0800
 categories: log
 ---
+# 17 May 2023
+[Google的Arial替代品。](https://fonts.google.com/specimen/Arimo)
+[BA数位周边](https://forum.nexon.com/bluearchiveTW/board_view?board=3359&thread=2122458)
+[更好的Antic字体](https://www.bilibili.com/read/cv23676084)
+pid u/8397454 twitter @han20220904
+
+***
+
 # 10 May 2023
 ## BA Gacha
 谢谢Nexon，接下来两个池子all out了
@@ -16,7 +24,9 @@ categories: log
 注册了fb。
 
 ***
+
 之前的
+
 ***
 
 1. 首先是BlueArchive的新活动，体香和玛丽PickUp；BONUS登陆活动；
