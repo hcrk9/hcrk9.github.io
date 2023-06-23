@@ -4,17 +4,17 @@ h1 {
 }
 @font-face {
     font-family: 'Inabakumori Sans';
-    src: url('./files/InabakumoriSansJP-Regular.ttf') format('truetype'),
-        url('./files/InabakumoriSans-Regular.woff') format('woff'),
-        url('./files/InabakumoriSans-Regular.woff2') format('woff2');
+    src: url('../../files/InabakumoriSansJP-Regular.ttf') format('truetype'),
+        url('../../files/InabakumoriSans-Regular.woff') format('woff'),
+        url('../../files/InabakumoriSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inabakumori Sans';
-    src: url('./files/nabakumoriSansJP-Bold.ttf') format('truetype'),
-        url('./files/InabakumoriSansJP-Bold.woff') format('woff'),
-        url('./files/InabakumoriSansJP-Bold.woff2') format('woff2');
+    src: url('../../files/InabakumoriSansJP-Bold.ttf') format('truetype'),
+        url('../../files/InabakumoriSansJP-Bold.woff') format('woff'),
+        url('../../files/InabakumoriSansJP-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -137,7 +137,7 @@ h1:hover {
 }
 .separation {
     height: 20px;
-    background: repeat center url(./images/construction-line.svg), linear-gradient(0deg, #222 0%, #333 100%);
+    background: repeat center url(../images/construction-line.svg), linear-gradient(0deg, #222 0%, #333 100%);
 }
 .projects {
     background-color: #000;

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Montserrat Fallback';
-    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
 }
 @font-face {
     font-family: 'Montserrat Fallback Italic';
-    src: url("./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
 }
 @font-face {
     font-family: 'Inabakumori Sans';
@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'Inabakumori Sans';
-    src: url('../../files/nabakumoriSans-Bold.ttf') format('truetype'),
+    src: url('../../files/InabakumoriSans-Bold.ttf') format('truetype'),
         url('../../files/InabakumoriSans-Bold.woff') format('woff'),
         url('../../files/InabakumoriSans-Bold.woff2') format('woff2');
     font-weight: bold;
@@ -229,7 +229,8 @@ abbr {
     text-decoration: underline wavy;
 }
 .footer-legal {
-    border-top: 1px solid var(--secondary);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
     padding-top: 10px;
 }
 @media only screen and (orientation:portrait) {

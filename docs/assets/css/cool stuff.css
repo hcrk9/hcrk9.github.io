@@ -1,5 +1,5 @@
 .title {
-    background: no-repeat center/186% url("./images/sssurf.svg");
+    background: no-repeat center/186% url("../images/sssurf.svg");
     height: 60vh;
     font-size: 4vw;
     display: flex;
@@ -118,7 +118,7 @@ h2 {
 
 @media only screen and (orientation:portrait) {
     .title {
-        background: no-repeat center/386% url("./images/sssurf.svg");
+        background: no-repeat center/386% url("../images/sssurf.svg");
         font-size: 7vw;
     }
     .main-nav {
