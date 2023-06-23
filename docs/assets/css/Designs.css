@@ -55,9 +55,13 @@ body {
     gap: 8em;
     padding: 4em 0;
 }
+.ba-logo-img {
+    display: contents;
+}
 .ba-logo-img img {
     transition: all .3s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 80%;
 }
 .ba-logo-img:hover img {
     filter: drop-shadow(0px 4px 8px #ffffff99);
