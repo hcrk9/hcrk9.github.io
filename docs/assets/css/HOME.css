@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'LCDDot TR';
-    src: url(../fonts/lcddottr.ttf);
+    src: url('../fonts/lcddottr.woff') format('woff'),
+        url('../fonts/lcddottr.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Inabakumori Sans';
@@ -431,22 +432,26 @@
         flex-direction: column;
         margin-top: 160px;
         justify-content: flex-start;
+        align-items: center;
         gap: 64px;
     }
     .latestImage {
         height: 285px;
         width: 456px;
+        max-width: 90vw;
     }
     .latestTitle {
-        font-size: 24px;
+        font-size: 22px;
+        white-space: nowrap;
     }
     .latestInfo {
-        transform: translateY(-105px);
+        transform: translateY(-55px);
+        padding-left: 80px;
     }
     .hachiAvatar {
-        width: 100px;
-        height: 100px;
-        transform: translate(-25%,-50%);
+        width: 60px;
+        height: 60px;
+        transform: translate(0,-40%);
     }
     .arrowWrap {
         display: none;
@@ -486,16 +491,8 @@
         height: 285px;
         width: 456px;
     }
-    .latestTitle {
-        font-size: 24px;
-    }
-    .latestInfo {
-        transform: translateY(-105px);
-    }
-    .hachiAvatar {
-        width: 100px;
-        height: 100px;
-        transform: translate(-25%,-50%);
+    .latestMisc {
+        flex-flow: column;
     }
     .projects {
         padding: 6em 5%;

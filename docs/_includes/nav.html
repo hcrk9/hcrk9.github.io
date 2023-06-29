@@ -68,6 +68,7 @@
     <ul><a href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a></ul>
     <ul><a href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a></ul>
 </div>
+<div class="menu-bg"></div>
 <script>
     function openMenu() {
         var x = document.getElementById("mobile-menu");
@@ -78,3 +79,17 @@
         }
     }
 </script>
+
+<script>
+    window.addEventListener('scroll', function() {
+        if (window.innerWidth < 800 && window.scrollY > 0) {
+            document.querySelector('.menu-bg').style.opacity = '1';
+            document.querySelector('.menu-bg').style.transition = 'opacity 0.5s ease-in-out';
+        } else {
+            document.querySelector('.menu-bg').style.opacity = '0';
+            document.querySelector('.menu-bg').style.transition = 'opacity 0.5s ease-in-out';
+        }
+    });
+</script>
+
+

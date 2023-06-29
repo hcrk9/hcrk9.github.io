@@ -284,7 +284,17 @@ abbr {
 .mobile-nav {
     display: none;
 }
+.menu-bg {
+    z-index: 5;
+    width: 100vw;
+    height: 170px;
+    position: fixed;
+    background: linear-gradient(180deg, #1B1B54 0%, rgba(27, 27, 84, 0.00) 100%);
+}
 @media only screen and (max-width: 800px) {
+    .navbar {
+        position: fixed;
+    }
     .main-nav {
         display: none;
     }
@@ -293,17 +303,43 @@ abbr {
     }
     .mobile-nav {
         display: block;
+        position: relative;
     }
     .responsive {
         display: flex;
         flex-flow: column nowrap;
-        position: absolute;
-        background-color: #222;
+        position: fixed;
+        background-color: rgba(38, 35, 56, 0.8);
+        backdrop-filter: blur(32px);
         width: 100%;
         padding-top: 100px;
         z-index: 100;
+        animation: 1s menuIn;
     }
     .responsive ul {
         margin: 1em 3em;
+    }
+    .menu-mask {
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+@keyframes menuIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes menuOut {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
     }
 }
