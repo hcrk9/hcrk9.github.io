@@ -22,6 +22,18 @@
     font-weight: bold;
     font-style: normal;
 }
+body {
+    animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+    }
+}
 :root {
     --gray-1:#222;
     --gray-2:#333;

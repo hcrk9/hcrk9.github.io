@@ -108,6 +108,7 @@
     z-index: 2;
     color: #eee;
     transition: all .5s cubic-bezier(.32,.99,.62,1);
+
 }
 .latestProject:hover {
     transform: translateY(-10px);
@@ -234,19 +235,36 @@
     gap: 120px;
 }
 
+.projectImageWrap {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 28px;
+}
 .projectImage {
     width: 565px;
     height: 360px;
-    background-image: url(../images/schale_thumb.png);
     background-size: cover;
+    background-position: center;
     border-radius: 68px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+.SCHALEImage {
+    background-image: url(../images/schale_thumb.png);
+}
+.KRPISImage {
+    background-image: url(../images/KR_PIS.png);
+}
+.MIDCardImage {
+    background-image: url(../images/millenniumID.png);
+}
+.SIDCardImage {
+    background-image: url(../images/thumbnail_schale.png);
 }
 .projectImage:hover {
     border-radius: 225px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
-.projectImage::after {
+.thumbnail::after {
     content: "VIDEO THUMBNAIL";
     font-family: "LCDDot TR";
     font-size: 48px;
@@ -260,7 +278,7 @@
     opacity: 0;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
-.projectImage:hover::after {
+.thumbnail:hover::after {
     opacity: 1;
     border-radius: 225px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
@@ -321,11 +339,26 @@
     fill: #2974E6;
 }
 .Red {
-    color:#C93964;
-    border-bottom-color:#C93964;
+    color:#F24E1E;
+    border-bottom-color:#F24E1E;
 }
 .Red svg {
-    fill: #C93964;
+    fill: #F24E1E;
+}
+/* Color from Figma Logo */
+.Purple {
+    color:#A259FF;
+    border-bottom-color:#A259FF;
+}
+.Purple svg {
+    fill: #A259FF;
+}
+.Green {
+    color:#0ACF83;
+    border-bottom-color:#0ACF83;
+}
+.Green svg {
+    fill: #0ACF83;
 }
 
 .projectInfoRow {
@@ -368,6 +401,52 @@
     }
     .arrowWrap {
         display: none;
+    }
+    .projects {
+        padding: 6em 5%;
+    }
+    .projectImage {
+        width: 100%;
+        height: 60vw;
+    }
+    .projectImage::after {
+        width: 100%;
+        height: 60vw;
+    }
+    .projectContent {
+        flex-flow: column;
+    }
+    .projectInfo {
+        justify-content: flex-start;
+        gap: 28px;
+    }
+    .projectInfoRow {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 36px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .titleContent {
+        flex-direction: column;
+        margin-top: 160px;
+        justify-content: flex-start;
+        gap: 64px;
+    }
+    .latestImage {
+        height: 285px;
+        width: 456px;
+    }
+    .latestTitle {
+        font-size: 24px;
+    }
+    .latestInfo {
+        transform: translateY(-105px);
+    }
+    .hachiAvatar {
+        width: 100px;
+        height: 100px;
+        transform: translate(-25%,-50%);
     }
     .projects {
         padding: 6em 5%;
