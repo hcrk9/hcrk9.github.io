@@ -1,21 +1,22 @@
 body {
-    background-color: #C6C6C6;
+    color: #eee;
+}
+.main-content {
+    padding-bottom: 6em;
 }
 .title {
     font-size: 6em;
-    background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
-    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
 }
-.main-content {
-    background-color: #C6C6C6;
-}
 .blog-title {
-    color: #000;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .blog-title:hover {
-    text-decoration: underline;
+    border-bottom: 3px solid #aaa;
 }
 .note-item {
     width: 80%;
@@ -24,10 +25,6 @@ body {
 .note-item p {
     max-width: 64ch;
     text-align: justify;
-}
-.ina {
-    background-color: #C6C6C6;
-    font-family: "Inabakumori Sans";
 }
 .bg-1 {
     position: absolute;
@@ -43,12 +40,17 @@ body {
 }
 h2 {
     font-size: 3em;
-    letter-spacing: .1em;
+    letter-spacing: -1.5px;
     margin-block-end:0%;
 }
 h4 {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     font-size: 2em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -87,7 +89,5 @@ p {
         padding: 0.5em 3rem!important;
     }
     .title {
-        font-size: 10vw;
-        background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
     }
 }

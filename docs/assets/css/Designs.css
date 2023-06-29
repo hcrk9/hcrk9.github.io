@@ -1,7 +1,7 @@
 ---
 ---
 body {
-    background: repeat-y center/100vw url("{{site.baseurl}}/assets/images/ba/Millennium-bg.svg") !important;
+    background: #080C13;
     font-family: "Instrument Sans", "Noto Sans SC";
 }
 ::-webkit-scrollbar {
@@ -9,13 +9,39 @@ body {
 }
 .title {
     font-size: 6em;
-    background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
-    height: 100vh;
+    background: #080C13;
     display: flex;
     flex-flow: column nowrap;
 }
+.title::after {
+    background: conic-gradient(from 149deg at 52.19% 42.81%, #080C12 55.49995243549347deg, #372AD0 144.42530393600464deg, #43FFE8 150.41244506835938deg, #2AA0C5 181.80834531784058deg, #53B816 271.99687242507935deg, #EBFF99 296.9915199279785deg, #151A0C 323.6249542236328deg);
+}
+.title span {
+    position: absolute;  
+    bottom: 50%;
+    transform: translateY(50%); 
+    font-weight: 400; 
+    font-size: 52px;
+    letter-spacing: -1.5px;
+    z-index: 3;
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s cubic-bezier(.32,.99,.62,1);
+}
+.title span:hover {
+    font-weight: 600;
+    transition: all .5s cubic-bezier(.32,.99,.62,1);
+}
+
 .main-content {
     background-color: transparent;
+    margin: 3em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3em;
 }
 .design-item {
     width: 80%;
@@ -202,7 +228,6 @@ p {
 }
 
 .item-bg {
-    margin: 3em;
     border-radius: 12px;
     filter: drop-shadow(0px 2px 4px #12203450);
     transition: all .3s;
@@ -224,18 +249,7 @@ p {
     }
 }
 
-.title span {
-    position: absolute; 
-    left: 13rem; 
-    bottom: 8rem; 
-    font-weight: 700; 
-    color: white; 
-}
 @media only screen and (orientation:portrait) {
-    .title span {
-        left: 50%;
-        transform: translateX(-50%);
-    }
     .projects h1 {
         padding: 0.5em 3rem!important;
     }

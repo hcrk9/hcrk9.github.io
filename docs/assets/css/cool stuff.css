@@ -1,6 +1,4 @@
 .title {
-    background: no-repeat center/186% url("../images/sssurf.svg");
-    height: 60vh;
     font-size: 4vw;
     display: flex;
     justify-content: center;
@@ -36,6 +34,10 @@
     letter-spacing: 0em;
     transition: all 1s;
 }
+a:hover {
+    font-weight:700;
+    transition: 0.2s font-weight;
+}
 .title-line-3 {
     animation: 8s line-3 ease;
     letter-spacing: -0.08em;
@@ -48,6 +50,7 @@
     font-variation-settings: "wght" 900, "wdth" 150, "GRAD" -50;
     transition: 1s font-variation-settings;
 }
+
 @keyframes line-1 {
     0% {
         font-weight: 120;
@@ -93,7 +96,7 @@
 
 .main-content {
     color: var(--primary);
-    padding: 4em 0;
+    padding: 6em 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -104,8 +107,8 @@
 .main-grid {
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    grid-template-areas: "title-01 title-01" "cugan esrgan" "craiyon ." "title-02 title-02" "uvr .";
-    gap:2em 16em;
+    grid-template-areas: "title-01 title-01" "cugan esrgan" "craiyon ." "title-02 title-02" "uvr whisper" "title-03 title-03" "ora .";
+    gap:4em 24em;
 }
 h2 {
     font-weight: 600;
@@ -117,20 +120,21 @@ h2 {
 
 
 @media only screen and (orientation:portrait) {
-    .title {
-        background: no-repeat center/386% url("../images/sssurf.svg");
-        font-size: 7vw;
+    .title span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .main-nav {
         align-items: center;
         text-align: center;
     }
     .main-grid {
-        grid-template-rows: repeat(1,1fr);
-        grid-template-areas: "title-01" "cugan" "esrgan" "craiyon" "title-02" "uvr";
+        display: flex; 
+        flex-direction: column;       
         padding: 0 2em;
     }
     .main-content p,i {
-    width: 50vw;
+        width: 50vw;
     }
 }

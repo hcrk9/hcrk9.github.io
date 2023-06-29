@@ -3,18 +3,12 @@ layout: default
 title: Notes
 ---
 <!DOCTYPE html>
-    <style>
-        .excerpt {
-            display: none;
-            
-            max-height: 10em;
-            overflow: hidden;
-        }
-    </style>
     <body class="dark">
         <div class="title">
-            <span style="position: absolute; left: 13rem; bottom: 8rem; font-weight: 700; color: white; font-family:'Inabakumori Sans'">
-                Notes</span>
+            <span class="titleSpan">
+                Pretty much a blog
+            </span>
+        <div class="arrowWrap"><div class="arrow"><img src="./assets/images/arrow.svg" alt=""></div></div>
         </div>
 
 
@@ -22,13 +16,10 @@ title: Notes
         <div class="main-content">
             {% for post in site.posts %}
             <section class="note-item ina">
-                <h4>ノート</h4>
-                <h2><a href="{{ post.url }}" style="color: #000;" class="blog-title">{{ post.title }}</a></h2>
+                <h4>NOTE ITEM</h4>
+                
+                <h2><a href="{{ post.url }}" class="blog-title">{{ post.title }}</a></h2>
                 <span style="color:#777">{{post.date}}</span><br>
-                <span style="color:#777">PREVIEW ↓</span>
-                <div class="excerpt">
-                    {{ post.excerpt }}
-                </div>
             </section>
             {% endfor %}
         </div>

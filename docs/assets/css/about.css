@@ -68,13 +68,25 @@
         font-weight: 400;
     }
 }
+.sectionTitle {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+
+    border-bottom: 3px solid #aaa;
+    width: fit-content;
+    font-style: italic;
+}
 .main-content {
     color: var(--primary);
-    padding: 4em 20vw;
     display: flex;
+    padding: 6em 10em;
     flex-flow: column nowrap;
-    align-items: center;
 }
 .quote {
     text-align: right;
@@ -181,10 +193,10 @@ button {
     font-weight: 100;
 }
 .kaf {
-    background:center / cover no-repeat url("./images/Clip_20221114_000123.png");
+    background:center / cover no-repeat url("../images/Clip_20221114_000123.png");
 }
 .isekaijoucho {
-    background:center / cover no-repeat url("./images/Clip_20221114_000219.png");
+    background:center / cover no-repeat url("../images/Clip_20221114_000219.png");
 }
 @media only screen and (orientation:portrait) {
     .kamitsubaki {

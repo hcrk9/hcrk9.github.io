@@ -8,8 +8,6 @@ categories: log
 
 ***
 
-1. 去鱼嘴中车厂
+1. 去中车厂
 
-2. CHUNITHM，如果taiko新框上了也行
-
-3. Honkai Star Rail
+2. CHUNITHM和WACCA，如果taiko新框上了也行

@@ -19,68 +19,10 @@
     font-weight: bold;
     font-style: normal;
 }
+
 .title {
-    font-size: 1em;
-    background-color: #080C12;
     height: 120vh;
-    display: flex;
-    position: relative;
-    overflow: hidden;
 }
-.title::after {
-    content: '';
-    position: absolute;
-    top: -300px;
-    right: -300px;
-    bottom: -280px;
-    left: -300px;
-    background: conic-gradient(from 115deg at 52.19% 42.81%, #080C12 55.49995243549347deg, #2B2AC5 143.92289400100708deg, #6C6BE2 149.2499542236328deg, #6027AB 156.78683280944824deg, #9443FF 173.6249577999115deg, #6BC5E2 192.37496137619019deg, #D377C0 301.1249542236328deg, #080C12 323.6249542236328deg);    
-    filter: blur(160px);
-    z-index: 0;
-
-    animation: 30s move linear infinite;
-}
-.arrowWrap {
-    height: 68px;
-    z-index: 1;
-}
-.arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 18em;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.arrow img {
-    animation: arrow 1s infinite;
-    height: 40px;
-    filter: brightness(1000%);
-}
-@keyframes arrow {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: none;
-    }
-}
-@keyframes move {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(180deg) scale(150%);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-  }
-
 .titleText {
     font-size: 52px;
     font-family: Instrument Sans;

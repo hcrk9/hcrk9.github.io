@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Not Found - hachiiiiiiii</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: 'Montserrat Fallback';
-            src: url("fonts/Montserrat-VariableFont_wght.ttf");
-        }
-        @font-face {
-            font-family: 'Montserrat Fallback Italic';
-            src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
-        }
         body {
             display: flex;
             flex-direction: column;
@@ -22,34 +16,22 @@
             justify-items: center;
             margin: 0%;
             padding: 12%;
-            background-color: #222;
-            font-family: 'Montserrat', 'Montserrat Fallback', Source Han Sans SC VF, sans-serif;
+            background-image: url({{site.baseurl}}/assets/images/static-bg.jpg);
+            background-size: cover;
+            font-family: 'Instrument Sans';
         }
         .title {
             font-size: 128px;
             letter-spacing: -0.04em;
-            color: white;
-            animation: infinite vf 0.1s;
-            filter: drop-shadow(0px 0px 12px rgba(255,255,255,0.75));
+            font-weight: 600;
+            color: #eee;
         }
         .description {
-            font-size: 36px;
+            font-size: 24px;
             line-height: 44px;
             text-align: center;
             letter-spacing: -0.04em;
-            color:#aaa;
-            animation: infinite vf 0.1s;
-        }
-        @keyframes vf {
-            0% {
-                font-weight:100;
-            }
-            50% {
-                font-weight:900;
-            }
-            100% {
-                font-weight:100;
-            }
+            color:#eee;
         }
         .hachi-logo {
             position:absolute;
@@ -65,9 +47,8 @@
 <body>
     <span class="title">404</span>
     <span class="description">Page Not Found.</span>
-    <span class="description">Maybe I haven't write this page lol</span>
     <div class="hachi-logo">
-        <a href="index.html">
+        <a href="{{site.baseurl}}/index.html">
             <svg width="59" height="30" viewBox="0 0 59 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.4616 9.23077V4.61538H42.6923V0H47.3077V4.61538H56.5385V9.23077H47.3077V11.5385H58.8462V16.1538H51.9231V23.0769C51.9231 25.3846 50.7693 30 45 30H43.8462V25.3846H45C45.7692 25.3846 47.3077 24.9231 47.3077 23.0769V16.1538H42.6923V19.9655C42.6923 25.3846 40.3187 29.4 39.8624 30L35.7693 27.6923C37.6436 24.3226 38.077 22.3846 38.077 19.6154V16.1538H31.1539V11.5385H42.6923V9.23077H33.4616Z" fill="white"/>
                 <path d="M31.1539 25.3846V18.4615H35.7693V25.3846H31.1539Z" fill="white"/>

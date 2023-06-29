@@ -18,18 +18,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="{{site.baseurl}}/favicon.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@400..700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body class="dark">
     {% include nav.html %}
     <div class="title">
-      <span>{{ page.title }}</span>
+      <span class="titleSpan">{{ page.title }}</span>
     </div>
     <section class="content">
       {{ content }}
-      <a href="/notes" style="color:#777;border-top: 1px solid #777; margin-top: 2em; display: block;width: fit-content;">BACK TO NOTES</a>
+      <a href="/notes" style="color:#eee;border-top: 1px solid #aaa; margin-top: 2em; display: block;width: fit-content;">BACK TO NOTES</a>
     </section>
     {% include footer.html %}
   </body>

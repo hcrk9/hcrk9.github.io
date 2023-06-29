@@ -82,7 +82,7 @@
 
 <script>
     window.addEventListener('scroll', function() {
-        if (window.innerWidth < 800 && window.scrollY > 0) {
+        if (window.scrollY > 0) {
             document.querySelector('.menu-bg').style.opacity = '1';
             document.querySelector('.menu-bg').style.transition = 'opacity 0.5s ease-in-out';
         } else {
@@ -91,5 +91,4 @@
         }
     });
 </script>
-
 

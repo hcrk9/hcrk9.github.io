@@ -4,18 +4,9 @@ html::-webkit-scrollbar {
 }
 .title {
     font-size: 3rem;
-    background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-flow: column-reverse nowrap;
-}
-.title span {
-    padding-left: 2em;
-    padding-bottom: 2em;
-    font-weight: 700; 
-    color: white; 
-    font-family:'Inabakumori Sans';
-    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 1));
 }
 html::-webkit-scrollbar-track {
     background: var(--background-2);
@@ -27,9 +18,9 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: var(--background);
-    font-family: 'Noto Sans Mono', 'Montserrat', 'Montserrat Fallback', Source Han Sans SC VF, sans-serif;
+    font-family: 'Instrument Sans', 'Noto Sans SC', sans-serif;
     transition: 0.3s all;
-    background-color: #b0b0b0;
+    background-color: #101217;
 }
 footer a:visited {
     color: var(--secondary);
@@ -121,7 +112,7 @@ ul {
     transition: .2s opacity;
 }
 .main-content {
-    background: #b0b0b0;
+    background: linear-gradient(180deg, #131518 0%, #001028 100%);
 }
 ul {
     padding:0
@@ -143,7 +134,7 @@ p {
     font-weight: 500;
 }
 .footer {
-    background-color: var(--background-2);
+    background-color: var(--background);
     color: var(--primary);
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
@@ -196,13 +187,15 @@ abbr {
     padding: 6em 0;
     width: 60%;
     margin: auto;
-    background-color: #b0b0b0;
-    color: #222;
+    color: #eee;
     font-size: 1.5em;
-    font-family: 'Inabakumori Sans', 'Noto Sans SC';
+    font-weight: 400;
 }
 .content a {
-    color: #6667ab;
+    color: #aaa
+}
+.content a:hover {
+    text-decoration: underline;
 }
 @media only screen and (orientation:portrait) {
     /* GLOBAL */
