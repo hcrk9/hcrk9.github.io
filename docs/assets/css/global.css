@@ -60,7 +60,8 @@ body {
     --nav: rgba(0, 0, 0, 0.8);
 }
 ::selection {
-    background:#7F80D5;
+    background:#EEE;
+    color: #0e0e0e;
 }
 html::-webkit-scrollbar {
     width: 3px;
