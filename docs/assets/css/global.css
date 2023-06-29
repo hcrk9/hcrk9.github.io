@@ -396,7 +396,7 @@ abbr {
         width: 100%;
         padding-top: 100px;
         z-index: 100;
-        animation: 1s menuIn;
+        animation: .5s menuIn;
     }
     .responsive ul {
         margin: 1em 3em;

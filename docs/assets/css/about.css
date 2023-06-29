@@ -182,7 +182,7 @@ button {
 }
 .kaf, .isekaijoucho {
     min-width: 400px;
-    width: -webkit-fill-available;
+    width: 50%;
     height: 120px;
     border-radius: 20px;
     padding: 10px;
@@ -201,5 +201,11 @@ button {
 @media only screen and (orientation:portrait) {
     .kamitsubaki {
         flex-flow: row wrap;
+    }
+    .main-content {
+        padding: 1em;
+    }
+    .kaf, .isekaijoucho {
+        max-width: 90vw;
     }
 }
