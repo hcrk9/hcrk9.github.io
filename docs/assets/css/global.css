@@ -63,20 +63,22 @@ body {
     background:#7F80D5;
 }
 html::-webkit-scrollbar {
-    width: 8px;
+    width: 3px;
     height: 5px;
+    background: transparent;
 }
 html::-webkit-scrollbar-track {
-    background: var(--background-2);
+    background: transparent;
 }
 html::-webkit-scrollbar-thumb {
-    background: var(--background-3);
+    background: #aaa;
+    border-radius: 10px;
 }
 body {
     margin: 0%;
     padding: 0%;
     background-color: var(--background);
-    font-family: "Instrument Sans", 'Montserrat', 'Montserrat Fallback', "Noto Sans SC", sans-serif;
+    font-family: "Instrument Sans", "Noto Sans SC", sans-serif;
     transition: 0.3s all;
 }
 footer a:visited {

@@ -93,6 +93,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all .5s cubic-bezier(.32,.99,.62,1);
+}
+.titleText:hover {
+    font-weight: 600;
+    transition: all .5s cubic-bezier(.32,.99,.62,1);
 }
 .titleContent {
     z-index: 2;
@@ -260,6 +265,18 @@
 .SIDCardImage {
     background-image: url(../images/thumbnail_schale.png);
 }
+.MFontImage {
+    background-image: url(../images/monospace.png);
+}
+.HFontImage {
+    background-image: url(../images/katakana.png);
+}
+.KAMITSUBAKIImage {
+    background-image: url(../images/kamitsubaki_page.png);
+}
+.INAImage {
+    background-image: url(../images/inabakumori/hero.svg);
+}
 .projectImage:hover {
     border-radius: 225px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
@@ -283,6 +300,25 @@
     border-radius: 225px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
+.scrshot::after {
+    content: "SCREENSHOT";
+    font-family: "LCDDot TR";
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 565px;
+    height: 360px;
+    display: flex;
+    border-radius: 68px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+.scrshot:hover::after {
+    opacity: 1;
+    border-radius: 225px;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
 
 .projectInfo {
     display: flex;
@@ -298,7 +334,6 @@
 .projectInfoUpper p {
     color: #FFF;
     font-size: 20px;
-    font-family: Instrument Sans;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -359,6 +394,20 @@
 }
 .Green svg {
     fill: #0ACF83;
+}
+.Yellow {
+    color: #EAC378;
+    border-bottom-color: #EAC378;
+}
+.Yellow svg {
+    fill: #EAC378;
+}
+.Gray {
+    color: #AAA;
+    border-bottom-color: #AAA;
+}
+.Gray svg {
+    fill: #AAA;
 }
 
 .projectInfoRow {
