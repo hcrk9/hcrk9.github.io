@@ -1,6 +1,6 @@
-h1 {
-    font-weight: 700;
-    transition: 0.3s all;
+@font-face {
+    font-family: 'LCDDot TR';
+    src: url(../fonts/lcddottr.ttf);
 }
 @font-face {
     font-family: 'Inabakumori Sans';
@@ -18,31 +18,44 @@ h1 {
     font-weight: bold;
     font-style: normal;
 }
-h1:hover {
-    font-weight: 300;
-    transition: 0.3s all;
-}
 .title {
     font-size: 1em;
-    background: #B6B6B6 no-repeat center/80% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
-    height: 100vh;
+    background-color: #080C12;
+    height: 120vh;
     display: flex;
-    flex-flow: column-reverse nowrap;
+    position: relative;
+    overflow: hidden;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    bottom: -280px;
+    left: -300px;
+    background: conic-gradient(from 115deg at 52.19% 42.81%, #080C12 55.49995243549347deg, #2B2AC5 143.92289400100708deg, #6C6BE2 149.2499542236328deg, #6027AB 156.78683280944824deg, #9443FF 173.6249577999115deg, #6BC5E2 192.37496137619019deg, #D377C0 301.1249542236328deg, #080C12 323.6249542236328deg);    
+    filter: blur(160px);
+    z-index: 0;
+
+    animation: 30s move linear infinite;
 }
 .arrowWrap {
     height: 68px;
+    z-index: 1;
 }
 .arrow {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 2em;
+    bottom: 18em;
     left: 50%;
     transform: translateX(-50%);
 }
 .arrow img {
     animation: arrow 1s infinite;
+    height: 40px;
+    filter: brightness(1000%);
 }
 @keyframes arrow {
     0% {
@@ -55,249 +68,328 @@ h1:hover {
         transform: none;
     }
 }
-.title-text {
-    font-variation-settings: "wght" 750;
-    transition: font-variation-settings 0.5s ease;
-    height: 4vw;
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-    margin: auto;
-    top:50%;
-}
-.title-text:hover {
-    font-variation-settings: "wght" 300;
-}
-.title-text span{
-    display: block;
-    box-sizing: border-box;
-    background-size: 100% 100%;
-    position: absolute;
-    top: 4.5vw;
-    margin-bottom: var(--offset);
-    pointer-events: none;
-}
-.title-text-1 {
-    letter-spacing: -0.04em;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 8%,rgba(141, 143, 246, 0.8) 8%, rgba(104, 188, 235, 0.8) 100%);
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg) scale(150%);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+.titleText {
+    font-size: 52px;
+    font-family: Instrument Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    height: fit-content;
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
-.title-text-2 {
-    letter-spacing: -0.04em;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 8%,rgba(246, 141, 141, 0.8) 8%, rgba(235, 151, 104, 0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.title-text-3 {
-    letter-spacing: -0.04em;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 8%, rgba(143, 246, 141, 0.8) 8%, rgba(104, 227, 235, 0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.title-text span[data-show] {
-    transform: translateY(-100%);
-    transition: .3s transform ease;
-}
-.title-text span[data-up] {
-    transform: translateY(-200%);
-    transition: .3s transform ease;
-}
-.img-info {
-    background-image: linear-gradient(90deg, #EE764C 0%, #653027 100%);
-    padding:0 13em;
+.titleContent {
+    z-index: 2;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+.latestProject {
+    z-index: 2;
+    color: #eee;
+    transition: all .5s cubic-bezier(.32,.99,.62,1);
+}
+.latestProject:hover {
+    transform: translateY(-10px);
+    transition: all .5s cubic-bezier(.32,.99,.62,1);
+    filter: drop-shadow(0 2px 4px rgba(255,255,255,.35));
+}
+.latestImage {
+    height: 380px;
+    width: 608px;
+    background-image: url("../images/schale_thumb.png");
+    background-size: cover;
+    border-radius: 68px;
+    margin-top: 10px;
+    box-shadow: 0px 1.6px 14px 0px rgba(240, 246, 255, 0.40);
+}
+.hachiAvatar {
+    width: 160px;
+    height: 160px;
+    background-image: url(../images/yuuka_head.png);
+    border-radius: 160px;
+    background-size: cover;
+    transform: translate(-50%,-50%);
+    box-shadow: 4.8px -4.8px 16px 0px rgba(108, 107, 226, 0.40);
+}
+.dot {
+    font-family: "LCDDot TR";
+}
+.serif {
+    font-family: 'Roboto Serif';
+}
+.latestInfo {
+    padding-left: 120px;
+    padding-top: 14px;
+    position: absolute;
+    transform: translateY(-168px);
+}
+.latestTitle {
+    font-size: 32px;
+    font-family: Instrument Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 3px solid rgba(255, 255, 255, .5);
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.latestMisc {
+    margin-top: 6px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: -webkit-fill-available;
     justify-content: space-between;
 }
-.img-alt {
-    opacity: 50%;
-    font-family: Montserrat;
+.miscContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .8);
 }
-.bold-vf {
-    font-weight:600;
-    transition: 0.3s font-weight;
-}
-.bold-vf:hover {
-    font-weight:400;
-    transition: 0.3s font-weight;
-}
-.copyright-link {
-    color:#000;
-    text-decoration: none;
-    transition: 0.2s text-shadow;
-}
-.copyright-link:active {
-    color:#fff;
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8);
-    transition: 0.2s text-shadow;
-}
-.separation {
-    height: 20px;
-    background: repeat center url(../images/construction-line.svg), linear-gradient(0deg, #222 0%, #333 100%);
-}
+
 .projects {
-    background-color: #000;
-}
-.projects-01 {
-    background: linear-gradient(90deg, #07287F 50%, #4B68B5 100%);
+    min-height: 600px;
+    padding: 6em 20%;
     color: #eee;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    background: linear-gradient(180deg, #131518 0%, #001028 100%);
 }
-.projects-02 {
-    background: linear-gradient(90deg, #EFA8CE 0%, #E57F82 50%);
-    color: #222;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+.sectionTitle h1 {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+
+    opacity: .8;
 }
-.projects-description {
+.sectionTitle span {
+    opacity: .5;
+}
+
+.projectWrap {
+    margin: 82px 0;
+}
+.projectTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+.projectID {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-bottom: -10px;
+}
+.projectTitleText {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    border-bottom: 3px solid rgba(255, 255, 255, .8);
+}
+
+.projectContent {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 120px;
+}
+
+.projectImage {
+    width: 565px;
+    height: 360px;
+    background-image: url(../images/schale_thumb.png);
+    background-size: cover;
+    border-radius: 68px;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+.projectImage:hover {
+    border-radius: 225px;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+.projectImage::after {
+    content: "VIDEO THUMBNAIL";
+    font-family: "LCDDot TR";
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 565px;
+    height: 360px;
+    display: flex;
+    border-radius: 68px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+.projectImage:hover::after {
+    opacity: 1;
+    border-radius: 225px;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+
+.projectInfo {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+
+.projectInfoUpper {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 28px;
+}
+.projectInfoUpper p {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Instrument Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.projectAction {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 9px;
+}
+.actionLabel {
+    font-size: 20px;
+}
+.action {
+    display: flex;
+    flex-direction: row;
     gap: 12px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    width: fit-content;
+
+    font-size: 16px;
+    font-family: Instrument Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
-.upper {
-    padding-left: 12px;
+.action:hover {
+    transform: translateY(-1px);
+    transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
-.projects-name {
-    font-size:2.5vw;
+.Blue {
+    color:#2974E6;
+    border-bottom-color:#2974E6;
 }
-.projects-id-light {
-    margin:0%;
-    font-size: 4vw;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.Blue svg {
+    fill: #2974E6;
 }
-.projects-id-dark {
-    margin:0%;
-    font-size: 4vw;
-    background: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, #222 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.Red {
+    color:#C93964;
+    border-bottom-color:#C93964;
 }
-.projects-image {
-    background-color: #222;
+.Red svg {
+    fill: #C93964;
+}
+
+.projectInfoRow {
     display: flex;
-    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-top: 2px solid #CED0D2;
+    color: #CED0D2;
+    padding-top: 16px;
 }
-.projects-image img {
-    width: -webkit-fill-available;
-}
-.description-text {
-    width: 48rem;
-}
-.project-01-info {
-    display: grid;
-    height: auto;
-    padding: 1em;
-    gap: 1em;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-template-areas: "date type tool time";
-    background-color: #c7deff;
-}
-.project-02-info {
-    display: grid;
-    height: auto;
-    padding: 1em;
-    gap: 1em;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-template-areas: "date type tool time";
-    background-color: #FFC7C9;
-}
-.project-01-date,.project-01-type,.project-01-time,.project-01-tool {
-    color: #07287F;
+.infoRowContent {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 4px;
 }
-.project-02-date,.project-02-type,.project-02-time,.project-02-tool {
-    color: #7E070A;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-.font {
-    font-family: Multiply Monospace, monospace;
-    display: flex;
-    justify-content: space-around;
-    color:var(--primary);
-    background: var(--background);
-}
-section {
-    position: relative;
-}
-.kamitsubaki, .kamitsubaki a {
-    background-color: #eee;
-    color: #000;
-    font-size: 60px;
-    letter-spacing: -6px;
-    text-align: right;
-}
+
 /* MOBILE */
 
 @media only screen and (orientation:portrait) {
-    .projects h1 {
-        padding: 0.5em 3rem!important;
+    .titleContent {
+        flex-direction: column;
+        margin-top: 160px;
+        justify-content: flex-start;
+        gap: 64px;
     }
-    .title {
-        font-size: 1rem;
-        background: rgba(0, 0, 0, 0.8) no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
+    .latestImage {
+        height: 285px;
+        width: 456px;
     }
-    .title-text {
-        height: 10vw;
-        padding-bottom: 6px;
+    .latestTitle {
+        font-size: 24px;
     }
-    .title-text span {
-        top: 10.5vw;
+    .latestInfo {
+        transform: translateY(-105px);
     }
-    .img-info {
-        padding: 0 3em;
+    .hachiAvatar {
+        width: 100px;
+        height: 100px;
+        transform: translate(-25%,-50%);
+    }
+    .arrowWrap {
         display: none;
     }
-    .img-alt {
-        display: none;
+    .projects {
+        padding: 6em 5%;
     }
-    .projects-01,.projects-02 {
-        width: 100vw;
-        grid-template-rows: repeat(2,minmax(0,1fr));
-        grid-template-columns: none;
+    .projectImage {
+        width: 100%;
+        height: 60vw;
     }
-    .projects-description {
-        flex-flow: column wrap;
+    .projectImage::after {
+        width: 100%;
+        height: 60vw;
     }
-    .projects-name {
-        font-size: 10vw;
-        width: 100vw;
+    .projectContent {
+        flex-flow: column;
     }
-    .projects-id-light, .projects-id-dark {
-        font-size: 12vw;
+    .projectInfo {
+        justify-content: flex-start;
+        gap: 28px;
     }
-    .projects-image {
-        width: 100vw;
+    .projectInfoRow {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 36px;
     }
-    .projects-image img {
-        width: 100vw;
-    }
-    .description-text {
-        width: 90vw;
-    }
-    .project-01-info,.project-02-info {
-        width: -webkit-fill-available;
-        padding: 1em 0em;
-        gap: 0em;
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        grid-template-areas: "date type" "tool time";
-    }
-    .project-01-date, .project-01-tool, .project-02-date, .project-02-tool {
-        padding-left: 10px;
-    }    
 }

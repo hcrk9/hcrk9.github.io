@@ -2,6 +2,7 @@
 ---
 body {
     background: repeat-y center/100vw url("{{site.baseurl}}/assets/images/ba/Millennium-bg.svg") !important;
+    font-family: "Instrument Sans", "Noto Sans SC";
 }
 ::-webkit-scrollbar {
     display: none;
@@ -27,7 +28,6 @@ body {
 }
 .transit {
     background-color: #C6C6C6;
-    font-family: "Inabakumori Sans", "Noto Sans SC";
 }
 .millennium {
     background-color: #F2F7FE;
@@ -66,7 +66,7 @@ body {
 .ba-logo-img:hover img {
     filter: drop-shadow(0px 4px 8px #ffffff99);
     transform: translateY(-10px);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all .3s;
 }
 
@@ -140,6 +140,11 @@ p {
     display: flex;
     flex-flow: row nowrap;
     gap: 10px;
+}
+.dl-tip {
+    font-style: italic;
+    opacity: .6;
+    margin: auto;
 }
 
 
@@ -225,7 +230,7 @@ p {
     bottom: 8rem; 
     font-weight: 700; 
     color: white; 
-    font-family:'Inabakumori Sans'
+    font-family:
 }
 @media only screen and (orientation:portrait) {
     .title span {

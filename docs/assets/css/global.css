@@ -64,7 +64,7 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: var(--background);
-    font-family: 'Noto Sans Mono', 'Montserrat', 'Montserrat Fallback', Source Han Sans SC VF, sans-serif;
+    font-family: "Instrument Sans", 'Montserrat', 'Montserrat Fallback', "Noto Sans SC", sans-serif;
     transition: 0.3s all;
 }
 footer a:visited {
@@ -107,7 +107,7 @@ ul {
 }
 .navbar-link {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s color;
     text-decoration: none;
     transition: 0.3s font-weight;
@@ -185,7 +185,7 @@ p {
     font-weight: 500;
 }
 .footer {
-    background-color: var(--background-2);
+    background-color: #080c12;
     color: var(--primary);
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
@@ -193,6 +193,10 @@ p {
     gap: 1em;
     padding: 1% 2%;
     width: -webkit-fill-available;
+    box-shadow: 0px -8px 16px 0px rgba(18, 32, 52, 0.50);
+
+    z-index: 1;
+    position: relative;
 }
 .footer-info {
     display:flex;
@@ -217,7 +221,11 @@ a {
     color: var(--secondary);
     transition: 0.2s all;
 }
-a:hover {
+.footer a:hover {
+    font-weight:700;
+    transition: 0.2s font-weight;
+}
+.navbar-link:hover {
     font-weight:700;
     transition: 0.2s font-weight;
 }
