@@ -9,6 +9,9 @@
     flex-flow: column nowrap;
 }
 
+.textBlockL img, .textBlockR img {
+    max-width: 90vw;
+}
 .textBlockL {
     display: flex;
     flex-flow: row wrap;
