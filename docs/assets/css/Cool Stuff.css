@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
 }
+.title::after {
+    background: conic-gradient(from 109deg at 52.19% 42.81%, #080C12 55.49995243549347deg, #141D6C 115.3639018535614deg, #C52A2A 151.4724326133728deg, #6027AB 161.0793435573578deg, #FFE143 178.81552577018738deg, #6BC5E2 192.37496137619019deg, #D377C0 254.47224140167236deg, #509689 286.31495475769043deg, #080C12 323.6249542236328deg)!important;
+}
 .title-text {
     text-align: center;
     letter-spacing: -0.04em;

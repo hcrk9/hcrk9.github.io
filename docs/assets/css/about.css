@@ -1,3 +1,6 @@
+.title::after {
+    background: conic-gradient(from 100deg at 52.19% 42.81%, #080C12 111.22576832771301deg, #071F74 165.83515763282776deg, #2B2AC5 167.82440185546875deg, #7E00FF 192.62936353683472deg, #BD00FF 297.2256016731262deg, #080C12 323.6249542236328deg);}
+
 .main-content {
     color: var(--primary);
     display: flex;
