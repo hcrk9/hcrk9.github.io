@@ -66,7 +66,7 @@
 .latestImage {
     height: 380px;
     width: 608px;
-    background-image: url("../images/schale_thumb.png");
+    background-image: url("../images/schale_thumb.webp");
     background-size: cover;
     border-radius: 68px;
     margin-top: 10px;
@@ -75,7 +75,7 @@
 .hachiAvatar {
     width: 160px;
     height: 160px;
-    background-image: url(../images/yuuka_head.png);
+    background-image: url(../images/yuuka_head.webp);
     border-radius: 160px;
     background-size: cover;
     transform: translate(-50%,-50%);
@@ -197,25 +197,25 @@
     transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
 .SCHALEImage {
-    background-image: url(../images/schale_thumb.png);
+    background-image: url(../images/schale_thumb.webp);
 }
 .KRPISImage {
-    background-image: url(../images/KR_PIS.png);
+    background-image: url(../images/KR_PIS.webp);
 }
 .MIDCardImage {
-    background-image: url(../images/millenniumID.png);
+    background-image: url(../images/millenniumID.webp);
 }
 .SIDCardImage {
-    background-image: url(../images/thumbnail_schale.png);
+    background-image: url(../images/thumbnail_schale.webp);
 }
 .MFontImage {
-    background-image: url(../images/monospace.png);
+    background-image: url(../images/monospace.webp);
 }
 .HFontImage {
-    background-image: url(../images/katakana.png);
+    background-image: url(../images/katakana.webp);
 }
 .KAMITSUBAKIImage {
-    background-image: url(../images/kamitsubaki_page.png);
+    background-image: url(../images/kamitsubaki_page.webp);
 }
 .INAImage {
     background-image: url(../images/inabakumori/hero.svg);
