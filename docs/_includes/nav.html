@@ -1,6 +1,6 @@
 <div class="navbar">
     <div>
-        <a href="index.html" class="hachi-logo" style="fill:var(--primary); display: block;">
+        <a href="{{site.baseurl}}/index" class="hachi-logo" style="fill:var(--primary); display: block;">
             <svg width="59" height="30" viewBox="0 0 59 30" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.4616 9.23077V4.61538H42.6923V0H47.3077V4.61538H56.5385V9.23077H47.3077V11.5385H58.8462V16.1538H51.9231V23.0769C51.9231 25.3846 50.7693 30 45 30H43.8462V25.3846H45C45.7692 25.3846 47.3077 24.9231 47.3077 23.0769V16.1538H42.6923V19.9655C42.6923 25.3846 40.3187 29.4 39.8624 30L35.7693 27.6923C37.6436 24.3226 38.077 22.3846 38.077 19.6154V16.1538H31.1539V11.5385H42.6923V9.23077H33.4616Z" />
                 <path d="M31.1539 25.3846V18.4615H35.7693V25.3846H31.1539Z" />
@@ -13,7 +13,7 @@
         </a>
     </div>
     <nav class="main-nav">
-        <ul><a href="{{site.baseurl}}/about.html" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a></ul>
+        <ul><a href="{{site.baseurl}}/about" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a></ul>
         <ul><a href="{{site.baseurl}}/coolstuff" class="navbar-link" {% if page.url == "/coolstuff.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Cool Stuff</span></div></a></ul>
         <ul><a href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a></ul>
         <ul><a href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a></ul>
