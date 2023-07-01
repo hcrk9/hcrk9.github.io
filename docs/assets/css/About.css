@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'A-OTF UD Shin Go Pr6N';
+    src: url(../fonts/A-OTF-UDShinGoPr6N-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'A-OTF UD Shin Go Pr6N';
+    src: url(../fonts/A-OTF-UDShinGoPr6N-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'A-OTF UD Shin Go Pr6N';
+    src: url(../fonts/A-OTF-UDShinGoPr6N-DemiBold.otf);
+    font-weight: 550;
+}
+@font-face {
+    font-family: 'A-OTF UD Shin Go Pr6N';
+    src: url(../fonts/A-OTF-UDShinGoPr6N-Bold.otf);
+    font-weight: bold;
+}
 .title::after {
     background: conic-gradient(from 100deg at 52.19% 42.81%, #080C12 111.22576832771301deg, #071F74 165.83515763282776deg, #2B2AC5 167.82440185546875deg, #7E00FF 192.62936353683472deg, #BD00FF 297.2256016731262deg, #080C12 323.6249542236328deg);}
 
@@ -62,7 +82,7 @@
 .textBlockL img, .textBlockR img, .waifus img {
     transition: .5s all;
 }
-.textBlockL img:hover,.textBlockR img:hover, .waifus img:hover {
+.textBlockL img:hover,.textBlockR img:hover, .waifus img:hover, .artist-profile:hover {
     transform: translateY(-4px);
     transition: .5s all;
 }
@@ -82,6 +102,85 @@
     font-weight: 400;
     line-height: 152%;
     letter-spacing: -0.576px;
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Label {
+    text-align: center;
+    font-size: 20px;
+    font-family: Instrument Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152%;
+    letter-spacing: -0.576px;
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "mika mmk mhr" "kdm lam krk" "ap ie .";
+    gap: 64px;
+}
+.artist-profile {
+    display: flex;
+    min-width: 408px;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    gap: 32px;
+    transition: .5s all;
+    place-self: center;
+}
+.artist-icon {
+    width: 120px;
+    height: 120px;
+    border: #0C89E4 4px solid;
+    border-radius: 100%;
+}
+.mika-pikazo {
+    background: url(/assets/images/mika.png);
+}
+.momoko {
+    background: url(/assets/images/momoko.png);
+}
+.mahiro {
+    background: url(/assets/images/mahiro.png);
+}
+.kedama {
+    background: url(/assets/images/kedama.png);
+}
+.lam {
+    background: url(/assets/images/lam.png);
+}
+.kiriko {
+    background: url(/assets/images/kiriko.png);
+}
+.applepie {
+    background: url(/assets/images/applepie.png);
+}
+.ieijie {
+    background: url(/assets/images/ieijie.png);
+}
+.artist-info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+.artist-name {
+    font-size: 40px;
+    font-family: Instrument Sans, 'A-OTF UD Shin Go Pr6N', Noto Sans SC, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: -0.96px;
 
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
     background-clip: text;
