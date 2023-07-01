@@ -1,18 +1,11 @@
 @font-face {
-    font-family: 'Montserrat Fallback';
-    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
-}
-@font-face {
-    font-family: 'Montserrat Fallback Italic';
-    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
-}
-@font-face {
     font-family: 'Inabakumori Sans';
     src: url('../../files/InabakumoriSans-Regular.ttf') format('truetype'),
         url('../../files/InabakumoriSans-Regular.woff') format('woff'),
         url('../../files/InabakumoriSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Inabakumori Sans';
@@ -21,6 +14,7 @@
         url('../../files/InabakumoriSans-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 body {
     animation: fadeIn ease 1s;
@@ -85,9 +79,6 @@ body {
 }
 footer a:visited {
     color: var(--secondary);
-}
-ul {
-    list-style: none;
 }
 .active-page span {
     font-weight: 800;
@@ -180,9 +171,6 @@ ul {
 }
 .main-content {
     background: linear-gradient(180deg, #131518 0%, #001028 100%);}
-ul {
-    padding:0
-}
 li {
     padding-bottom: 6px;
 }
@@ -398,7 +386,7 @@ abbr {
         z-index: 100;
         animation: .5s menuIn;
     }
-    .responsive ul {
+    .responsive a {
         margin: 1em 3em;
     }
 }

@@ -2,22 +2,7 @@
     font-family: 'LCDDot TR';
     src: url('../fonts/lcddottr.woff') format('woff'),
         url('../fonts/lcddottr.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Inabakumori Sans';
-    src: url('../../files/InabakumoriSansJP-Regular.ttf') format('truetype'),
-        url('../../files/InabakumoriSans-Regular.woff') format('woff'),
-        url('../../files/InabakumoriSans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Inabakumori Sans';
-    src: url('../../files/InabakumoriSansJP-Bold.ttf') format('truetype'),
-        url('../../files/InabakumoriSansJP-Bold.woff') format('woff'),
-        url('../../files/InabakumoriSansJP-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+    font-display: swap;
 }
 
 .title {

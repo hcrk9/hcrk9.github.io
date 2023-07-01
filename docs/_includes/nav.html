@@ -1,6 +1,6 @@
 <div class="navbar">
     <div>
-        <a href="{{site.baseurl}}/index" class="hachi-logo" style="fill:var(--primary); display: block;">
+        <a aria-label="Hachi Homepage" href="{{site.baseurl}}/index" class="hachi-logo" style="fill:var(--primary); display: block;">
             <svg width="59" height="30" viewBox="0 0 59 30" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33.4616 9.23077V4.61538H42.6923V0H47.3077V4.61538H56.5385V9.23077H47.3077V11.5385H58.8462V16.1538H51.9231V23.0769C51.9231 25.3846 50.7693 30 45 30H43.8462V25.3846H45C45.7692 25.3846 47.3077 24.9231 47.3077 23.0769V16.1538H42.6923V19.9655C42.6923 25.3846 40.3187 29.4 39.8624 30L35.7693 27.6923C37.6436 24.3226 38.077 22.3846 38.077 19.6154V16.1538H31.1539V11.5385H42.6923V9.23077H33.4616Z" />
                 <path d="M31.1539 25.3846V18.4615H35.7693V25.3846H31.1539Z" />
@@ -13,10 +13,10 @@
         </a>
     </div>
     <nav class="main-nav">
-        <ul><a href="{{site.baseurl}}/about" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a></ul>
-        <ul><a href="{{site.baseurl}}/coolstuff" class="navbar-link" {% if page.url == "/coolstuff.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Cool Stuff</span></div></a></ul>
-        <ul><a href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a></ul>
-        <ul><a href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a></ul>
+        <a aria-label="About Page" href="{{site.baseurl}}/about" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a>
+        <a aria-label="Cool Stuff Page" href="{{site.baseurl}}/coolstuff" class="navbar-link" {% if page.url == "/coolstuff.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Cool Stuff</span></div></a>
+        <a aria-label="Designs Page" href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a>
+        <a aria-label="Notes Page" href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a>
     </nav>
     <!--<div class="has-dropdown">
         <a href="#">Theme</a>
@@ -27,27 +27,27 @@
             <li class="dropdown-item">
                 <a href="#" id="dark">DARK</a>
             </li>
-        </ul>
+        
     </div> !-->
     <div class="social-icon">
-        <a href="https://space.bilibili.com/22376817" target="_blank">
+        <a aria-label="Bilibili Profile" href="https://space.bilibili.com/22376817" target="_blank">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.813 4.65301H18.667C20.177 4.70701 21.436 5.23101 22.44 6.22701C23.444 7.22201 23.964 8.47601 24 9.98701V17.347C23.964 18.857 23.444 20.116 22.44 21.12C21.436 22.124 20.178 22.644 18.667 22.68H5.333C3.823 22.644 2.564 22.124 1.56 21.12C0.556 20.116 0.036 18.858 0 17.347V9.98701C0.036 8.47601 0.556 7.22201 1.56 6.22701C2.564 5.23101 3.822 4.70701 5.333 4.65301H6.107L4.933 3.53301C4.81226 3.41546 4.71688 3.27443 4.65273 3.11861C4.58858 2.96279 4.55702 2.79549 4.56 2.62701C4.56 2.27101 4.684 1.96901 4.933 1.72001L4.96 1.69301C5.227 1.44401 5.533 1.32001 5.88 1.32001C6.227 1.32001 6.533 1.44401 6.8 1.69301L9.653 4.44001C9.724 4.51101 9.787 4.58201 9.84 4.65301H14.107C14.1486 4.57391 14.2026 4.502 14.267 4.44001L17.12 1.69301C17.387 1.44401 17.693 1.32001 18.04 1.32001C18.387 1.32001 18.702 1.47101 18.969 1.72001C19.236 1.96901 19.36 2.27101 19.36 2.62701C19.36 2.98201 19.236 3.28401 18.987 3.53301L17.813 4.65301ZM5.333 7.24001C4.587 7.25801 3.96 7.51601 3.453 8.01301C2.947 8.51101 2.684 9.14301 2.667 9.90701V17.427C2.684 18.191 2.947 18.822 3.453 19.32C3.96 19.818 4.587 20.076 5.333 20.093H18.667C19.413 20.076 20.04 19.818 20.547 19.32C21.053 18.822 21.316 18.191 21.333 17.427V9.90701C21.316 9.14201 21.053 8.51101 20.547 8.01301C20.04 7.51601 19.413 7.25801 18.667 7.24001H5.333ZM8 11.107C8.373 11.107 8.684 11.231 8.933 11.48C9.183 11.729 9.316 12.049 9.333 12.44V13.613C9.316 14.004 9.183 14.324 8.933 14.573C8.684 14.823 8.373 14.947 8 14.947C7.627 14.947 7.316 14.822 7.067 14.573C6.817 14.324 6.684 14.004 6.667 13.613V12.44C6.667 12.067 6.796 11.751 7.053 11.493C7.311 11.236 7.627 11.107 8 11.107V11.107ZM16 11.107C16.373 11.107 16.684 11.231 16.933 11.48C17.183 11.729 17.316 12.049 17.333 12.44V13.613C17.316 14.004 17.183 14.324 16.933 14.573C16.684 14.823 16.373 14.947 16 14.947C15.627 14.947 15.316 14.822 15.067 14.573C14.817 14.324 14.684 14.004 14.667 13.613V12.44C14.684 12.049 14.817 11.729 15.067 11.48C15.316 11.231 15.627 11.107 16 11.107V11.107Z"/>
             </svg>
         </a>
     </div>
     <div class="social-icon">
-        <a href="https://www.youtube.com/channel/UCmt-EaZ3Qmq9DaCX1p7p_Kg" target="_blank">
+        <a aria-label="YouTube Profile" href="https://www.youtube.com/channel/UCmt-EaZ3Qmq9DaCX1p7p_Kg" target="_blank">
             <svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
     </div>
     <div class="social-icon">
-        <a href="https://twitter.com/hcrk862" target="_blank">
+        <a aria-label="Twitter Profile" href="https://twitter.com/hcrk862" target="_blank">
             <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
         </a>
     </div>    
     <div class="social-icon">
-        <a href="https://github.com/hcrk9" target="_blank">
+        <a aria-label="GitHub Profile" href="https://github.com/hcrk9" target="_blank">
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.1428 0.128418C5.51692 0.128418 0.143555 5.50024 0.143555 12.1292C0.143555 17.4299 3.58096 21.928 8.34973 23.5145C8.94969 23.6243 9.16926 23.2548 9.16926 22.9362C9.16926 22.6517 9.15844 21.8971 9.1538 20.8951C5.81535 21.6203 5.11179 19.287 5.11179 19.287C4.56595 17.9015 3.77889 17.5319 3.77889 17.5319C2.68875 16.7882 3.86084 16.8021 3.86084 16.8021C5.0654 16.8871 5.69938 18.0391 5.69938 18.0391C6.76942 19.873 8.50745 19.3426 9.19091 19.0365C9.3007 18.2602 9.60996 17.733 9.95323 17.433C7.28897 17.1284 4.48864 16.1001 4.48864 11.5014C4.48864 10.1917 4.95562 9.12011 5.72412 8.28202C5.60042 7.9774 5.18756 6.75737 5.84164 5.10593C5.84164 5.10593 6.84982 4.78276 9.14143 6.33678C10.0986 6.06927 11.1238 5.93629 12.1443 5.93165C13.1633 5.93629 14.1901 6.06927 15.1488 6.33523C17.4404 4.78276 18.4455 5.10439 18.4455 5.10439C19.0995 6.75583 18.6882 7.97585 18.5645 8.28047C19.333 9.11856 19.7985 10.1901 19.7985 11.4998C19.7985 16.1093 16.9935 17.1237 14.32 17.4206C14.7514 17.7917 15.1349 18.5231 15.1349 19.6426C15.1349 21.2461 15.1194 22.5404 15.1194 22.9347C15.1194 23.2563 15.3359 23.629 15.9451 23.5114C20.7092 21.9219 24.1436 17.4268 24.1436 12.1276C24.1436 5.50178 18.7702 0.128418 12.1428 0.128418Z" fill="#eee"/>
                 </svg>                
@@ -60,10 +60,10 @@
     </div>
 </div>
 <div class="mobile-menu" id="mobile-menu">
-    <ul><a href="{{site.baseurl}}/about.html" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a></ul>
-    <ul><a href="{{site.baseurl}}/coolstuff" class="navbar-link" {% if page.url == "/coolstuff.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Cool Stuff</span></div></a></ul>
-    <ul><a href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a></ul>
-    <ul><a href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a></ul>
+    <a aria-label="About Page" href="{{site.baseurl}}/about.html" class="navbar-link" {% if page.url == "/about.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>About</span></div></a>
+    <a aria-label="Cool Stuff Page" href="{{site.baseurl}}/coolstuff" class="navbar-link" {% if page.url == "/coolstuff.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Cool Stuff</span></div></a>
+    <a aria-label="Designs Page" href="{{site.baseurl}}/designs" class="navbar-link" {% if page.url == "/designs.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Designs</span></div></a>
+    <a aria-label="Notes Page" href="{{site.baseurl}}/notes" class="navbar-link" {% if page.url == "/notes.html" %}style="font-weight: 700;"{% endif %}><div class="button"><span>Notes</span></div></a>
 </div>
 <div class="menu-bg"></div>
 <script>
