@@ -3,6 +3,8 @@ layout: post
 title:  "BlueArchive 悲哀抽卡记录 <br> Gacha Records"
 date:   2023-05-01 00:00:00 +0800
 categories: log
+desc: 抽卡还是毁灭？这是一个值得深思的问题。To gacha or not to gacha, this is a question。
+keywords: 蔚蓝档案, BlueArchive, 抽卡, Gacha
 ---
 #### May 2023
 
