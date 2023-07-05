@@ -4,7 +4,18 @@
         url('../fonts/lcddottr.woff2') format('woff2');
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'DSEG7 Classic';
+    src: url('../fonts/DSEG7Classic-Regular.ttf') format('ttf');
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DSEG7 Classic';
+    src: url('../fonts/DSEG7Classic-Italic.ttf') format('ttf');
+    font-display: swap;
+    font-style: italic;
+}
 .title {
     height: 120vh;
 }
@@ -16,16 +27,19 @@
     line-height: normal;
     letter-spacing: -1.5px;
     height: fit-content;
+    max-width: 40%;
 
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all .5s cubic-bezier(.32,.99,.62,1);
+    font-variation-settings: "GRAD" 0;
 }
 .titleText:hover {
     font-weight: 600;
     transition: all .5s cubic-bezier(.32,.99,.62,1);
+    font-variation-settings: "GRAD" -50;
 }
 .titleContent {
     z-index: 2;
@@ -51,7 +65,7 @@
 .latestImage {
     height: 380px;
     width: 608px;
-    background-image: url("../images/schale_thumb.webp");
+    background-image: url("../images/DriveStickers.webp");
     background-size: cover;
     border-radius: 68px;
     margin-top: 10px;
@@ -71,6 +85,29 @@
 }
 .serif {
     font-family: 'Roboto Serif';
+}
+.seg7 {
+    font-family: 'DSEG7 Classic';
+    font-size: 16px;
+    text-shadow: 0 0 3px rgba(255, 255, 255, .5);
+}
+
+.latestLabel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.latestDate {
+    background-image: url(/assets/images/8888.88.88.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.projectDate {
+    background-image: url(/assets/images/8888.88.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 .latestInfo {
     padding-left: 120px;
@@ -138,18 +175,7 @@
     align-items: flex-start;
     margin-bottom: 32px;
 }
-.projectID {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-    font-size: 39px;
-    font-style: normal;
-    font-weight: 700;
-
-    margin-bottom: -10px;
-}
 .projectTitleText {
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
     background-clip: text;
@@ -180,6 +206,9 @@
     background-position: center;
     border-radius: 68px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
+}
+.HDDImage {
+    background-image: url(../images/DriveStickers.webp);
 }
 .SCHALEImage {
     background-image: url(../images/schale_thumb.webp);
@@ -352,9 +381,29 @@
     gap: 4px;
 }
 
+.projectTitleText::before {
+    content: counter(project-id);
+    counter-increment: project-id;
+    display: block;
+
+    color: #707375;
+    -webkit-text-fill-color: #707375;
+
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 500;
+
+    margin-bottom: -10px;
+}
+
+.projects {
+    counter-reset: project-id;
+}
+
 /* MOBILE */
 
 @media only screen and (orientation:portrait) {
+    
     .titleContent {
         flex-direction: column;
         margin-top: 160px;
@@ -443,5 +492,8 @@
         flex-flow: row wrap;
         justify-content: flex-start;
         gap: 36px;
+    }
+    .titleText {
+            max-width: none;
     }
 }

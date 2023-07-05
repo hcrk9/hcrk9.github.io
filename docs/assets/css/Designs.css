@@ -38,10 +38,8 @@ body {
 
 .main-content {
     background-color: transparent;
-    margin: 3em;
     display: flex;
     flex-flow: column nowrap;
-    gap: 3em;
 }
 .design-item {
     width: 80%;
@@ -56,18 +54,21 @@ body {
     background-color: #C6C6C6;
 }
 .millennium {
-    background-color: #F2F7FE;
     font-family: "Gotham", "Montserrat", "Noto Sans SC";
     z-index: 4;
+    color: #eee;
+    background-color: #080C12;
+    background-image: url(/assets/images/millennium-bg.svg);
+    background-size: cover;
+    background-position: center;
 }
 .ba-logo {
-    background-color: #1a1a1a;
     background-image: url("{{site.baseurl}}/assets/images/schale_halo.svg");
     background-size: cover;
     background-position: center;
     font-family: "Gotham", "Montserrat", "Noto Sans SC";
     z-index: 4;
-    color: #fff;
+    color: #eee;
 }
 
 .ba-logo-h {
@@ -119,7 +120,7 @@ h2 {
 
 h4 {
     font-size: 2rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #aaa;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -141,8 +142,8 @@ p {
 }
 .dl-button{
     padding: 8px 14px;
-    background-color: black;
-    color: white;
+    background-color: #222;
+    color: #eee;
     border-radius: 4px;
     transition: all .3s;
     text-decoration: none;
@@ -153,12 +154,13 @@ p {
     letter-spacing: .1em;
 }
 .dl-button a {
-    color: white;
+    color: #eee;
     text-decoration: none;
 }
 .dl-button:hover {
     transform: translateY(-2px);
-    background-color: #1e1e1e;
+    background-color: #17202E;
+    color: #eee;
     text-decoration: none;
     transition: all .3s;
 }
@@ -171,6 +173,7 @@ p {
     font-style: italic;
     opacity: .6;
     margin: auto;
+    text-align: center;
 }
 
 
@@ -189,8 +192,8 @@ p {
 }
 .ba-card-image button {
     background-color: transparent;
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid #eee;
+    color: #eee;
 
     font-family: "Gotham", "Montserrat", "Noto Sans SC";
     font-size: 1.2em;
@@ -199,9 +202,9 @@ p {
     transition: .3s all;
 }
 .ba-card-image button:hover {
-    background-color: #000;
-    border: 2px solid #000;
-    color: #fff;
+    background-color: #222;
+    border: 2px solid #eee;
+    color: #eee;
     transition: .3s all;
 }
 .ba-card-btn {
@@ -227,16 +230,6 @@ p {
     animation: arrow 1s infinite;
 }
 
-.item-bg {
-    border-radius: 12px;
-    filter: drop-shadow(0px 2px 4px #12203450);
-    transition: all .3s;
-}
-.item-bg:hover {
-    transition: all .3s;
-    filter: drop-shadow(0px 4px 8px #12203490);
-    transform: translateY(-4px);
-}
 @keyframes arrow {
     0% {
         transform: none;
@@ -273,9 +266,44 @@ p {
         flex-flow: column nowrap;
         gap:10px;
     }
-
-    .main-content {
-        margin: 1em;
-        gap: 1em;
+    .drive-dl img {
+        max-width: 90%;
     }
+
+}
+
+.main-content {
+    counter-reset: section;
+}
+h4::before {
+    counter-increment: section;
+    content: counter(section);
+}
+
+.drive-stickers {
+    display: flex;
+    flex-flow: column nowrap;
+    color: #eee;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    gap: 64px;
+    padding-bottom: 64px;
+}
+.drive-dl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin: auto;
+}
+.drive-dl img {
+    max-height: 500px;
+    max-width: 1200px;
+    transition: .3s all;
+}
+.drive-dl img:hover {
+    transform: translateY(-4px);
+    transition: .3s all;
 }
