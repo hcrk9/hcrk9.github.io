@@ -307,3 +307,15 @@ h4::before {
     transform: translateY(-4px);
     transition: .3s all;
 }
+
+.figma-link {
+    text-decoration: underline;
+    margin: auto;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all .4s;
+}
+.figma-link:hover {
+    font-weight: 400;
+    transition: all .4s;
+}
