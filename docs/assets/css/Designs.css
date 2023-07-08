@@ -1,5 +1,6 @@
 ---
 ---
+
 body {
     background: #080C13;
     font-family: "Instrument Sans", "Noto Sans SC";
@@ -248,7 +249,6 @@ p {
     }
     .title {
         font-size: 10vw;
-        background: #B6B6B6 no-repeat top/250% url("https://raw.gitmirror.com/hcrk9/hcrk9.github.io/main/images/inabaku.jpg");
     }
     .ba-card-image {
         margin:auto;
@@ -270,7 +270,7 @@ p {
         width: 100%!important;
     }
     .drive-dl img {
-        max-width: 90vw!important;
+        max-width: 80vw!important;
     }
     .drive-stickers h4 {
         width: 80%;
@@ -287,15 +287,25 @@ h4::before {
     content: counter(section);
 }
 
-.drive-stickers {
+.lighter-section {
+    background-color: #121821;
     display: flex;
     flex-flow: column nowrap;
     color: #eee;
-    width: 80%;
+    padding: 0 10% 64px 10%;
     margin: auto;
     justify-content: center;
     gap: 64px;
-    padding-bottom: 64px;
+}
+.darker-section {
+    background-color: #081222;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #eee;
+    padding: 0 10% 64px 10%;
+    margin: auto;
+    justify-content: center;
+    gap: 64px;
 }
 .drive-dl {
     display: flex;
@@ -314,15 +324,28 @@ h4::before {
     transform: translateY(-4px);
     transition: .3s all;
 }
+.rounded {
+    border-radius: 12px;
+}
+.rounded img {
+    border-radius: 12px;
+}
 
 .figma-link {
-    text-decoration: underline;
+    border-bottom: 2px solid #eee;
     margin: auto;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 36px;
     transition: all .4s;
+    font-family: 'LCDDot TR';
 }
 .figma-link:hover {
-    font-weight: 400;
+    transform: translateY(-4px);
     transition: all .4s;
+}
+
+@font-face {
+    font-family: 'LCDDot TR';
+    src: url('../fonts/lcddottr.woff') format('woff'),
+        url('../fonts/lcddottr.woff2') format('woff2');
+    font-display: swap;
 }
