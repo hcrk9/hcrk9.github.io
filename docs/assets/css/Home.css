@@ -207,6 +207,14 @@
     border-radius: 68px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
+
+.hidden {
+    display: none!important;
+}
+
+.CPUImage {
+    background-image: url(../images/MillenniumCPU.webp);
+}
 .HDDImage {
     background-image: url(../images/DriveStickers.webp);
 }
