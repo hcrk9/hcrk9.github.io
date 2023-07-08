@@ -266,8 +266,15 @@ p {
         flex-flow: column nowrap;
         gap:10px;
     }
+    .drive-stickers {
+        width: 100%!important;
+    }
     .drive-dl img {
-        max-width: 90%;
+        max-width: 90vw!important;
+    }
+    .drive-stickers h4 {
+        width: 80%;
+        margin: auto;
     }
 
 }
