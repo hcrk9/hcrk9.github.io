@@ -22,6 +22,14 @@
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: linear-gradient(156deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 32.00%, rgba(255, 255, 255, 0.00) 66.46%, rgba(255, 255, 255, 0.03) 100%);
     box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.05);
+    filter: brightness(.9);
+    transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.link-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.10);
+    filter: brightness(1);
+    transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .link-img {
     height: 160px;
