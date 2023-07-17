@@ -1,0 +1,114 @@
+.main-content {
+    padding: 4em 10%;
+}
+.links-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3em;
+    justify-content: space-between;
+}
+.link-box {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 680px;
+    width: calc(50% - 2em);
+    
+    height: 240px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(156deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 32.00%, rgba(255, 255, 255, 0.00) 66.46%, rgba(255, 255, 255, 0.03) 100%);
+    box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.05);
+}
+.link-img {
+    height: 160px;
+    width: auto;
+    border-radius: 160px;
+}
+.link-info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+}
+.link-title {
+    color: #eee;
+    text-align: justify;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.link-desc {
+    width: 370px;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.url-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    align-items: center;
+}
+.url-item {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    align-items: center;
+}
+.link-url {
+    color: rgba(255, 255, 255, 0.50);
+    transition: all .4s;
+}
+.link-url:hover {
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.warning {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    align-items: center;
+    padding: 1em 0;
+}
+.warning span {
+    color: rgba(255, 255, 255, 0.50);
+}
+@media only screen and (max-width: 1765px) {
+    .links-list {
+        align-items: center;
+        justify-content: center;
+    }   
+}
+@media only screen and (max-width: 800px) {
+    .link-box {
+        width: 90vw;
+        min-width: 0;
+        height: fit-content;
+        flex-flow: column nowrap;
+        padding: 3em 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .link-desc {
+        width: 24ch;
+    }
+    .url-wrap {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .link-desc {
+        width: 60vw;
+    }
+    .link-info {
+        margin: auto;
+    }
+}

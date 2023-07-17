@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈赤官方站 / Hachi Official Site</title>
+    <meta name="description" content="{{page.desc}}">
+    <meta name="keywords" content="{{page.keywords}}">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ECD49MNC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-B6ECD49MNC');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.svg">
+
+    <meta name="baidu-site-verification" content="codeva-NkuQeVk5Ha" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@1,400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/{{ page.title }}.css">
+  </head>
+  <body class="dark">
+    {% include nav.html %}
+    <section>
+      {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

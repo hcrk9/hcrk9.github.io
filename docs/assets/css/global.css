@@ -88,8 +88,7 @@ footer a:visited {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
-
+    gap: 2rem;
     position: fixed;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
@@ -132,7 +131,7 @@ footer a:visited {
 .main-nav {
     display: flex;
     flex-flow: row wrap;
-    gap: 1rem;
+    gap: 2rem;
     margin-right:auto;
 }
 .social-icon svg {
@@ -364,7 +363,7 @@ abbr {
         transform: rotate(360deg);
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1400px) {
     .main-nav {
         display: none;
     }
