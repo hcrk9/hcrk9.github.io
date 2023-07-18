@@ -363,6 +363,11 @@ abbr {
         transform: rotate(360deg);
     }
 }
+@media only screen and (orientation: portrait) {
+.footer {
+    padding: 6%;
+}
+}
 @media only screen and (max-width: 1400px) {
     .main-nav {
         display: none;
@@ -406,8 +411,10 @@ abbr {
     }
 }
 
-.footer ul {
-    list-style-type: none;
-    margin-block-start: 0;
+.footer-link-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 6px;
 }
+
 
