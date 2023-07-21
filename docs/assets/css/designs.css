@@ -349,3 +349,41 @@ h4::before {
         url('../fonts/lcddottr.woff2') format('woff2');
     font-display: swap;
 }
+
+.section-title {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 2em;
+    margin: auto;
+}
+
+.ssd {
+    max-width: 720px!important;
+    max-height: 400px!important;
+}
+
+.info-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.left-info, .right-info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 6px;
+}
+.left-info {
+    align-items: flex-start;
+}
+.right-info {
+    align-items: flex-end;
+}
+.left-info a {
+    margin: 0;
+}
+.right-info span {
+    margin: 0;
+}
