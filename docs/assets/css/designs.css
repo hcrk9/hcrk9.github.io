@@ -390,4 +390,6 @@ h4::before {
 
 .gt-container {
     color: #eee;
+    width: 90%;
+    margin: auto;
 }
