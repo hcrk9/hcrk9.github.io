@@ -1132,10 +1132,6 @@
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
   }
-  .gt-container .gt-comment-content:hover {
-    -webkit-box-shadow: 0 0.625em 3.75em 0 #f4f4f4;
-            box-shadow: 0 0.625em 3.75em 0 #f4f4f4;
-  }
   @media (max-width: 479px) {
     .gt-container .gt-comment-content {
       margin-left: 0.875em;
@@ -1194,7 +1190,8 @@
     right: 0;
   }
   .gt-container .gt-comment-body {
-    color: #333 !important;
+    color: #eee !important;
+    border-radius: 12px;
   }
   .gt-container .gt-comment-body .email-hidden-toggle a {
     display: inline-block;
