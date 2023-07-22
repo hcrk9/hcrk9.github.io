@@ -133,6 +133,25 @@ keywords: 哈赤, 哈赤官方, 哈赤官方站, Hachi, Hachi Official, 哈赤Ha
             </div>
         </div>
 
+        <div id="gitalk-container"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+        <script>
+            var gitalk = new Gitalk({
+              clientID: '1288ee3752a44563b45c',
+              clientSecret: '8fa2d83e0fadcf9b00aec6c62f65e19128866abe',
+              repo: 'hcrk9.github.io',
+              owner: 'hcrk9',
+              admin: ['hcrk9'],
+              id: location.pathname,      // Ensure uniqueness and length less than 50
+              distractionFreeMode: true  // Facebook-like distraction free mode
+            })
+
+            gitalk.render('gitalk-container')
+        </script>
+
+
         <script>
             const m_button = document.getElementById("MILLENNIUM"); // get the button element by its ID
             const s_button = document.getElementById("S.C.H.A.L.E"); // get the button element by its ID

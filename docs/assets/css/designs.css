@@ -387,3 +387,7 @@ h4::before {
 .right-info span {
     margin: 0;
 }
+
+.gt-container {
+    color: #eee;
+}
