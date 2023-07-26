@@ -1,6 +1,8 @@
 ---
 ---
-
+:root {
+    scroll-behavior: smooth;
+}
 body {
     background: #080C13;
     font-family: "Instrument Sans", "Noto Sans SC";
@@ -35,6 +37,29 @@ body {
 .title span:hover {
     font-weight: 600;
     transition: all .5s cubic-bezier(.32,.99,.62,1);
+}
+.page-contents {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap: 4px;
+    font-size: 1rem;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+}
+.page-contents p {
+    color: #eee;
+}
+.page-contents a {
+    opacity: .75;
+    transition: all .4s;
+}
+.page-contents a:hover {
+    opacity: 1;
+    transition: all .4s;
 }
 
 .main-content {
@@ -277,6 +302,11 @@ p {
         margin: auto;
     }
 
+}
+@media only screen and (max-width:800px) {
+    .page-contents {
+        display: none;
+    }
 }
 
 .main-content {
