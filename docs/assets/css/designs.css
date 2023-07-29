@@ -109,12 +109,14 @@ body {
     padding: 4em 0;
 }
 .ba-logo-img {
-    display: contents;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ba-logo-img img {
     transition: all .3s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    max-width: 80%;
+    max-width: 50%;
 }
 .ba-logo-img:hover img {
     filter: drop-shadow(0px 4px 8px #ffffff99);
@@ -307,6 +309,13 @@ p {
     .page-contents {
         display: none;
     }
+    .ba-logo-grid {
+        display: flex!important;
+        flex-flow: column nowrap;
+    }
+    .ba-logo-img img {
+        max-width: 80%;
+    }
 }
 
 .main-content {
@@ -422,4 +431,12 @@ h4::before {
     color: #eee;
     width: 90%;
     margin: auto;
+}
+
+.ba-logo-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "aby gdd geh" "gsc mln rwt" "sch smn srt " "tri val .";
+    gap: 64px;
+    padding: 4rem 0;
 }
