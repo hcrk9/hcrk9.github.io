@@ -332,7 +332,6 @@ h4::before {
     flex-flow: column nowrap;
     color: #eee;
     padding: 0 10% 64px 10%;
-    margin: auto;
     justify-content: center;
     gap: 64px;
 }
@@ -342,7 +341,6 @@ h4::before {
     flex-flow: column nowrap;
     color: #eee;
     padding: 0 10% 64px 10%;
-    margin: auto;
     justify-content: center;
     gap: 64px;
 }
@@ -439,4 +437,65 @@ h4::before {
     grid-template-areas: "aby gdd geh" "gsc mln rwt" "sch smn srt " "tri val .";
     gap: 64px;
     padding: 4rem 0;
+}
+
+.tickets {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
+    transition: all .6s;
+}
+.ticket-item {
+    transform: translateX(-60%) scale(.9);
+    box-shadow: 24px 0px 36px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    transition: all .6s;
+    opacity: 0;
+    cursor: pointer;
+}
+.first-ticket {
+    transform: none;
+    opacity: 1;
+    z-index: 9;
+}
+.second-ticket {
+    transform: translateX(-60%) scale(.9);
+    box-shadow: 24px 0px 36px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    transition: all .6s;
+    opacity: 1!important;
+}
+.ticket-wrap:hover .tickets {
+    gap: 48px;
+    transition: all .6s;
+}
+.ticket-wrap:hover .ticket-item {
+    transform: none;
+    transition: all .6s;
+    opacity: 1;
+
+}
+
+.ticket-item img {
+    height: 453px;
+}
+.ticket-wrap span {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 2rem;
+}
+.ticket-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+.ticket-item:hover img {
+    transform: translateY(-4px);
+    transition: all .4s;
+}
+.ticket-item img {
+    transition: all .4s;
 }
