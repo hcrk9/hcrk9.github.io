@@ -19,4 +19,6 @@ categories: log
 |  4  |DARKNESS| 1    |
 |  4  |  ZH   | 1    |
 |  4  |  广平  | 1    |
-|  5  |       | NaN |
+|  …  |       |  |
+| 82 | ZH | -2 |
+| 83 | Kizuna Ai | -8 |
