@@ -434,7 +434,7 @@ h4::before {
 .ba-logo-grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "aby gdd geh" "gsc mln rwt" "sch smn srt " "tri val .";
+    grid-template-areas: "aby ari fox" "gdd geh gsc" "hya kro mln" "rab rwt smn" "sch sha srt" "tri trf val";
     gap: 64px;
     padding: 4rem 0;
 }
