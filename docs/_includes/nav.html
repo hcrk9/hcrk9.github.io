@@ -84,12 +84,16 @@
 
 <script>
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 0) {
+        if (window.scrollY > 20) {
             document.querySelector('.menu-bg').style.opacity = '1';
-            document.querySelector('.menu-bg').style.transition = 'opacity 0.5s ease-in-out';
+            document.querySelector('.navbar').style.borderBottom = '1px solid rgba(255,255,255,0)';
+            document.querySelector('.menu-bg').style.transition = 'all 0.5s ease-in-out';
+            document.querySelector('.navbar').style.transition = 'all 0.5s ease-in-out';
         } else {
             document.querySelector('.menu-bg').style.opacity = '0';
-            document.querySelector('.menu-bg').style.transition = 'opacity 0.5s ease-in-out';
+            document.querySelector('.navbar').style.borderBottom = '1px solid #fff';
+            document.querySelector('.menu-bg').style.transition = 'all 0.5s ease-in-out';
+            document.querySelector('.navbar').style.transition = 'all 0.5s ease-in-out';
         }
     });
 </script>

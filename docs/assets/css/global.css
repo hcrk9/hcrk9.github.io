@@ -273,7 +273,7 @@ abbr {
 }
 .menu-bg {
     opacity: 0;
-    z-index: 5;
+    z-index: 50;
     width: 100vw;
     height: 170px;
     position: fixed;
