@@ -59,12 +59,12 @@
 .url-wrap {
     display: flex;
     flex-flow: column nowrap;
-    gap: 4px;
+    gap: 6px;
 }
 .url-item {
     display: flex;
     flex-flow: row nowrap;
-    gap: 4px;
+    gap: 8px;
     align-items: center;
 }
 .link-url {
@@ -116,4 +116,19 @@
     .link-info {
         margin: auto;
     }
+}
+
+hr {
+    margin: 3em 0;
+    border: 1px rgba(255, 255, 255, 0.25) solid;
+}
+
+.section-title {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 2em;
+    padding-bottom: 3em;
 }
