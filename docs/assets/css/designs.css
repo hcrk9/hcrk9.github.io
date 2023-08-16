@@ -80,7 +80,6 @@ body {
     background-color: #C6C6C6;
 }
 .millennium {
-    font-family: "Gotham", "Montserrat", "Noto Sans SC";
     z-index: 4;
     color: #eee;
     background-color: #080C12;
@@ -92,7 +91,6 @@ body {
     background-image: url("{{site.baseurl}}/assets/images/schale_halo.svg");
     background-size: cover;
     background-position: center;
-    font-family: "Gotham", "Montserrat", "Noto Sans SC";
     z-index: 4;
     color: #eee;
 }
@@ -223,7 +221,6 @@ p {
     border: 2px solid #eee;
     color: #eee;
 
-    font-family: "Gotham", "Montserrat", "Noto Sans SC";
     font-size: 1.2em;
 
     border-radius: 4px;
