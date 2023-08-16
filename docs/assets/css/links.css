@@ -58,9 +58,8 @@
 }
 .url-wrap {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     gap: 4px;
-    align-items: center;
 }
 .url-item {
     display: flex;

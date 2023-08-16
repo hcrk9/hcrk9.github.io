@@ -205,7 +205,6 @@ p {
     flex-flow: column nowrap;
     gap: .8em;
     font-weight:550;
-    height: 160px;
     justify-content: center;
 }
 .footer-email {
