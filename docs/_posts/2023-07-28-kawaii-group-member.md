@@ -21,5 +21,5 @@ categories: log
 |  4  |  ZH   | 1    |
 |  4  |  广平  | 1    |
 |  …  |       |  |
-| 104 | ZH | -2 |
-| 105 | Kizuna Ai | -8 |
+| 103 | ZH | -2 |
+| 104 | Kizuna Ai | -8 |
