@@ -74,11 +74,11 @@
 .hachiAvatar {
     width: 160px;
     height: 160px;
-    background-image: url(../images/yuuka_head.webp);
+    background-image: url(../images/mzk.webp);
     border-radius: 160px;
     background-size: cover;
     transform: translate(-50%,-50%);
-    box-shadow: 4.8px -4.8px 16px 0px rgba(108, 107, 226, 0.40);
+    box-shadow: 4.8px -4.8px 16px 0px rgba(251, 190, 204, 0.40);
 }
 .dot {
     font-family: "LCDDot TR";
@@ -240,7 +240,7 @@
     background-image: url(../images/kamitsubaki_page.webp);
 }
 .INAImage {
-    background-image: url(../images/inabakumori/hero.svg);
+    background-image: url(../images/ina_hero.webp);
 }
 .projectImage:hover {
     border-radius: 225px;
@@ -261,6 +261,7 @@
     transition: all .3s cubic-bezier(.32,.99,.62,1);
 }
 .thumbnail:hover::after {
+
     opacity: 1;
     border-radius: 225px;
     transition: all .3s cubic-bezier(.32,.99,.62,1);

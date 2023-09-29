@@ -203,12 +203,31 @@ p {
 .footer-info {
     display:flex;
     flex-flow: column nowrap;
-    gap: .8em;
     font-weight:550;
-    justify-content: center;
+    justify-content: space-between;
+}
+.info-upper {
+    display:flex;
+    flex-flow: column nowrap;
+    gap: .8em;
+    margin-top: 1em;
 }
 .footer-email {
     transition: 0.2s all;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.email-icons, .email-links {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.email-icons {
+    align-items: flex-end;
+    gap: .5rem;
+}
+.email-links {
+    align-items: flex-start;
+    gap: .65rem;
 }
 .footer-email:active{
     fill-opacity: 50%;
@@ -240,7 +259,8 @@ abbr {
 .footer-legal {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.5);
-    padding-top: 10px;
+    padding-top: .3em;
+    margin-top: .7em;
 }
 @media only screen and (orientation:portrait) {
     /* GLOBAL */
