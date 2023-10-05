@@ -1120,6 +1120,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-radius: 5px;
   }
   .gt-container .gt-comment-content {
     -webkit-box-flex: 1;
