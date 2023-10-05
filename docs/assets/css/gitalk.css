@@ -1132,6 +1132,7 @@
     overflow: auto;
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
+    border-radius: 5px;
   }
   @media (max-width: 479px) {
     .gt-container .gt-comment-content {
