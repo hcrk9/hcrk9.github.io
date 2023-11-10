@@ -65,7 +65,7 @@
 .latestImage {
     height: 380px;
     width: 608px;
-    background-image: url("../images/MillenniumCPU.webp");
+    background-image: url("../images/yuzubox.webp");
     background-size: cover;
     border-radius: 68px;
     margin-top: 10px;
@@ -212,6 +212,9 @@
     display: none!important;
 }
 
+.YUZUImage {
+    background-image: url(../images/yuzubox.webp);
+}
 .CPUImage {
     background-image: url(../images/MillenniumCPU.webp);
 }
