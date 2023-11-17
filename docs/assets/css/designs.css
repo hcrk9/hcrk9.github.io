@@ -38,6 +38,36 @@ body {
     font-weight: 600;
     transition: all .5s cubic-bezier(.32,.99,.62,1);
 }
+
+.license-tips {
+    transform: translateY(80px);
+
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 12px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 6px;
+    border: 1px solid #3B3B3B;
+    background: rgba(28, 28, 28, 0.50);
+}
+.license-l {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+.license-r a {
+    font-weight: 500;
+    text-decoration: underline wavy;
+}
+.license-r a:hover {
+    font-weight: 600;
+}
 .page-contents {
     display: flex;
     flex-flow: column nowrap;
@@ -50,8 +80,16 @@ body {
     right: 10%;
     transform: translate(0, -50%);
 }
+.page-content-links {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    gap: 4px;
+}
 .page-contents p {
     color: #eee;
+    opacity: .85;
+    text-align: right;
 }
 .page-contents a {
     opacity: .75;
@@ -268,6 +306,13 @@ p {
 }
 
 @media only screen and (orientation:portrait) {
+    .license-tips,.license-l {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    .license-tips {
+        padding: 24px 16px;
+    }
     .projects h1 {
         padding: 0.5em 3rem!important;
     }
@@ -304,7 +349,36 @@ p {
 }
 @media only screen and (max-width:800px) {
     .page-contents {
-        display: none;
+        position: relative;
+        align-items: flex-start;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: 32px;
+        left: 10%;
+        transform: none;
+        top: unset;
+    }
+    .page-content-links {
+        align-items: flex-start;
+    }
+    .title {
+        justify-content: center;
+    }
+    .title-content {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-top: 56px;
+        gap: 32px;
+    }
+    .page-contents p {
+        text-align: left;
+        padding: 0;
+    }
+    .titleSpan {
+        position: relative!important;
+        top: unset!important;
+        bottom: unset!important;
+        transform: none!important;
     }
     .ba-logo-grid {
         display: flex!important;
