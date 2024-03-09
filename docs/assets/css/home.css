@@ -65,8 +65,9 @@
 .latestImage {
     height: 380px;
     width: 608px;
-    background-image: url("../images/yuzubox.webp");
+    background-image: url("../images/crtpatternsfsdj.webp");
     background-size: cover;
+    background-position: center;
     border-radius: 68px;
     margin-top: 10px;
     box-shadow: 0px 1.6px 14px 0px rgba(240, 246, 255, 0.40);
@@ -116,7 +117,7 @@
     transform: translateY(-168px);
 }
 .latestTitle {
-    font-size: 32px;
+    font-size: 26px;
     font-family: Instrument Sans;
     font-style: normal;
     font-weight: 700;
@@ -212,6 +213,9 @@
     display: none!important;
 }
 
+.CRTImage {
+    background-image: url(../images/crtpatternsfsdj.webp);
+}
 .YUZUImage {
     background-image: url(../images/yuzubox.webp);
 }
@@ -430,7 +434,7 @@
         max-width: 90vw;
     }
     .latestTitle {
-        font-size: 22px;
+        font-size: 21px;
         white-space: nowrap;
     }
     .latestInfo {
